@@ -26,3 +26,7 @@ ADD_SUBDIRECTORY(external/zeromq)
 SET_PROPERTY(DIRECTORY external/zeromq PROPERTY ZMQ_BUILD_TESTS FALSE)
 
 ADD_SUBDIRECTORY(external/sdsl-lite)
+
+
+ADD_EXECUTABLE(index src/index.cpp)
+TARGET_LINK_LIBRARIES(index sdsl divsufsort divsufsort64 pthread)
