@@ -5,7 +5,7 @@
 #include <sdsl/int_vector.hpp>
 
 namespace topkcomp{
+    typedef std::pair<uint64_t, uint64_t>    tII;
     typedef std::pair<std::string, uint64_t> tSI;
     typedef std::vector<tSI>                 tVSI;
-
 } // end namespace topkcomp

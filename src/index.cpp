@@ -23,10 +23,16 @@ int main(int argc, char* argv[]){
         entry_priority.emplace_back(entry, priority);
     }
     cout << "read " << entry_priority.size() << " entries" << endl;
+    sort(entry_priority.begin(), entry_priority.end());
     index1 idx(entry_priority);
 
     string prefix;
     while ( getline(cin, prefix) ) {
-        cout << prefix << endl;
+        auto result_list = idx.top_k(prefix, 5);
+        cout << "-- top results:" << endl;
+        for (size_t i=0; i<result_list.size(); ++i) {
+            cout << result_list[i].first << "  " << result_list[i].second << endl;
+        }
+        cout << "--" << endl;
     }
 }
