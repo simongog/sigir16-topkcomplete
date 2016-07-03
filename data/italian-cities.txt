@@ -58,7 +58,7 @@ Fiumicino	70985
 Florence	358079
 Foggia	152747
 Foligno	58162
-Forlì    118167
+Forlì	118167
 Gallarate	51751
 Gela	77360
 Genoa	586180
