@@ -1,5 +1,6 @@
 #include "topkcomp/index1.hpp"
 #include "topkcomp/index2.hpp"
+#include "topkcomp/index3.hpp"
 #include <cstdio>
 #include <iostream>
 #include <string>
