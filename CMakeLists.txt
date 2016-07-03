@@ -27,6 +27,18 @@ SET_PROPERTY(DIRECTORY external/zeromq PROPERTY ZMQ_BUILD_TESTS FALSE)
 
 ADD_SUBDIRECTORY(external/sdsl-lite)
 
+FILE(STRINGS ${CMAKE_HOME_DIRECTORY}/index.config index_lines REGEX "^[^#].*")
+FOREACH(line ${index_lines})
+    MESSAGE("line = ${line}")
+    LIST(GET line 0 index_name)
+    LIST(GET line 1 index_type)
 
-ADD_EXECUTABLE(index src/index.cpp)
-TARGET_LINK_LIBRARIES(index sdsl divsufsort divsufsort64 pthread)
+    SET(exec ${index_name}-main)
+    ADD_EXECUTABLE(${exec} src/index.cpp)
+    TARGET_LINK_LIBRARIES(${exec} sdsl divsufsort divsufsort64 pthread)
+    SET_PROPERTY(TARGET ${exec} PROPERTY COMPILE_DEFINITIONS 
+                 INDEX_TYPE=${index_type} 
+                 INDEX_NAME="${index_name}")
+ENDFOREACH()
+
+

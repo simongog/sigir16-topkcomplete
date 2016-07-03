@@ -1,4 +1,5 @@
 #include "topkcomp/index1.hpp"
+#include "topkcomp/index2.hpp"
 #include <cstdio>
 #include <iostream>
 #include <string>
@@ -9,8 +10,10 @@ using namespace std;
 using namespace sdsl;
 using namespace topkcomp;
 
+typedef INDEX_TYPE t_index;
 
 int main(int argc, char* argv[]){
+    const string index_name = INDEX_NAME;
     if ( argc < 2 ) {
         cout << "Usage: ./" << argv[1] << " file" << endl;
     }
@@ -26,13 +29,15 @@ int main(int argc, char* argv[]){
         entry_priority.emplace_back(entry, priority);
     }
     cout << "read " << entry_priority.size() << " entries" << endl;
+
     sort(entry_priority.begin(), entry_priority.end());
-    index1 idx(entry_priority);
+    t_index topk_index(entry_priority);
+    write_structure<HTML_FORMAT>(topk_index, string(argv[1])+"."+index_name+".html");
 
     string prefix;
     while ( getline(cin, prefix) ) {
         auto query_start = clock::now();
-        auto result_list = idx.top_k(prefix, 5);
+        auto result_list = topk_index.top_k(prefix, 5);
         auto query_time  = clock::now() - query_start;
         auto query_us    = chrono::duration_cast<chrono::microseconds>(query_time).count();
         
