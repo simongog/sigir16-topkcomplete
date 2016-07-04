@@ -51,26 +51,33 @@ class index2 {
             m_start_sel = t_sel(&m_start_bv);
         }
 
-        // k > 0
-        tVSI top_k(std::string prefix, size_t k){
-            tVSI result_list;
-            size_t lb = 0;              // inclusive left bound
-            size_t rb = m_priority.size(); // exclusive right bound
+        // Return range [lb, rb) of matching entries
+        std::array<size_t,2> prefix_range(const std::string& prefix) const {
+            std::array<size_t,2> res = {{0, m_priority.size()}};
             id_rac id(m_priority.size());
             for (size_t i=0; i<prefix.size(); ++i) {
                 // use binary search at each step to narrow the interval
-                lb = std::lower_bound(id.begin()+lb, id.begin()+rb,
-                        prefix[i],  [&](size_t idx, char c){
-                                        return m_text[m_start_sel(idx+1)+i] < c;
-                                    }) - id.begin();
-                rb = std::upper_bound(id.begin()+lb, id.begin()+rb,
-                        prefix[i],  [&](char c, size_t idx){
-                                        return c < m_text[m_start_sel(idx+1)+i];
-                                    }) - id.begin();
+                res[0] = std::lower_bound(id.begin()+res[0], id.begin()+res[1],
+                            prefix[i],  [&](size_t idx, char c){
+                                return m_text[m_start_sel(idx+1)+i] < c;
+                            }) - id.begin();
+                res[1] = std::upper_bound(id.begin()+res[0], id.begin()+res[1],
+                            prefix[i],  [&](char c, size_t idx){
+                                return c < m_text[m_start_sel(idx+1)+i];
+                            }) - id.begin();
             }
+            return res;
+        }
+
+
+        // k > 0
+        tVSI top_k(const std::string& prefix, size_t k) const {
+            auto range = prefix_range(prefix);
+
+            tVSI result_list;
             // min-priority queue holds (priority, index)-pairs
             std::priority_queue<tII, std::vector<tII>, std::greater<tII>> pq;
-            for (size_t i=lb; i<rb; ++i){
+            for (size_t i=range[0]; i<range[1]; ++i){
                 if ( pq.size() < k ) {
                     pq.emplace(m_priority[i], i);
                 } else if ( m_priority[i] > pq.top().first ) {
