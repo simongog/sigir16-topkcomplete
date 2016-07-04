@@ -69,57 +69,6 @@ class index4 {
             m_bp_sel10   = t_bp_sel10(&m_bp);
         }
 
-        // v -> [1..N]
-        size_t node_id(size_t v) const{
-            return m_bp_support.rank(v);
-        }
-
-        // node_id -> edge of node
-        t_edge_label edge(size_t v_id) const{
-            size_t begin = m_start_sel(v_id) + 1 - v_id;
-            size_t end   = m_start_sel(v_id+1) + 1 - (v_id+1);
-            return t_edge_label(&m_labels, begin, end);
-        }
-
-        size_t is_leaf(size_t v) const {
-            return m_bp[v+1] == 0;
-        }
-
-        size_type is_root(size_t v) const {
-            return v == 0;
-        }
-
-        size_type parent(size_t v) const {
-            return m_bp_support.enclose(v);
-        }
-
-        // reconstruct label at position idx of original sequence
-        std::string label(size_t idx) {
-            std::stack<size_t> node_stack;
-            node_stack.push(m_bp_sel10(idx+1)-1);
-            while ( !is_root(node_stack.top()) ) {
-                size_t p = parent(node_stack.top());
-                node_stack.push(p);
-            }
-            std::string res;
-            while ( !node_stack.empty() ){
-                auto e = edge(node_id(node_stack.top()));
-                res.append(e.begin(), e.end());
-                node_stack.pop();
-            }
-            return res;
-        }
-
-        std::vector<size_t> children(size_t v) const {
-            std::vector<size_t> res;
-            size_t cv = v+1;
-            while ( m_bp[cv] ) {
-                res.push_back(cv);
-                cv = m_bp_support.find_close(cv) + 1;
-            }
-            return res;
-        }
-
         struct priority_interval{
             uint64_t p;
             size_t idx, lb, rb;
@@ -135,48 +84,9 @@ class index4 {
         };
 
         // k > 0
-        tVSI top_k(std::string prefix, size_t k){
+        tVSI top_k(const std::string& prefix, size_t k) const{
+            auto range = prefix_range(prefix);
             tVSI result_list;
-
-            size_t v = 0; // node is represented by position of opening parenthesis in bp
-
-            size_t m = 0; // length of common prefix
-            while ( m < prefix.size() ) {
-                auto cv = children(v);
-                if ( cv.size() == 0 ) { // v is already a leaf, prefix is longer than leaf
-                    return result_list;
-                }
-                auto w = v;
-                auto w_edge = edge(node_id(cv[0]));
-                size_t i = 0;
-                while ( ++i < cv.size() and w_edge[0] < prefix[m] ) {
-                    w_edge = edge(node_id(cv[i]));
-                }
-                if ( prefix[m] != w_edge[0] ) { // no matching child found
-                    return result_list;
-                } else {
-                    w = cv[i-1];
-                    size_t mm = m+1;
-                    while ( mm < prefix.size() and mm-m < w_edge.size() and  prefix[mm] == w_edge[mm-m] ) {
-                        ++mm;
-                    }
-                    // edge search exhausted 
-                    if ( mm-m == w_edge.size() ){
-                        v = w;
-                        m = mm;
-                    } else { // edge search not exhausted
-                        if ( mm == prefix.size() ) { // pattern exhausted
-                            v = w;
-                            m = mm;
-                        } else { // pattern not exhausted -> mismatch
-                            return result_list;
-                        }
-                    }
-                }
-            }
-            size_t lb = m_bp_rnk10(v);
-            size_t rb = m_bp_rnk10(m_bp_support.find_close(v)+1);
-            
             std::priority_queue<priority_interval> pq;
 
             auto push_interval = [&](size_t f_lb, size_t f_rb) {
@@ -186,7 +96,7 @@ class index4 {
                 }
             };
 
-            push_interval(lb, rb);
+            push_interval(range[0], range[1]);
             
             while ( result_list.size() < k and !pq.empty() ) {
                 auto iv = pq.top();
@@ -268,6 +178,101 @@ class index4 {
                 lb = mid;
             }
             m_bp[bp_idx++] = 0; // append ,,)''
+        }
+
+        // Return range [lb, rb) of matching entries
+        std::array<size_t,2> prefix_range(const std::string& prefix) const {
+            size_t v = 0; // node is represented by position of opening parenthesis in bp
+            size_t m = 0; // length of common prefix
+            while ( m < prefix.size() ) {
+                auto cv = children(v);
+                if ( cv.size() == 0 ) { // v is already a leaf, prefix is longer than leaf
+                    return {{0,0}};
+                }
+                auto w = v;
+                auto w_edge = edge(node_id(cv[0]));
+                size_t i = 0;
+                while ( ++i < cv.size() and w_edge[0] < prefix[m] ) {
+                    w_edge = edge(node_id(cv[i]));
+                }
+                if ( prefix[m] != w_edge[0] ) { // no matching child found
+                    return {{0,0}};
+                } else {
+                    w = cv[i-1];
+                    size_t mm = m+1;
+                    while ( mm < prefix.size() and mm-m < w_edge.size() and  prefix[mm] == w_edge[mm-m] ) {
+                        ++mm;
+                    }
+                    // edge search exhausted 
+                    if ( mm-m == w_edge.size() ){
+                        v = w;
+                        m = mm;
+                    } else { // edge search not exhausted
+                        if ( mm == prefix.size() ) { // pattern exhausted
+                            v = w;
+                            m = mm;
+                        } else { // pattern not exhausted -> mismatch
+                            return {{0,0}};
+                        }
+                    }
+                }
+            }
+            return {{m_bp_rnk10(v), m_bp_rnk10(m_bp_support.find_close(v)+1)}};
+        }
+
+
+        // v -> [1..N]
+        size_t node_id(size_t v) const{
+            return m_bp_support.rank(v);
+        }
+
+        // node_id -> edge of node
+        t_edge_label edge(size_t v_id) const{
+            size_t begin = m_start_sel(v_id) + 1 - v_id;
+            size_t end   = m_start_sel(v_id+1) + 1 - (v_id+1);
+            return t_edge_label(&m_labels, begin, end);
+        }
+
+        // check if v is a leaf
+        size_t is_leaf(size_t v) const {
+            return m_bp[v+1] == 0;
+        }
+
+        // check if v is the root node
+        size_type is_root(size_t v) const {
+            return v == 0;
+        }
+
+        // parent of v
+        size_type parent(size_t v) const {
+            return m_bp_support.enclose(v);
+        }
+
+        // reconstruct label at position idx of original sequence
+        std::string label(size_t idx) const {
+            std::stack<size_t> node_stack;
+            node_stack.push(m_bp_sel10(idx+1)-1);
+            while ( !is_root(node_stack.top()) ) {
+                size_t p = parent(node_stack.top());
+                node_stack.push(p);
+            }
+            std::string res;
+            while ( !node_stack.empty() ){
+                auto e = edge(node_id(node_stack.top()));
+                res.append(e.begin(), e.end());
+                node_stack.pop();
+            }
+            return res;
+        }
+
+        std::vector<size_t> children(size_t v) const {
+            std::vector<size_t> res;
+            size_t cv = v+1;
+            while ( m_bp[cv] ) {
+                res.push_back(cv);
+                cv = m_bp_support.find_close(cv) + 1;
+            }
+            return res;
         }
 
 
