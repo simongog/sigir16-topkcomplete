@@ -18,64 +18,18 @@ class index3 {
     typedef sdsl::int_vector<8> t_label;
     typedef edge_rac<t_label>   t_edge_label;
 
-    t_label             m_labels;  // labels of the tree
-    sdsl::bit_vector    m_bp; // balanced parantheses sequence of tree
+    t_label             m_labels;     // labels of the tree
+    sdsl::bit_vector    m_bp;         // balanced parantheses sequence of tree
     t_bp_support        m_bp_support; // support structure for m_bp
-    t_bp_rnk10          m_bp_rnk10;  // rank for leaves in bp
-    t_bp_sel10          m_bp_sel10;  // select for leaves in bp
-    t_bv                m_start_bv;  // bitvector which represents the start of labels in m_text
-    t_sel               m_start_sel; // select structure for m_start_bv
-    sdsl::int_vector<>  m_priority;  //
+    t_bp_rnk10          m_bp_rnk10;   // rank for leaves in bp
+    t_bp_sel10          m_bp_sel10;   // select for leaves in bp
+    t_bv                m_start_bv;   // bitvector which represents the start of labels in m_labels
+    t_sel               m_start_sel;  // select structure for m_start_bv
+    sdsl::int_vector<>  m_priority;   //
 
 
     public:
         typedef size_t size_type;
-
-        void build_tree(const tVSI& entry_priority, size_t& bp_idx, size_t &start_idx, size_t &label_idx) {
-            build_tree(entry_priority, 0, entry_priority.size(), 0, bp_idx, start_idx, label_idx);
-        }
-
-        void build_tree(const tVSI& entry_priority, size_t lb, size_t rb, size_t depth, size_t& bp_idx, size_t& start_idx, size_t& label_idx) {
-            if ( lb >= rb )
-                return;
-            m_bp[bp_idx++] = 1; // append ,,(''
-//            std::cout << "(";
-//            std::cout<<depth<<"-["<<lb<<","<<rb-1<<"]"<<std::endl;
-            size_t d = depth;
-            const char* lb_entry = entry_priority[lb].first.c_str();
-            const char* rb_entry = entry_priority[rb-1].first.c_str();
-            while ( lb_entry[d] !=0 and lb_entry[d] == rb_entry[d] ) {
-//                std::cout << lb_entry[d];
-                m_labels[label_idx++] = lb_entry[d];
-                start_idx++;
-                ++d;
-            }
-            m_start_bv[start_idx++] = 1; 
-            if ( lb_entry[d] == 0 ) {
-                ++lb;
-            }
-            while ( lb < rb ) {
-                char c = entry_priority[lb].first[d];
-//                std::cout<<"fc="<<fc<<" d="<<d<<std::endl;
-/*              // TODO: why does binary search not work here ???
-                id_rac id(rb);
-                size_t mid = std::upper_bound(id.begin()+lb+1, id.begin()+rb, fc,
-                                [&](char c, size_t idx) {
-                                std::cout<<"comp c = "<<c<<" < " << (char)entry_priority[idx].first[d]<<" at index "<<idx<<std::endl;
-                                    return c < entry_priority[idx].first[d];
-                                }) - id.begin();
-*/
-                size_t mid = lb+1;
-                while ( mid < rb and entry_priority[mid].first[d] == c ) {
-                    ++mid;
-                }
-//                std::cout<<"["<<lb<<","<<mid-1<<"_"<<rb<<"] d="<<d<<std::endl;
-                build_tree(entry_priority, lb, mid, d, bp_idx, start_idx, label_idx);
-                lb = mid;
-            }
-//            std::cout << ")";
-            m_bp[bp_idx++] = 0; // append ,,)''
-        }
 
         // Constructor
         index3(const tVSI& entry_priority=tVSI()) {
@@ -104,11 +58,6 @@ class index3 {
             m_bp.resize(bp_idx);
             m_labels.resize(label_idx);
             m_start_bv.resize(start_idx);
-//            std::cout<<"m_bp="<<m_bp<<std::endl;
-//            std::cout<<"m_labels=";
-//            for(char c : m_labels ) std::cout << c;
-//            std::cout<<std::endl;
-//            std::cout<<"m_start_bv="<<m_start_bv<<std::endl;
             m_start_sel  = t_sel(&m_start_bv);
             m_bp_support = t_bp_support(&m_bp);
             m_bp_rnk10   = t_bp_rnk10(&m_bp);
@@ -124,11 +73,6 @@ class index3 {
         t_edge_label edge(size_t v_id) const{
             size_t begin = m_start_sel(v_id) + 1 - v_id;
             size_t end   = m_start_sel(v_id+1) + 1 - (v_id+1);
-//            std::cout<<"edge("<<v_id<<")=["<<begin<<","<<end<<"] ";//m_labels.size()="<<m_labels.size()<<std::endl;
-//            for(size_t i=begin; i<end; ++i){
-//                std::cout<<m_labels[i];
-//            }
- //           std::cout<<std::endl;
             return t_edge_label(&m_labels, begin, end);
         }
 
@@ -154,7 +98,6 @@ class index3 {
             }
             std::string res;
             while ( !node_stack.empty() ){
-//                std::cout<<"label recostruct "<<node_stack.top()<<std::endl;
                 auto e = edge(node_id(node_stack.top()));
                 res.append(e.begin(), e.end());
                 node_stack.pop();
@@ -166,7 +109,6 @@ class index3 {
             std::vector<size_t> res;
             size_t cv = v+1;
             while ( m_bp[cv] ) {
-//                std::cout << "cv="<<cv<<" excess="<<m_bp_support.excess(cv)<<std::endl;
                 res.push_back(cv);
                 cv = m_bp_support.find_close(cv) + 1;
             }
@@ -192,7 +134,6 @@ class index3 {
                     w_edge = edge(node_id(cv[i]));
                 }
                 if ( prefix[m] != w_edge[0] ) { // no matching child found
-//                    std::cout<<" prefix[m]="<<prefix[m]<<" != w_edge[0]="<<w_edge[0]<<std::endl;
                     return result_list;
                 } else {
                     w = cv[i-1];
@@ -214,25 +155,9 @@ class index3 {
                     }
                 }
             }
-//            std::cout<< "found v="<<v<<std::endl;
             size_t lb = m_bp_rnk10(v);
             size_t rb = m_bp_rnk10(m_bp_support.find_close(v)+1);
-//            std::cout<<"[lb,rb]=["<<lb<<","<<rb<<"]"<<std::endl;
-/*
-            std::cout << "edge_v.size()="<<edge_v.size()<<std::endl;
-            std::cout << "cv.size()="<<cv.size()<<std::endl;
-            for(size_t i=0; i<cv.size(); ++i){
-                auto cv_edge = edge(node_id(cv[i]));
-                for(char c : cv_edge) {
-                    std::cout << c;
-                }
-                std::cout << std::endl;  
-            }
-*/            
 
-//            size_t lb = 0;              // inclusive left bound
-//            size_t rb = m_priority.size(); // exclusive right bound
-            // min-priority queue holds (priority, index)-pairs
             std::priority_queue<tII, std::vector<tII>, std::greater<tII>> pq;
             for (size_t i=lb; i<rb; ++i){
                 if ( pq.size() < k ) {
@@ -285,6 +210,42 @@ class index3 {
             m_start_sel.set_vector(&m_start_bv);
             m_priority.load(in);
         }
+
+    private:
+
+        void build_tree(const tVSI& entry_priority, size_t& bp_idx, size_t &start_idx, size_t &label_idx) {
+            build_tree(entry_priority, 0, entry_priority.size(), 0, bp_idx, start_idx, label_idx);
+        }
+
+        void build_tree(const tVSI& entry_priority, size_t lb, size_t rb, size_t depth, size_t& bp_idx, size_t& start_idx, size_t& label_idx) {
+            if ( lb >= rb )
+                return;
+            m_bp[bp_idx++] = 1; // append ,,(''
+            size_t d = depth;
+            const char* lb_entry = entry_priority[lb].first.c_str();
+            const char* rb_entry = entry_priority[rb-1].first.c_str();
+            while ( lb_entry[d] !=0 and lb_entry[d] == rb_entry[d] ) {
+                m_labels[label_idx++] = lb_entry[d];
+                start_idx++;
+                ++d;
+            }
+            m_start_bv[start_idx++] = 1; 
+            if ( lb_entry[d] == 0 ) {
+                ++lb;
+            }
+            while ( lb < rb ) {
+                char c = entry_priority[lb].first[d];
+                size_t mid = lb+1;
+                while ( mid < rb and entry_priority[mid].first[d] == c ) {
+                    ++mid;
+                }
+                build_tree(entry_priority, lb, mid, d, bp_idx, start_idx, label_idx);
+                lb = mid;
+            }
+            m_bp[bp_idx++] = 0; // append ,,)''
+        }
+
+
 };
 
 } // end namespace topkcomp
