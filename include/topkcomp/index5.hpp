@@ -33,13 +33,19 @@ class index5 {
         // Constructor
         index5(const tVSI& entry_priority=tVSI()) {
             {
-                std::string concat;
-                for (auto ep : entry_priority) {
-                    concat.append(ep.first.begin(), ep.first.end());
+                std::string concat_file = sdsl::tmp_file(std::string("./"),"topkcomp_index5");
+                {
+                    std::string concat;
+                    for (auto ep : entry_priority) {
+                        concat.append(ep.first.begin(), ep.first.end());
+                    }
+                    sdsl::store_to_file(concat.c_str(), concat_file);
                 }
-                construct_im(m_csa, concat.c_str(), 1);
+                construct(m_csa, concat_file, 1);
+                sdsl::remove(concat_file);
             }
             {
+                std::cout<<"generate bitvector"<<std::endl;
                 sdsl::bit_vector bv(m_csa.size(), 0);
                 size_t sa_pos = 0;
                 for (size_t i = 0; i < entry_priority.size(); ++i){

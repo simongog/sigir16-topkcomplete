@@ -39,7 +39,7 @@ int main(int argc, char* argv[]){
     auto construction_time = clock::now() - construction_start;
     auto construction_ms    = chrono::duration_cast<chrono::milliseconds>(construction_time).count();
     cout << "(construction took "<< std::setprecision(3) << construction_ms / 1000.0;
-    cout << " m)" << endl;
+    cout << " s)" << endl;
     write_structure<HTML_FORMAT>(topk_index, string(argv[1])+"."+index_name+".html");
     cout << "(index size is " << size_in_mega_bytes(topk_index) << " MiB)" << endl;
 
