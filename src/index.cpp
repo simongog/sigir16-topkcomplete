@@ -2,6 +2,7 @@
 #include "topkcomp/index2.hpp"
 #include "topkcomp/index3.hpp"
 #include "topkcomp/index4.hpp"
+#include "topkcomp/index5.hpp"
 #include <cstdio>
 #include <iostream>
 #include <string>
@@ -27,14 +28,20 @@ int main(int argc, char* argv[]){
         string s_priority;
         getline(in, s_priority);
         uint64_t priority = stoull(s_priority);
-        cout << "(" << entry << ", " << priority << ")" << endl;
+//        cout << "(" << entry << ", " << priority << ")" << endl;
         entry_priority.emplace_back(entry, priority);
     }
     cout << "read " << entry_priority.size() << " entries" << endl;
 
+    auto construction_start = clock::now();
     sort(entry_priority.begin(), entry_priority.end());
     t_index topk_index(entry_priority);
+    auto construction_time = clock::now() - construction_start;
+    auto construction_ms    = chrono::duration_cast<chrono::milliseconds>(construction_time).count();
+    cout << "(construction took "<< std::setprecision(3) << construction_ms / 1000.0;
+    cout << " m)" << endl;
     write_structure<HTML_FORMAT>(topk_index, string(argv[1])+"."+index_name+".html");
+    cout << "(index size is " << size_in_mega_bytes(topk_index) << " MiB)" << endl;
 
     string prefix;
     while ( getline(cin, prefix) ) {
