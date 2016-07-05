@@ -20,3 +20,9 @@ represents the priority.
     make
     ./index ../data/italian-cities.txt
 ```
+
+
+### Credits
+
+Thanks to Sascha Witt for preparing the file which contains the pairs of
+Dutch train stations and number of daily train stops.
