@@ -23,11 +23,8 @@ static void ev_handler(struct mg_connection *nc, int ev, void *p) {
     struct http_message *hm = (struct http_message *) p;
     std::string uri = std::string(hm->uri.p, (hm->uri.p)+(hm->uri.len));
     std::string query_string = std::string(hm->query_string.p, (hm->query_string.p)+(hm->query_string.len));
-    std::cout<<"URI: "<<uri<<std::endl;
-    std::cout<<"QUERY_STRING: "<<query_string<<std::endl;
     if ( uri == "/topcomp" and query_string.substr(0, 6) == "query=" ) {
         std::string query = query_string.substr(6);
-        std::cout<<"TODO: handle "<<query<< std::endl;
         std::string data;
         auto result_list = topk_index.top_k(query, 10);
         if ( result_list.empty() ){

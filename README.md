@@ -18,8 +18,13 @@ represents the priority.
     cd build
     cmake ..
     make
-    ./index ../data/italian-cities.txt
+    ./index4-main ../data/stops_nl.txt
+    ./index4-webserver ../data-stops_nl.txt 8000
 ```
+
+The webserver will listen to the specified port. In the example the port
+is 8080 and you will get top-k query suggestions at 
+[http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 
 ### Credits
