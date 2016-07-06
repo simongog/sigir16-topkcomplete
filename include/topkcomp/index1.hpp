@@ -19,6 +19,9 @@ class index1 {
 
         // Constructor
         index1(const tVSI& entry_priority=tVSI()) {
+            if ( entry_priority.size() == 0 ) {
+                return;
+            }
             // get the length of the concatenation of all strings
             uint64_t n = std::accumulate(entry_priority.begin(), entry_priority.end(),
                             0, [](uint64_t a, std::pair<std::string, uint64_t> ep){

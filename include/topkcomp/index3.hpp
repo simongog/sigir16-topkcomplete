@@ -33,6 +33,9 @@ class index3 {
 
         // Constructor
         index3(const tVSI& entry_priority=tVSI()) {
+            if ( entry_priority.size() == 0 ) {
+                return;
+            }
             // get the length of the concatenation of all strings
             uint64_t n = std::accumulate(entry_priority.begin(), entry_priority.end(),
                             0, [](uint64_t a, std::pair<std::string, uint64_t> ep){
@@ -111,7 +114,7 @@ class index3 {
         void load(std::istream& in) {
             m_labels.load(in);
             m_bp.load(in);
-            m_bp_support.load(in);
+            m_bp_support.load(in, &m_bp);
             m_bp_support.set_vector(&m_bp);
             m_bp_rnk10.load(in);
             m_bp_rnk10.set_vector(&m_bp);

@@ -32,6 +32,9 @@ class index5 {
 
         // Constructor
         index5(const tVSI& entry_priority=tVSI()) {
+            if ( entry_priority.size() == 0 ) {
+                return;
+            }
             {
                 std::string concat_file = sdsl::tmp_file(std::string("./"),"topkcomp_index5");
                 {

@@ -33,9 +33,14 @@ FOREACH(line ${index_lines})
     SET_PROPERTY(TARGET ${exec} PROPERTY COMPILE_DEFINITIONS 
                  INDEX_TYPE=${index_type} 
                  INDEX_NAME="${index_name}")
+
+    SET(web-exec ${index_name}-webserver)
+    ADD_EXECUTABLE(${web-exec} src/web_server.cpp external/mongoose/mongoose.c)
+    TARGET_LINK_LIBRARIES(${web-exec} pthread divsufsort divsufsort64 sdsl)
+    SET_PROPERTY(TARGET ${web-exec} PROPERTY COMPILE_DEFINITIONS 
+                 INDEX_TYPE=${index_type} 
+                 INDEX_NAME="${index_name}")
 ENDFOREACH()
 
-ADD_EXECUTABLE(web_server src/web_server.cpp external/mongoose/mongoose.c)
-TARGET_LINK_LIBRARIES(web_server pthread sdsl)
 
 #g++ web_server.c ../external/mongoose/mongoose.c -o web_server -I ../external/mongoose/ 
