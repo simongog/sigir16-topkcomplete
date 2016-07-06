@@ -86,12 +86,12 @@ Rotterdam, Randweg	94
 Rotterdam, Wytemaweg	98
 Rotterdam, Den Hamweg	71
 Odijk, De Vork	30
-Arnhem,2
+Arnhem	2
 Wegberg, Abzw. Schönhausen	28
 Eext, Monument	16
 Tilburg, Bachlaan	46
 Heiloo, De Ronge	9
-Venray,41
+Venray	41
 Enter, Jagersweg	31
 Eefde, Het Hart	32
 Apeldoorn, Blekersweg	36
@@ -101,7 +101,7 @@ Heino, Klaproos	17
 Ommen, Strangeweg	26
 Lommel, Autoweg	10
 Rhenen, Koesteeg	32
-Eijsden,0
+Eijsden	0
 Duiven, Maststraat	23
 Haarlem, Kleverlaan	88
 Gendt, Dwarsakker	35
@@ -113,7 +113,7 @@ Landgraaf, Markt	31
 Drachten, Zuidkade	53
 Leeuwen, Kerkplein	32
 Texel, Pontweg-Zuidhaffel	25
-Leiden Centraal,2
+Leiden Centraal	2
 Graft, Noordeinde	7
 Westbeemster, Klaterbuurt	7
 Ruurlo, Haarskamp	32
@@ -140,10 +140,10 @@ Leunen, Het Schoor	33
 Bears, School	8
 Leunen, Het Schoor	33
 Nörvenich, Eschweiler über Feld Kirche	21
-Dulken,36
+Dulken	36
 Aachen, Karlsgraben	192
 Aachen, Beverau	9
-Haarlem,0
+Haarlem	0
 Aachen, Misereor	228
 Vlieland, Eureka	4
 Wassenberg, Birgelen Dammstraße	22
@@ -248,7 +248,7 @@ Tholen, Grindweg	8
 Tholen, Vliethof	4
 Ossenisse, Lageweg	27
 Oud Vossemeer, Oud Vossemeersedijk	8
-=H13,4
+=H13	4
 Zierikzee, Busstation (aansluittijd)	17
 Zierikzee, Verpleeghuis Cornelia	14
 Zierikzee, Ziekenhuis	14
@@ -346,22 +346,22 @@ Rotterdam, Dokhaven	12
 Rotterdam, Randweg	164
 Aachen, Gut Neuenhof	0
 Wassenberg, Ophoven	14
-Tiel Passewaaij,0
+Tiel Passewaaij	0
 Aachen, Schleckheim Nerscheider Weg	1
 Arnhem, Haven	18
 Lemmer, Begraafplaats	23
 Arnhem, Ezingestraat	35
-Almere Buiten,111
+Almere Buiten	111
 Megen, Meerstraat	11
 Wanroij, Molen	13
 Amersfoort, Euterpeplein	63
 Vasse, Bolscher	24
 Kollum, De Anjen	31
 Ommen, Besthmen	25
-Maarheeze,33
+Maarheeze	33
 Breda, Station	7
-Arnhem Presikhaaf,0
-Baarn,3
+Arnhem Presikhaaf	0
+Baarn	3
 Eext, Monument	16
 Weiteveen, Boovenen	23
 Gulpen, De Del	111
@@ -371,7 +371,7 @@ Nieuwstadt, Susterderweg	31
 Beek, Centrum	123
 Oler, Brandweergarage	18
 Wier, Gernierswei	35
-Ulm Hbf,1
+Ulm Hbf	1
 Amsterdam, Oeverpad	133
 Den Helder, Dollardlaan	59
 Zaandam, Vijfhoek	139
@@ -403,25 +403,25 @@ Zeeland, Kreitsberg	33
 Leunen, Kerk	51
 Simmerath, Abzw. Dedenborn	11
 Monschau, AZJ	29
-Nijkerk,0
+Nijkerk	0
 Aachen, Horbach Linde	32
 Zülpich, Hoven Ort	2
 Herzogenrath, Merkstein Floeßer Straße	41
 Geilenkirchen, Nirm	1
-Delft Zuid,71
+Delft Zuid	71
 Oirschot, M. de Ruyterlaan	11
 Etten-Leur, Donkerstraat	30
 Goes, Station	17
 Wegberg, Merbeck Schürensteg	30
 Aachen, Walheim Freizeitgelände	12
 Kreuzau, Winden Keubgen	20
-Rotterdam Stadion,0
-Lage Zwaluwe,33
+Rotterdam Stadion	0
+Lage Zwaluwe	33
 Langerwehe, Heistern Friedhof	20
 Lopik, Vogelzang	21
-Ameland,7
+Ameland	7
 Wegberg, Rickelrath	26
-Emmen,17
+Emmen	17
 Jülich, Altenburg Moll	5
 Utrecht, CS Jaarbeursplein (Perron H)	0
 Utrecht, CS Jaarbeursplein (Perron H)	125
@@ -3880,12 +3880,12 @@ Oisterwijk, Langvennen Oost	11
 Udenhout, Boterbloem	10
 Udenhout, Boterbloem	0
 Albergen, Gravendijk	22
-Zurich HB,0
+Zurich HB	0
 Stein, Gemeentehuis	18
 Zevenbergen, Prins Hendrikstraat	53
 Hoeven, Hofstraat	36
 Volkel, Zeelandsedijk	13
-Zutphen,0
+Zutphen	0
 Enschede, Rozenstraat	33
 Uden, Kornetstraat	30
 Uden, Hobostraat	76
@@ -3926,7 +3926,7 @@ Epe, Hammerstraat	25
 Finsterwolde, Klinkerweg 82	29
 Finsterwolde, Klinkerweg 82	28
 Lent, Fluitenkruid	61
-Amsterdam Zuid,110
+Amsterdam Zuid	110
 Titz, Kalrath	24
 Bunde, Station	29
 De Valk, School met de Bijbel	11
@@ -3979,8 +3979,8 @@ Wormer, Spatterstraat	16
 Amsterdam, Stat. De Vlugtlaan	64
 Eindhoven, Station	1495
 Spijk, Ameidsedam	13
-Zwijndrecht (Belgie),0
-Eindhoven Strijp-S,0
+Zwijndrecht (Belgie)	0
+Eindhoven Strijp-S	0
 Nootdorp, Centrum/Parade	46
 Naaldwijk, Ambachtstraat	70
 Kubaard, Berkwerterleane	30
@@ -3995,7 +3995,7 @@ Tolbert, De Holm	12
 Ewijk, Molenweg	33
 Scheulder, Kapel	29
 Vilt, Vinkenweg	31
-Heemskerk,40
+Heemskerk	40
 Hilversum, Adelaarstraat	25
 Kortenhoef, Het Rechthuis	2
 Kortenhoef, Kortenhoefsedijk 116	3
@@ -4037,7 +4037,7 @@ Den Haag, Ockenburgh	65
 Vianen, Busstation Lekbrug (Perron A)	124
 Vianen, Busstation Lekbrug (Perron A)	131
 Nootdorp, Veenhage	10
-Amersfoort Schothorst,62
+Amersfoort Schothorst	62
 Amsterdam, Borneolaan	75
 Den Helder, Baljuwstraat	30
 De Koog, Nikadel	17
@@ -4305,14 +4305,14 @@ Düren (Rheinland), Schöllerstraße	20
 Bergen op Zoom, Strandplevier	32
 Kats, Dorpsstraat	10
 Alsdorf (Rheinland), Am Neuen Markt	56
-Boxtel,0
+Boxtel	0
 Hilversum, Willem Barentszweg	28
 Raeren, Pley	5
 Aachen, Burtscheid Sebastianstraße	76
 Hellevoetsluis, J.Blankenstraat	63
 Zwanenburg, Wilgenlaan	21
 Dudzele, Dorp	15
-Avignon TGV,0
+Avignon TGV	0
 Doetinchem, Rozengaardseweg	48
 Maastricht, Dolmansstraat / Kerk	32
 Leiderdorp, Leythenrode/Engelendaal	14
@@ -4337,7 +4337,7 @@ Wadenoijen, Smid van Eck	17
 Opijnen, Esterweg	16
 Simmerath, Lammersdorf Grundschule	2
 Wegberg, Dalheim Philosophenweg	31
-Vriezenveen,0
+Vriezenveen	0
 Aachen, Hahn Kirche	33
 Roetgen, Süd	52
 Stolberg (Rheinland), Werth Brunnenweg	35
@@ -4382,7 +4382,7 @@ Wegberg, Merbeck Schule	30
 Den Haag, Rotonde Houtkade	0
 Geldrop, Bogardeind	14
 Eindhoven, Koudenhoven	37
-Amsterdam Centraal,36
+Amsterdam Centraal	36
 Krabbendijke, Station	24
 Krabbendijke, Station	11
 Rilland, Dorpshuis	5
@@ -4399,13 +4399,13 @@ Nörvenich, Rommelsheim Bubenheim	19
 Aachen, Zwanzigmorgen	53
 Frederiksoord, De Delle	15
 Tilburg, Rosmolenplein	46
-Hengelo,66
+Hengelo	66
 Tzum, Franekerweg	8
 Amsterdam, Centraal Station	15
 Zuidland, Haasdijk	44
-Oberhausen Hbf,15
-Bad Oeynhausen,8
-Hertogenbosch ('s),63
+Oberhausen Hbf	15
+Bad Oeynhausen	8
+Hertogenbosch ('s)	63
 Lepelstraat, Vossepad	14
 Heinkenszand, Kamilleplein	10
 Leentjer, Leentjerweg	6
@@ -4445,11 +4445,11 @@ Groningen, Station Europapark (Perron C)	4
 Meeden, Driesprong	14
 Muntendam, Oude verlaat	14
 Zaandam, Station	0
-Mainz Hbf,0
+Mainz Hbf	0
 Groningen, P+R Zernike (Perron A)	63
 Düren (Rheinland), Ellernbusch	39
 Gangelt, Langbroich Krings	6
-Olst,36
+Olst	36
 Nörvenich, Rath Mitte	4
 Rhenen, Tuinlaan	29
 Rhenen, Ouwehands Dierenpark	29
@@ -4479,22 +4479,22 @@ Krabbendijke, Calvijn College	6
 Klazienaveen, Molenwijk	30
 Lijnden, Akerdijk 90	2
 Hoofddorp, Wegalaan	32
-Soest,0
+Soest	0
 Vaals, De lange Akker	0
 Aachen, Bendplatz	108
 Hückelhoven, Doveren Abzw. Doverhahn	35
-Franeker,33
+Franeker	33
 Weert, Franciscuslaan	32
 Eupen, Schilsweg	4
 Mheer, Kerk	47
-Maastricht,6
+Maastricht	6
 Middelie, Riethoorneweg	79
 Tilburg, van Kalmthoutlaan	73
 Vlieland, Stortemelk, Het Sluisje	6
 Vlieland, Duinkersoord, Badweg	9
 Nes, Hotel Ameland	0
-Wormerveer,66
-Breda,36
+Wormerveer	66
+Breda	36
 Titz, Ameln	26
 B'graaf, Bleskensgraaf, Prov. weg N214	25
 Almelo, Zwaluwenstraat	29
@@ -4507,14 +4507,14 @@ Horstermeer, 't Hemeltje	3
 Doorn, Sonora	2
 Vlieland, Dorp Veerdam	0
 Vlieland, Dorp Veerdam	7
-Santpoort Noord,40
+Santpoort Noord	40
 Oostburg, Bredestraat	48
 Winschoten, Beertsterweg	19
 Aalsmeer, P.F.von Sieboldlaan	90
-Haarlem Spaarnwoude,75
+Haarlem Spaarnwoude	75
 Anloo, Gasterenseweg 1	16
 Ellecom, Hofstetten	14
-Heerenveen,51
+Heerenveen	51
 Boskoop, Zwanenwater	19
 Goes, Station	1
 Terneuzen, Busstation WST	55
@@ -4526,7 +4526,7 @@ Heinsberg (Rheinland), Hülhoven Gangelter Straße	13
 Emmen, Boslaan	24
 Heerlen, Coriopolis	5
 Waddinxveen, Coenecoop 135	12
-Workum,18
+Workum	18
 Best, De Maas	7
 Egmond aan Zee, Pr. Hendrikstichting	57
 Zuidoostbeemster, W. Sluislaan	26
@@ -4658,8 +4658,8 @@ Sleeuwijk, De Nieuwe S	12
 Nieuw-Vennep, Getsewoud-Zuid/N207	34
 Zevenbergen, Oostrand	11
 Sleeuwijk, De Nieuwe S	12
-Munster (Westf) Hbf,18
-Neuss Hbf,34
+Munster (Westf) Hbf	18
+Neuss Hbf	34
 Eelde, Hortensiaweg	31
 Wageningen, Lawickse Allee	68
 Amsterdam, Koenenkade	211
@@ -4675,9 +4675,9 @@ Havelterberg, Rotonde	13
 Havelterberg, Rotonde	13
 Doorn, Het Zonnehuis	2
 Windraak, Windraak	72
-Utrecht Centraal,0
-Oldenzaal,0
-Akkrum,34
+Utrecht Centraal	0
+Oldenzaal	0
+Akkrum	34
 Raeren, Hauset Brücke	5
 Almere Hout, Vogelweg	60
 Almere Stad, Componistenpad	235
@@ -4873,17 +4873,17 @@ Haarlem, Edisonstraat	68
 Eindhoven, Fontys Rachelsmolen	265
 Hilversum, Compagnieweg	28
 Haarlem, Emmaplein	66
-Heerenveen IJsstadion,0
+Heerenveen IJsstadion	0
 Tilburg, Brucknerlaan	46
-Terschelling,6
-Vlieland,3
-Elst,97
+Terschelling	6
+Vlieland	3
+Elst	97
 Haren, Dilgtplein	25
-Haren,0
+Haren	0
 Hauwert, N.H. Kerk	11
 Arnhem, Slaakweg	18
 Hengelo, Pasteurstraat	35
-Monchengladbach Hbf,35
+Monchengladbach Hbf	35
 Ommen, Danteweg	13
 Herzogenrath, Kohlscheid Bank	10
 Urk, Marsdiep	13
@@ -4904,7 +4904,7 @@ Selfkant, Millen	20
 Sneek, Tinga	75
 Kessel, Veer	18
 Linnich, Körrenzig Kirche	16
-Geldrop,33
+Geldrop	33
 Assendelft, Genieweg	12
 De Meern, Wiericke	51
 Heerjansdam, Dorpsstraat	18
@@ -4914,11 +4914,11 @@ Hoorn, Willemsweg	33
 's-Hertogenbosch, Merwedelaan	60
 Den Haag, Boslaan	145
 Acquoy, Kerkweg	16
-Leeuwarden,16
-Wormerveer,65
+Leeuwarden	16
+Wormerveer	65
 Kerpen (Rheinland), Mitte	0
 Aachen, Gut Nonnenhof	22
-Gramsbergen,20
+Gramsbergen	20
 Aachen, Brüsseler Ring	50
 Jülich, Pattern Kreuzstraße	14
 Wassenberg, Myhl Erkelenzer Straße	38
@@ -4926,28 +4926,28 @@ Aachen, Grüne Eiche	37
 Diemen, Stammerkamp	89
 Kreuzau, Winden Schule	28
 Roetgen, Wanderstation/Bahnhof	31
-Stavoren,0
+Stavoren	0
 Simmerath, Dedenborn Schöne Aussicht	11
 Gangelt, Brüxgen	10
 Simmerath, Lammersdorf Junker	12
 Roetgen, Knott	21
 Roetgen, Post	46
 Toldijk, Tolbrug	18
-Roosendaal,33
+Roosendaal	33
 Puth, Kerk	18
-Beilen,0
+Beilen	0
 Oss, Lievekamp	12
 Etten-Leur, Donkerstraat	30
 Meeuwen, Dorpsstraat	27
-Wijchen,36
+Wijchen	36
 Jülich, Rochusstraße	17
-Leerdam,37
-Kitzbuehel,0
+Leerdam	37
+Kitzbuehel	0
 Meerlo, Brug	19
 Kreuzau, Teichstraße	28
 Hee, Camping Cupido	11
 Titz, Linnicher Straße	14
-Diemen Zuid,0
+Diemen Zuid	0
 Meeden, Hereweg 180	14
 Linnich, Tetz Bahnhof	10
 Loil, Kerk	16
@@ -5303,8 +5303,8 @@ Middelburg, Noordpoortbrug	16
 Rotterdam, Stadhoudersplein	0
 Hoogvliet Rotterdam, Viskaarweg	32
 Nijmegen, Mesdagstraat	62
-Hardinxveld-Giessendam,2
-Bonn-Beuel,0
+Hardinxveld-Giessendam	2
+Bonn-Beuel	0
 Gassel, Molen	4
 Wassenberg, Effeld	14
 Beverwijk, Creutzberglaan	34
@@ -5335,7 +5335,7 @@ Houten, Lichtschip	32
 Gouda, Driehoeven	32
 Leiden, Posthof	250
 Sassenheim, Uiver	34
-Rotterdam Alexander,121
+Rotterdam Alexander	121
 Aachen, Brand Niederforstbach	27
 Elshout, Scheidingstraat	18
 Breda, Verdilaan	12
@@ -5346,7 +5346,7 @@ Merzenich (Kreis Düren), Girbelsrath Neuwerk	0
 Langerwehe, Wenau	1
 Simmerath, Lammersdorf Waldsiedlung	11
 Monschau, Widdau	12
-Jenbach,0
+Jenbach	0
 Berkenwoude, Dorp	4
 Wegberg, Kipshoven	28
 Würselen, Bardenberg Krankenhaus	9
@@ -5362,7 +5362,7 @@ Spijk, Spijkerbak	19
 Aachen, Wilfried-König-Straße	3
 Waldfeucht, Haaren Abzw. Obspringen	12
 Zülpich, Römerbad	2
-Brummen,35
+Brummen	35
 Dorst, Rijksweg	18
 Aachen, Vaalserquartier Vaals Grenze	103
 Edam, Busstation	71
@@ -5370,9 +5370,9 @@ Winssen, Geerstraat	31
 Baesweiler, Puffendorf B 57	24
 Wassenberg, Luchtenberg Rurweg	7
 Aachen, Drosselweg	18
-Breda,0
+Breda	0
 Doorn, Kaap Doorn	56
-Gouda,0
+Gouda	0
 Nijmegen, Huygensgebouw	385
 Terneuzen, Aangeenbrugschool	2
 Usselo, Crematorium	38
@@ -5441,7 +5441,7 @@ Amstelveen, Jan Benninghstraat	51
 Amstelveen, Bankrashof	45
 Beerta, Bouwtelaan	19
 Beerta, Hoofdstraat 31	20
-Landgraaf,38
+Landgraaf	38
 Beerta, Hoofdstraat 31	19
 Winschoten, Zijlkerweg	20
 Winschoten, Zijlkerweg	19
@@ -5606,7 +5606,7 @@ Zwolle, Corn. Houtmanstraat	60
 Zwolle, Tesselschadestraat	60
 Delft, Station Delft (Perron F)	78
 Sint Anthonis, Kolonel Silvertoplaan	12
-Harlingen,33
+Harlingen	33
 Vught, Taalstraat	85
 Mookhoek, Zweedsestraat	21
 Mijnsheerenland, Beukenhof	32
@@ -5813,8 +5813,8 @@ Roden, Acacialaan	0
 Lhee, Oosteresweg	13
 Raalte, Kruisstraat	81
 Elburg, Klaverplein	62
-Rotterdam Stadion,0
-Rotterdam Stadion,0
+Rotterdam Stadion	0
+Rotterdam Stadion	0
 Olst, Station	0
 Deventer, David Wijnveldtweg	60
 Gorinchem, Fortes Lyceum	39
@@ -5936,7 +5936,7 @@ Breda, Centraal Station (U)	61
 Breda, Valkeniersplein	68
 Venray, Noordsingel	13
 Halsteren, Steenspil	0
-Wuppertal Oberbarmen,30
+Wuppertal Oberbarmen	30
 Arnhem, Heideweg	28
 Arnhem, Veendamstraat	37
 Zeist, Amandelhof	38
@@ -5973,16 +5973,16 @@ Würselen, Bardenberg Steinbusch	47
 Wegberg, Tüschenbroich Schule	14
 Aachen, Wallstraße	173
 Aachen, Königsberger Straße	94
-Duffel,0
+Duffel	0
 Wegberg, Arsbeck Kirche	34
 Kreuzau, Untermaubach Im Heidehof	10
 Aachen, Liebigstraße	175
 Jülich, Abzw. Bourheim	16
-Arnhem,40
+Arnhem	40
 Jülich, Merzenhausen Kreuz	3
 Linnich, Gevenich Ivenhain	38
 Jülich, Heckfeldstraße	17
-Haarlem,0
+Haarlem	0
 Graft, Noordeinde	10
 Borger, P+R / N34	18
 Borger, P+R / N34	46
@@ -6008,7 +6008,7 @@ Kloosterzande, Cloosterstraat	24
 Wegberg, Beecker Wald	28
 Jülich, Meyburginsel	0
 Aachen, Verlautenheide Waldstraße	14
-Liege-Palais,30
+Liege-Palais	30
 Abcoude, Manege	32
 Erkelenz, Beecker Straße	28
 Dalerpeel, Steigerwijk 93	12
@@ -6019,13 +6019,13 @@ Heinsberg (Rheinland), Kempen Hochbrück	1
 Lemmer, Houtmolen	23
 Bakkum, Van Bergenlaan	17
 Appel, Akkerweg	4
-Zuidbroek,69
+Zuidbroek	69
 Buurse, Grens	0
 Veenendaal, Sirius	40
 Almelo, De Eik	28
 Velp, Graaf Ottostraat	18
-Ekeren,34
-Warszawa Wschodnia,0
+Ekeren	34
+Warszawa Wschodnia	0
 Deurne, Vescom	13
 Gerwen, Bosweg	17
 Weert, Kempenweg	23
@@ -6037,7 +6037,7 @@ Ryptsjerk, IJpeijsingel	38
 Nijega, Nijega	21
 Aalzum, Tiltjeburen	15
 Ee, Medhuizen	13
-Den Haag HS,0
+Den Haag HS	0
 Lopik, De Jong	11
 Lopik, Roodhorst	11
 Lekkerkerk, Deelen	17
@@ -6052,31 +6052,31 @@ Aachen, Lukasstraße	29
 Arnhem, Geitenkamp	95
 Wegberg, Arsbeck Büch	31
 Titz, Bettenhoven	2
-Nijverdal,16
+Nijverdal	16
 Titz, Spiel	23
 Roetgen, Am Kloster	49
-Boxtel,37
+Boxtel	37
 Niederzier, Alte Post	30
 Vettweiß, Markt	42
 Eupen, Kettenis Dorf	22
 Waldfeucht, Braunsrath Dorfplatz	1
 Titz, Jackerath Grevenbroicher Straße	3
-Roermond,0
+Roermond	0
 Simmerath, Rösberg	15
 Wegberg, Busbahnhof	29
 Titz, Rathaus	47
 Aachen, Lintert	36
 Simmerath, Rurberg Kirche	12
-Arnhem,68
+Arnhem	68
 Geilenkirchen, Grotenrath Post	12
 Roetgen, Am Roetgenbach	5
 Titz, Rathaus	29
 Leek, Lijnbaan	12
-Enschede Drienerlo,0
-Den Haag Laan v NOI,69
+Enschede Drienerlo	0
+Den Haag Laan v NOI	69
 Aachen, Lintert Schießstand	20
 Driel, De Meikers	62
-Utrecht Centraal,46
+Utrecht Centraal	46
 Geilenkirchen, Lindern Kirche	26
 Geilenkirchen, Bauchem Kirche	53
 Haarlem, Raaksbrug	289
@@ -6084,7 +6084,7 @@ Aachen, Hauptbahnhof	27
 Arnhem, Het Dorp	26
 Arnhem, Rozet	18
 Enschede, Marssteden	26
-Cuijk,50
+Cuijk	50
 Aachen, Richterich Landgraben	40
 Someren, Kapelletje	45
 Deurne, Vescom	11
@@ -6136,38 +6136,38 @@ Roetgen, Post	51
 Aachen, Carolus Thermen	59
 Erkelenz, Tenholt Wahnenbusch	17
 Herzogenrath, Merkstein Eintrachtstraße	41
-Etten-Leur,0
+Etten-Leur	0
 Gouda, Driehoeven	30
 Stolberg (Rheinland), Dorff Fuchskaul	6
 Aachen, St. Vither Straße	64
 Aachen, Eilendorf Markusstraße	35
-Valkenburg,0
+Valkenburg	0
 Aachen, Ronheider Berg	53
 Aachen, Eilendorf Markusstraße	27
 Aachen, Vaalserquartier Püngelerstraße	104
 Amsterdam, Olympisch Stadion	329
 Monschau, Mützenich Kleinbüchel	21
-Amsterdam Sloterdijk,147
+Amsterdam Sloterdijk	147
 Monschau, Höfen Alzen	26
 Düren (Rheinland), Rölsdorf Boisdorfer Siedlung 1	25
 Herzogenrath, Schmetz	52
-Rathenow,0
-Scheemda,1
+Rathenow	0
+Scheemda	1
 Roetgen, Kalfstraße	3
 Aachen, Walheim Prämienstraße	48
 Gangelt, Abzw. Nachbarheid	13
-Zwolle,34
+Zwolle	34
 Jülich, Linnicher Straße	5
-Vleuten,0
+Vleuten	0
 Titz, Schulzentrum	51
 Linnich, Körrenzig Oberdorf	14
 Erkelenz, Schwanenberg Abzw. Hoven	38
-Goor,0
-Haarlem,74
+Goor	0
+Haarlem	74
 Arnhem, Slaakweg	43
 Velswijk, Waarlo	33
 Leiden, Robijnstraat	59
-Holten,37
+Holten	37
 Düren (Rheinland), Echtz Badesee	20
 Amstelveen, Kronenburg	148
 Breda, Hovenierstraat	0
@@ -6179,7 +6179,7 @@ Utrecht, Jaarbeursplein	0
 Gorinchem, Melkpad	19
 Breda, Groenedijkplein	0
 Breda, Groenedijkplein	0
-Enschede Kennispark,2
+Enschede Kennispark	2
 Goirle, Bacseweg	59
 Spoordonk, Hildsven	24
 Alphen, Boshoven	24
@@ -6510,13 +6510,13 @@ Ellecom, Dorp	18
 Almelo, De Haere	36
 Wapenveld, Molenweg	47
 Dijkerhoek, De Smid	13
-Hengelo Gezondheidspark,72
+Hengelo Gezondheidspark	72
 Dordrecht, Hunzeweg	59
 Emmen, Sandurdreef	0
-Rzepin,0
+Rzepin	0
 Ede, Grotestraat	1
 Axel, De Sterrenpracht	0
-Veendam,34
+Veendam	34
 Urk, Ransuil	40
 Gennep, Wilhelminaplein	25
 Groningen, Goudlaan	61
@@ -6544,7 +6544,7 @@ Gaarshof, Huisvennen	17
 Finsterwolde, J. Hakenweg	29
 Finsterwolde, J. Hakenweg	28
 Finsterwolde, Meijerslaan	29
-Boxtel,35
+Boxtel	35
 Aachen, Neu-Linzenshäuschen	19
 Aachen, STAWAG	59
 Aachen, Normaluhr	173
@@ -6553,7 +6553,7 @@ Inden (Rheinland), Schophoven	32
 Baesweiler, Gewerbegebiet ITS	4
 Vettweiß, Lüxheim	17
 Würselen, Bardenberg Friedhof	0
-Beilen,40
+Beilen	40
 Aachen, Pumpstation	36
 Schleiden (Eifel), Olef Brücke	4
 Baesweiler, Reyplatz	108
@@ -6563,8 +6563,8 @@ Vettweiß, Disternich	13
 Rijen, Stationsstraat	8
 Wassenberg, Birgelen Kreuzbuschstraße	22
 Amersfoort, Centraal Station	58
-Den Dolder,76
-Almere Oostvaarders,3
+Den Dolder	76
+Almere Oostvaarders	3
 Aachen, Brand Hermann-Löns-Straße	18
 Geilenkirchen, Gillrath An der Burg	2
 Kreuzau, Bogheim Ort	14
@@ -7075,18 +7075,18 @@ Heemskerk, Hoflaan	17
 Uithoorn, Korte Polder	55
 Bussum, Meerweg	25
 Hilversum, de Lieberg	30
-Lauwersoog,5
+Lauwersoog	5
 Tilburg, Wagenaarstraat	46
 Teteringen, Meulenspie	105
 Aachen, Eilendorf Schlackstraße	0
-Heiloo,75
-Zwolle,0
-Sint-Mariaburg,34
+Heiloo	75
+Zwolle	0
+Sint-Mariaburg	34
 Aachen, Ronheider Weg	61
 Aachen, Schöntal	14
 Wegberg, Beecker Bissen	1
 Monschau, Kalterherberg Reichenstein	24
-Lage Zwaluwe,34
+Lage Zwaluwe	34
 Mill, Molenkuilweg	39
 Hückelhoven, Brachelen Kirche	29
 Roetgen, Ev. Kirche	2
@@ -7108,8 +7108,8 @@ Wegberg, Grenzlandring	4
 Hoenderloo, Bungalow Park	5
 Hückelhoven, Ludovicistraße	47
 Epse, Viersprong	29
-Veendam,0
-Usquert,0
+Veendam	0
+Usquert	0
 Hoenderloo, Miggelenbergweg	24
 Wegberg, Isengraben	16
 Wageningen, Arboretumlaan	33
@@ -7118,7 +7118,7 @@ Blijham, Turfweg	44
 Alkmaar, Oudorperdijkje	120
 Wageningen, Mansholtlaan	34
 Son, De Bontstraat	11
-Alkmaar,47
+Alkmaar	47
 Hückelhoven, Schlee	9
 Herzogenrath, Thiergarten	43
 Wegberg, Tetelrath	4
@@ -7127,7 +7127,7 @@ Wageningen, Haagsteeg	96
 Aachen, Elisenbrunnen	477
 Wageningen, Haagsteeg	96
 Beverwijk, Station	32
-Barendrecht,70
+Barendrecht	70
 Jülich, Krankenhaus	7
 Oosterhuizen, Wittekruisweg	11
 Apeldoorn, Eendrachtstraat	115
@@ -7204,7 +7204,7 @@ Heinenoord, Busstation	70
 Heinenoord, Busstation	2
 Oud Heusden, Laagstraat	12
 Heinenoord, Sporthal	31
-Enschede Kennispark,64
+Enschede Kennispark	64
 Aachen, Kaiserplatz	88
 Heinenoord, Mollekade	32
 Numansdorp, Proeftuinlaan	59
@@ -11834,25 +11834,25 @@ Amsterdam, Gr. Gelderlandplein	72
 Amsterdam, Oldenaller	19
 Amsterdam, Gustav Mahlerplein	72
 Amsterdam, V. d. Boechorststraat	19
-Dronryp,33
-Dronryp,33
-Schiphol Airport,181
-Schiphol Airport,0
-Schiphol Airport,112
+Dronryp	33
+Dronryp	33
+Schiphol Airport	181
+Schiphol Airport	0
+Schiphol Airport	112
 Nieuwe-Tonge, Prov,weg N215	24
 Lent, Station Lent	92
-Heerenveen IJsstadion,0
-Heerenveen IJsstadion,0
+Heerenveen IJsstadion	0
+Heerenveen IJsstadion	0
 Middelharnis, Centrum	0
 Numansdorp, Viaduct A29	23
 Herkingen, Haven	23
 Piershil, Bestuurscentrum	5
-Dronryp,0
-Schiphol Airport,219
-Schiphol Airport,243
+Dronryp	0
+Schiphol Airport	219
+Schiphol Airport	243
 Vianen, Busstation Lekbrug (west)	0
-Poznan Gl,0
-Ochtrup,37
+Poznan Gl	0
+Ochtrup	37
 Aachen, Laurensberg Viadukt	30
 Heerhugowaard, Centrumwaard	0
 Son, Telecom Son	51
@@ -11972,31 +11972,31 @@ Beek, Station	114
 Helden, Koningslust	65
 Almere Buiten, Bouwmeesterbuurt-O.	12
 Eindhoven, Leo van Dorstpad	31
-Kijkuit,34
-Mortsel-Deurnesteenweg,0
-Wildert,34
-Glons,30
-Herstal,30
-Niel,29
-Mechelen-Nekkerspoel,0
-Liege-Guillemins,33
-Hove,0
-Noorderkempen,0
-Schelle,29
-Baden,1
-Basel SBB,2
-Landquart,0
-Decin hl.n.,0
-Praha-Holesovice,0
-Bad Schandau,0
-Ahaus,29
+Kijkuit	34
+Mortsel-Deurnesteenweg	0
+Wildert	34
+Glons	30
+Herstal	30
+Niel	29
+Mechelen-Nekkerspoel	0
+Liege-Guillemins	33
+Hove	0
+Noorderkempen	0
+Schelle	29
+Baden	1
+Basel SBB	2
+Landquart	0
+Decin hl.n.	0
+Praha-Holesovice	0
+Bad Schandau	0
+Ahaus	29
 Brunssum, Lindeplein	67
 Eys, Spoorbrug	28
 Aachen, Hauptbahnhof	0
 Vaals, Busstation Perron C	0
 Vaals, Busstation Perron D	18
 Heerlen, Busstation Perron E	70
-Venlo,33
+Venlo	33
 Weert, Station Perron E	30
 Maldegem, Stroobrugge	5
 Maldegem, Stroobrugge	5
@@ -12043,11 +12043,11 @@ Kranenburg, Kranenburg Mitte	20
 Emmerich, Bahnhof	17
 Emmerich, Bahnhof	0
 Kleve, Bahnhof	19
-Sint-Niklaas,0
-Sinaai,0
-Eindhoven Strijp-S,34
-Eindhoven Strijp-S,73
-Eindhoven Strijp-S,1
+Sint-Niklaas	0
+Sinaai	0
+Eindhoven Strijp-S	34
+Eindhoven Strijp-S	73
+Eindhoven Strijp-S	1
 Nijmegen, Plein 1944 (A)	244
 Nijmegen, Plein 1944 (D)	199
 Nijmegen, Plein 1944 (B)	317
@@ -12062,7 +12062,7 @@ Schiphol, P40 Parkeerterrein	313
 Eindhoven, Uiverlaan	29
 Naaldwijk, Ambachtstraat	71
 Naaldwijk, Hoge Woerd	6
-Hoofddorp,76
+Hoofddorp	76
 Hoofddorp, Toolenburg Zuid	129
 Hoofddorp, Toolenburg Zuid	132
 Hoofddorp, Wkc. 't Paradijs	63
@@ -12186,7 +12186,7 @@ Alphen a/d Rijn, Concertweg	14
 Alphen a/d Rijn, Concertweg	30
 Alphen a/d Rijn, Concertweg	51
 Zeist, Nieuw Beerschoten	53
-Boenen,28
+Boenen	28
 Brugge, De Veste	15
 Groet, Kerkbrink	31
 Noordwijkerhout, Victoriberg	52
@@ -12227,7 +12227,7 @@ Nieuwkoop, De Halve Roe	33
 Reek, Kruisbeeld	28
 Well, Dorpstraat	36
 Nuland, Prins Bernhardplein	13
-Schin op Geul,0
+Schin op Geul	0
 Schaijk, Cafe Boszicht	15
 's-Hertogenbosch, Ploegweg	31
 's-Hertogenbosch, Ploegweg	30
@@ -12337,26 +12337,26 @@ Amsterdam, Koenenkade	212
 Bussum, Station	0
 Nieuwveen, RK Kerk	28
 Westbroek, Westbroeksebinnenweg	19
-Sappemeer Oost,70
-Schiedam Nieuwland,0
-Den Helder Zuid,1
-Veenwouden,0
-Rotterdam Blaak,0
-Geldrop,0
-Vlissingen,0
-Nijmegen Lent,0
-Baarn,39
-Doetinchem De Huet,0
-Ermelo,36
-Sauwerd,71
-Eygelshoven,39
-Diemen,1
-Scheemda,0
-Groningen,0
-Zuidbroek,69
-Lochem,35
-Wijchen,13
-Deinum,0
+Sappemeer Oost	70
+Schiedam Nieuwland	0
+Den Helder Zuid	1
+Veenwouden	0
+Rotterdam Blaak	0
+Geldrop	0
+Vlissingen	0
+Nijmegen Lent	0
+Baarn	39
+Doetinchem De Huet	0
+Ermelo	36
+Sauwerd	71
+Eygelshoven	39
+Diemen	1
+Scheemda	0
+Groningen	0
+Zuidbroek	69
+Lochem	35
+Wijchen	13
+Deinum	0
 Vaals, Maastrichterlaan (Busstation)	23
 Kelmis, Hattigweg	36
 Alsdorf (Rheinland), Siedlung Broich Greifswalder Straße	39
@@ -12515,19 +12515,19 @@ Zoetermeer, Florazoom	32
 Kollum, De Anjen	13
 Erkelenz, Lützerath Ort	1
 Born, Overweg	38
-Groningen,0
+Groningen	0
 Koewacht, Emmabaan/Nieuwstraat	13
 Zeewolde, Harderbroek	44
 Oostwoud, Vereweg	11
 Linnich, Ederen Bahnstraße	12
 Vettweiß, Sportheim	35
 Vorden, Villa Nuova	12
-Dalen,0
+Dalen	0
 Heetveld, Prot Chr Basisschool	31
 Groningen, P+R Zernike (Perron C)	113
-Oss,72
+Oss	72
 Wegberg, Tetelrath Siedlung	3
-Deinum,66
+Deinum	66
 Wassenberg, Am Stern	42
 Wegberg, Schwaam	26
 Amersfoort, Centraal Station	0
@@ -12536,10 +12536,10 @@ Amersfoort, Apollovlinder	85
 Meijel, Kapelkesweg	36
 Venlo, Sint Urbanusweg / OCE	33
 Pepinusbrug, Pepinusbrug	17
-Haarlem,4
-Voerendaal,0
+Haarlem	4
+Voerendaal	0
 Erkelenz, Ziegelei	60
-Antwerpen-Centraal,92
+Antwerpen-Centraal	92
 Duiven, Aansluiting A12	24
 Pijnacker, Ade	10
 Amstelveen, Seine	97
@@ -12557,7 +12557,7 @@ Harmelen, Gerverscop	51
 Ede, Stadspoort	96
 Vijlen, De Klee	18
 Appelscha, School	34
-Dordrecht,1
+Dordrecht	1
 Anholt, Anholt	16
 Epe, Haverkamp	82
 Rockanje, Strand	29
@@ -12568,14 +12568,14 @@ Erica, Havenstr. 121	19
 Gouda, Gentseweg	56
 Dordrecht, Spirea	61
 Wegberg, Krankenhausstraße	27
-Hilversum Media Park,2
+Hilversum Media Park	2
 Boskoop, Clusiuserf	19
 Een, Oldehof	13
 Amsterdam, Hildsven	17
 Huizen, Langerhuizenweg	63
-Schwelm,30
+Schwelm	30
 Amsterdam, Gein	106
-Almere Parkwijk,108
+Almere Parkwijk	108
 Kollum, De Anjen	17
 Lekkerkerk, Kool	17
 Noordeloos, Dorp	38
@@ -12864,54 +12864,54 @@ Dudzele, 't Apertje	15
 Monster, Papelaan	8
 Monster, Papelaan	6
 Naaldwijk, Grote Achterweg	6
-Dortmund Hbf,15
-Dulmen,29
-Epe (Westf),29
-Rosendahl-Holtwick,29
-Holzwickede,28
-Ludinghausen,29
-Lette (Kr Coesfeld),29
-Lunen Hbf,29
-Munster-Haeger,37
-Nordwalde,37
-Eschweiler-Nothberg,0
-Eschweiler Talbahnhof,0
-Eschweiler-West,0
-Selm-Beifang,29
-Selm,29
-Eschweiler-Weisweiler,0
-Limburg Sud,0
-Frankfurt Flughafen Fernb,14
-Geislingen,0
-Hagen Hbf,29
-Hamburg Hbf,0
-Hamm (Westf.),14
-Hannover Hbf,13
-Wolfsburg,12
-Herzogenrath,18
-Karlsruhe Hbf,3
-Breyell,36
-Koln Deutz,0
-Koblenz Hbf,3
-Montabaur,0
-Kaldenkirchen,36
-Kohlscheid,0
-Siegburg,2
-Langerwehe,0
-Leer (Ostfriesland),25
-Rathenow,0
-Mannheim Hbf,3
-Gunzburg,1
-Minden (Westf.),14
-Baden-Baden,0
-Rheine,14
-Stolberg Altstadt,0
-Stolberg Hbf,0
-Stolberg Muhlener bahnhof,0
-Stolberg Rathaus,0
-Stolberg Schneidemuhle,0
-Viersen,36
-Weener,34
+Dortmund Hbf	15
+Dulmen	29
+Epe (Westf)	29
+Rosendahl-Holtwick	29
+Holzwickede	28
+Ludinghausen	29
+Lette (Kr Coesfeld)	29
+Lunen Hbf	29
+Munster-Haeger	37
+Nordwalde	37
+Eschweiler-Nothberg	0
+Eschweiler Talbahnhof	0
+Eschweiler-West	0
+Selm-Beifang	29
+Selm	29
+Eschweiler-Weisweiler	0
+Limburg Sud	0
+Frankfurt Flughafen Fernb	14
+Geislingen	0
+Hagen Hbf	29
+Hamburg Hbf	0
+Hamm (Westf.)	14
+Hannover Hbf	13
+Wolfsburg	12
+Herzogenrath	18
+Karlsruhe Hbf	3
+Breyell	36
+Koln Deutz	0
+Koblenz Hbf	3
+Montabaur	0
+Kaldenkirchen	36
+Kohlscheid	0
+Siegburg	2
+Langerwehe	0
+Leer (Ostfriesland)	25
+Rathenow	0
+Mannheim Hbf	3
+Gunzburg	1
+Minden (Westf.)	14
+Baden-Baden	0
+Rheine	14
+Stolberg Altstadt	0
+Stolberg Hbf	0
+Stolberg Muhlener bahnhof	0
+Stolberg Rathaus	0
+Stolberg Schneidemuhle	0
+Viersen	36
+Weener	34
 Alblasserdam, Hoogendijk	108
 Papendrecht, Kennedylaan	76
 Papendrecht, Kennedylaan	70
@@ -13017,8 +13017,8 @@ Oploo, Vloetweg/Loonseweg	19
 Groningen, A-Kerkhof	235
 Blerick, Van Bornestraat	68
 Heijen, De Grens	33
-Amersfoort,0
-Zwolle,37
+Amersfoort	0
+Zwolle	37
 Jistrum, Wyldpaed	21
 Workum, Lynbaen	27
 Hollum, Herenweg	12
@@ -13032,7 +13032,7 @@ Beets, Viaduct A7	3
 Hem, Torenweg	10
 Baak, Covik	19
 Zoetermeer, Acaciazoom	32
-Halfweg-Zwanenburg,76
+Halfweg-Zwanenburg	76
 Wilnis, Geerkade	28
 Haps, Asterstraat	26
 Rumpt, Roodseweg	17
@@ -13212,30 +13212,30 @@ Leiden, Fruitweg	32
 Swier, Swier	18
 Bemelen, Wolfshuis	18
 Emmen, Vossepad	46
-Hertogenbosch ('s),0
+Hertogenbosch ('s)	0
 Workum, Lynbaen	29
 Delft, Markt	32
-Amersfoort Schothorst,51
+Amersfoort Schothorst	51
 Nijkerk, De Veenhuis	10
 Utrecht, Madridstraat	147
 Sliedrecht, Maaslaan	72
 Beilen, Linthorst Homanweg	19
 Ees, Dorpsstraat	16
-Utrecht Centraal,5
+Utrecht Centraal	5
 Boskoop, Clusiuserf	19
 Erkelenz, Gerderath Sparkasse	18
 Weesp, Nijverheidslaan	24
-Castricum,101
+Castricum	101
 Vught, Moleneindplein	31
 Zundert, Berkenlaan	37
 Tilburg, Centraal Station (F)	57
 Aachen, Ponttor	32
 Groningen, Atoomweg	113
 Bussum, Parklaan	25
-Hertogenbosch ('s),0
-Rotterdam Centraal,36
+Hertogenbosch ('s)	0
+Rotterdam Centraal	36
 Heeze, Kerk	27
-Hoevelaken,69
+Hoevelaken	69
 Pesse, De Akker	17
 Ganzedijk, G. Gernaatweg 35	18
 Weper, Weper	38
@@ -13243,39 +13243,39 @@ Kerkrade, Grens	66
 Klimmen, Overheek	32
 Heijen, De Grens	9
 Hengelo, Van Neck	33
-Groningen,18
-Utrecht Centraal,1
-Almere Poort,108
-Overveen,39
-Den Haag Centraal,36
-Den Haag Centraal,35
-Den Haag Centraal,33
-Utrecht Centraal,0
-Berlin Hbf (tief),0
-Vlissingen Souburg,0
-Maassluis West,67
-Oss West,36
-Veenendaal-De Klomp,37
-Apeldoorn,49
-Putten,36
-Sliedrecht,67
-Haren,37
-Hoorn,75
+Groningen	18
+Utrecht Centraal	1
+Almere Poort	108
+Overveen	39
+Den Haag Centraal	36
+Den Haag Centraal	35
+Den Haag Centraal	33
+Utrecht Centraal	0
+Berlin Hbf (tief)	0
+Vlissingen Souburg	0
+Maassluis West	67
+Oss West	36
+Veenendaal-De Klomp	37
+Apeldoorn	49
+Putten	36
+Sliedrecht	67
+Haren	37
+Hoorn	75
 Sloten, Spanjaardsdijk	24
-Utrecht Centraal,85
-Eindhoven,0
-Den Haag Ypenburg,67
-Westervoort,63
+Utrecht Centraal	85
+Eindhoven	0
+Den Haag Ypenburg	67
+Westervoort	63
 Erkelenz, Oerath	27
 Dordrecht, Merbau	0
-Waddinxveen Noord,0
-Apeldoorn Osseveld,33
-Soest Zuid,75
-Hoofddorp,0
+Waddinxveen Noord	0
+Apeldoorn Osseveld	33
+Soest Zuid	75
+Hoofddorp	0
 Leiden, Bizetpad	59
 Zwijndrecht, Station NS	0
-Nijmegen,62
-Schiedam Centrum,146
+Nijmegen	62
+Schiedam Centrum	146
 Heerlen, Busstation Uitstap Perron	0
 Rosmalen, T.M. Kortenhorstlaan	30
 Loon op Zand, Busstation	118
@@ -14144,7 +14144,7 @@ Eindhoven, Mercuriuslaan	79
 Eindhoven, Summa College Sterrenln	78
 Eindhoven, Eckartdal	29
 Veldhoven, Koningshof	68
-Amsterdam Centraal,4
+Amsterdam Centraal	4
 Veldhoven, Koningshof	100
 Veldhoven, Turfweg	37
 Veldhoven, Turfweg	35
@@ -15523,7 +15523,7 @@ Nijmegen, Badhuis	62
 Nijmegen, Professorenwijk	34
 Nijmegen, Dominicanenstraat	62
 Nijmegen, Bowlingcentrum	34
-Diepenbeek,30
+Diepenbeek	30
 Nijmegen, Radboud UMC	86
 Nijmegen, Professorenwijk	32
 Nijmegen, Heyend.weg/Archipelstraat	32
@@ -15554,7 +15554,7 @@ Malden, Rijksweg/Nertsstraat	51
 Malden, Rijksweg/Nertsstraat	56
 Malden, Plantsoenstraat	10
 Malden, Broekkant/Malderburch	10
-Kerkrade Centrum,38
+Kerkrade Centrum	38
 Malden, Zweefvliegveld	11
 Malden, Zweefvliegveld	11
 Malden, Groesbeekseweg/Bosweg	11
@@ -15770,7 +15770,7 @@ Eindhoven, Roelantlaan	145
 Eindhoven, Roelantlaan	145
 Eindhoven, Autowijk	116
 Eindhoven, Van Logterenpad	59
-Hilversum,105
+Hilversum	105
 Eindhoven, Catharina Zh Zuid	59
 Eindhoven, Catharina Zh Zuid	59
 Eindhoven, Aardmannetje	59
@@ -16750,7 +16750,7 @@ Groningen, Skagerrak	12
 Groningen, Stavangerweg	12
 Groningen, Griffeweg	23
 Groningen, Trompstraat	53
-Amsterdam Science Park,78
+Amsterdam Science Park	78
 Groningen, Wismarweg	12
 Groningen, Wismarweg	12
 Groningen, Osloweg	12
@@ -17518,7 +17518,7 @@ Doezum, Harkereed	26
 Doezum, Harkereed	23
 Doezum, Provincialeweg 130	23
 Doezum, Provincialeweg 130	26
-Bunnik,0
+Bunnik	0
 Grootegast, Duisterburen	23
 Grootegast, Duisterburen	26
 Opende, Sjallemastraat	23
@@ -19365,7 +19365,7 @@ Hoensbroek, Hommert	18
 Honthem, Honthem	76
 Honthem, Honthem	79
 Hoogcruts, Kamp.boerderij Welkom	29
-Elst,96
+Elst	96
 Hoogcruts, Kamp.boerderij Welkom	28
 Hoogcruts, Kruispunt	29
 Hoogcruts, Kruispunt	28
@@ -20194,7 +20194,7 @@ Heerlen, Douvenrade	191
 Heerlen, Zuyd Hogeschool	109
 Heerlen, Prof. Lambertstraat	90
 Heerlen, Prof. Lambertstraat	90
-Daarlerveen,27
+Daarlerveen	27
 Heerlen, Arcus/Sintermeertencollege	125
 Heerlen, Arcus/Sintermeertencollege	81
 Heerlen, Tichelbeekstraat	90
@@ -20440,7 +20440,7 @@ Margraten, Aan De Fremme	17
 Maastricht, Brusselseweg/P.Huyssenlaan	12
 Maastricht, Brusselseweg/P.Huyssenlaan	12
 Kerkrade, Rolduc	29
-Arnhem Presikhaaf,35
+Arnhem Presikhaaf	35
 Kerkrade, Rolduc	52
 Maastricht, Ankerkade/Karveelweg	23
 Maastricht, Ankerkade/Karveelweg	23
@@ -20489,7 +20489,7 @@ Hijkersmilde, Wittewijk	34
 Hijkersmilde, Wittewijk	34
 Hoogersmilde, Leembrug	21
 Hoogersmilde, Leembrug	21
-Zandvoort aan Zee,1
+Zandvoort aan Zee	1
 Oranje, Oranje 8	10
 Oranje, Oranje 8	10
 Appelscha, Stellinghaven	5
@@ -20542,7 +20542,7 @@ Meppel, Burg. Knopperslaan	39
 Aijen, Aijerdijk	33
 Aijen, Aijerdijk	34
 Meppel, Steenwijkerstraatweg	21
-Houthem-St Gerlach,40
+Houthem-St Gerlach	40
 Meppel, Randweg	14
 Meppel, Randweg	16
 Meppel, Reestplantsoen	16
@@ -21062,7 +21062,7 @@ Melderslo, Massenweg	18
 Melderslo, Massenweg	17
 Melick, Heinsbergerweg	32
 Melick, Heinsbergerweg	33
-Houten Castellum,76
+Houten Castellum	76
 Milsbeek, Rijksweg/Kerkstraat	52
 Milsbeek, Rijksweg/Kerkstraat	25
 Milsbeek, Rijksweg/Kerkstraat	57
@@ -21861,7 +21861,7 @@ Noordscheschut, Rieghoogtendijk	17
 Noordscheschut, Rieghoogtendijk	17
 Noordscheschut, Sluis	8
 Noordscheschut, Sluis	8
-Almelo,75
+Almelo	75
 Noordscheschut, De Steenbaan	8
 Noordscheschut, De Steenbaan	8
 Noordscheschut, Hoogeveensevaart	8
@@ -22372,7 +22372,7 @@ Ter Apel, Busstation	38
 Ter Apel, Busstation	29
 Barnflair, Barnflair Oost 66	6
 Barnflair, Sluis 7	7
-Leiden Centraal,27
+Leiden Centraal	27
 Barnflair, Sluis 7	6
 Ter Apel, Oosterstraat 82	7
 Ter Apel, Ruiten A kanaal	7
@@ -22896,7 +22896,7 @@ Franeker, Watertoren	35
 Franeker, Watertoren	42
 Franeker, Welsrijperhoek	17
 Franeker, Welsrijperhoek	17
-Zwijndrecht,72
+Zwijndrecht	72
 Nij Altoenae, Stap	4
 Nij Altoenae, Stap	3
 Nij Altoenae, Hoogland	8
@@ -26167,7 +26167,7 @@ Heerhugowaard, Broekerweg	17
 Heerhugowaard, Broekerweg	17
 Heerhugowaard, Oostertocht	36
 Heerhugowaard, Smaragd	36
-Diemen Zuid,78
+Diemen Zuid	78
 Heerhugowaard, Granaat	36
 Heerhugowaard, Granaat	34
 Heerhugowaard, Diamant	34
@@ -28947,7 +28947,7 @@ Utrecht, Rosarium	104
 Utrecht, Rosarium	105
 Utrecht, Dillenburgstraat	104
 Utrecht, Dillenburgstraat	105
-Raalte,16
+Raalte	16
 Utrecht, De Hoogstraat	104
 Utrecht, De Hoogstraat	105
 Utrecht, Prins Hendriklaan	104
@@ -29043,7 +29043,7 @@ Zeist, Prinses Margrietlaan	74
 Zeist, Pr. Margrietlaan	38
 Zeist, Prinses Margrietlaan	72
 Zeist, Pr. Margrietlaan	36
-Beveren,0
+Beveren	0
 Zeist, De Clomp	66
 Zeist, Kromme-Rijnlaan	66
 Zeist, Kromme-Rijnlaan	65
@@ -29294,7 +29294,7 @@ Utrecht, Korianderstraat	0
 Utrecht, Korianderstraat	0
 Utrecht, P+R Papendorp	32
 Utrecht, P+R Papendorp	78
-Cuijk,0
+Cuijk	0
 Utrecht, P+R Papendorp	139
 Utrecht, P+R Papendorp	21
 Utrecht, P+R Papendorp	82
@@ -32538,7 +32538,7 @@ Hoofddorp, Duinbeek	65
 Hoofddorp, Duinbeek	65
 Hoofddorp, Expo Haarlemmermeer	169
 Hoofddorp, Expo Haarlemmermeer	171
-Zuidhorn,33
+Zuidhorn	33
 Vijfhuizen, Vijfhuizen	173
 Vijfhuizen, Vijfhuizen	175
 Hoofddorp, Schelphoek	73
@@ -33529,7 +33529,7 @@ Hilversum, J.H.Meijerstraat	32
 Hilversum, Van Ghentlaan	32
 Hilversum, Oostereind	13
 Hilversum, Oostereind	13
-Eindhoven,0
+Eindhoven	0
 Hilversum, Surinamelaan	13
 Hilversum, Surinamelaan	31
 Hilversum, Surinamelaan	13
@@ -34107,14 +34107,14 @@ Maasbommel, Kerk	10
 Maasbommel, Velddijksestraat	10
 Maasbommel, Velddijksestraat	10
 Maasbommel, Heerstraat	10
-Den Haag Laan v NOI,72
+Den Haag Laan v NOI	72
 Maasbommel, Heerstraat	10
 Hellouw, Irenestraat	29
 Hellouw, Irenestraat	29
 Hellouw, Zandsteeg	29
 Hellouw, Zandsteeg	29
 Beesd, Station	17
-Uithuizen,0
+Uithuizen	0
 Elsdorf (Rheinland), Oberembt	5
 Beesd, Station	16
 Beesd, Huis te Beestlaan	17
@@ -35050,7 +35050,7 @@ Breda, Wilderen	28
 Breda, Flierstraat	59
 Breda, Flierstraat	59
 Breda, Heuvelbrink	59
-Coevorden,0
+Coevorden	0
 Heusden, Heusdenseweg	37
 Breda, Heuvelbrink	59
 Breda, Lage Kant	28
@@ -35256,7 +35256,7 @@ Etten-Leur, Schipperstraat	11
 Etten-Leur, Waldhoornlaan	25
 Etten-Leur, Waldhoornlaan	24
 Etten-Leur, Voorsteven	11
-Tiel,24
+Tiel	24
 Etten-Leur, Fr.van Eedenstraat	11
 Etten-Leur, Lage Vaartkant	30
 Etten-Leur, Lage Vaartkant	30
@@ -35513,7 +35513,7 @@ Roosendaal, Jasmijnberg	32
 Roosendaal, Jasmijnberg	26
 Roosendaal, A-Dijk	32
 Roosendaal, A-Dijk	26
-Ommen,22
+Ommen	22
 Roosendaal, Lelieberg	26
 Roosendaal, Lelieberg	32
 Roosendaal, Morelberg	32
@@ -35672,7 +35672,7 @@ Hoogerheide, Vliegbasis Woensdrecht	3
 Huijbergen, Westerstraat	13
 Huijbergen, Wilhelmietenstraat	13
 Huijbergen, Wilhelmietenstraat	13
-Duivendrecht,147
+Duivendrecht	147
 Huijbergen, Siardus Bogaertslaan	13
 Huijbergen, Siardus Bogaertslaan	13
 Huijbergen, Bergsestraat	13
@@ -35836,7 +35836,7 @@ Zaamslag, Busstation	18
 Absdale, Stellestraat	31
 Absdale, Provincialeweg	31
 Losser, Broekhoekweg	44
-Rotterdam Stadion,0
+Rotterdam Stadion	0
 Zuideropgaande, Schooldijkje	30
 Ane, De Viersprong	12
 Tubbergen, Manderveenseweg	37
@@ -35873,8 +35873,8 @@ Amersfoort, Heliumweg	24
 Kampen, Station	0
 Raeren, Altenbau	5
 Aachen, Tierpark	20
-Sneek Noord,46
-Opheusden,24
+Sneek Noord	46
+Opheusden	24
 Aachen, Audimax	113
 Deurne, Emmalaan	22
 Uithuizen, Snik	21
@@ -35888,7 +35888,7 @@ Beek, Australielaan	52
 Elim, Barsweg	12
 Britsum, Britsum	19
 Harkema, Pauloane	22
-Hilversum Media Park,79
+Hilversum Media Park	79
 Den Helder, Tuinstraat	30
 Delft, Nassauplein	39
 Utrecht, Veemarkt	78
@@ -35900,13 +35900,13 @@ Dordrecht, Henri Polakstraat	61
 Leiden, Damlaan	29
 Leiden, Plesmanlaan	24
 Leiden, Paterstraat	65
-Eindhoven Stadion,0
+Eindhoven Stadion	0
 Nieuw-Vennep, Westerkim	31
 Breda, Ginnekenweg	36
 Zundert, Stuivezand	53
 Dongen, De Volckaert	85
 Simmerath, Kriegsgräberstätte	2
-Gorinchem,38
+Gorinchem	38
 Aachen, Purweider Weg	42
 Aachen, Eulersweg	33
 Elden, De Brink	31
@@ -35918,14 +35918,14 @@ Alsdorf (Rheinland), Herzogenrather Straße	26
 Aalst, Michiel de Ruyterstraat	32
 Enschede, Rabobank	41
 Rhenen, Anjerlaan	31
-Harde ('t),37
+Harde ('t)	37
 Wegberg, Ellinghoven	1
 Wegberg, Beeck Im Maggenfeld	28
 Linnich, Im Gansbruch	38
 Herzogenrath, Merkstein Naturfreundehaus	41
 Aachen, Marienhospital	143
 Aachen, Continental	158
-Venlo,0
+Venlo	0
 Selfkant, Tüddern Apotheke	36
 Erkelenz, Ziegelweiher	28
 Biezenmortel, Capucijnenstraat	11
@@ -35934,11 +35934,11 @@ Aachen, Grüner Winkel	25
 Gilze, Aalstraat	31
 Nederweert, Lindenstraat	10
 Mijdrecht, Proostdijland	62
-Stendal,12
+Stendal	12
 Hückelhoven, Gewerbegebiet	27
 Oudenhoorn, Zorgboerderij	32
 Drogeham, Boskloane	22
-Venlo,18
+Venlo	18
 Jülich, Barmen Haus Overbach	17
 Alphen a/d Rijn, Binkhorst	21
 Almere Stad, Sallandsekant	47
@@ -35949,8 +35949,8 @@ Helmond, Deltaweg	11
 Amsterdam, Kikkenstein	98
 Amersfoort, Arendshorst	94
 Linnich, Welz Am Ederer Weg	14
-Zevenaar,63
-Alkmaar,35
+Zevenaar	63
+Alkmaar	35
 Aachen, Bushof	0
 Stolberg (Rheinland), Salmstraße	125
 Hürtgenwald, Vossenack Sportlokal	27
@@ -36218,7 +36218,7 @@ Esbeek, Laag Spul	22
 Diessen, Rijtseweg	11
 Diessen, Rijtseweg	12
 Diessen, Julianastraat	33
-Amsterdam Centraal,30
+Amsterdam Centraal	30
 Diessen, Beekseweg	21
 Diessen, Beekseweg	21
 Hilvarenbeek, Diessenseweg	82
@@ -36687,7 +36687,7 @@ Roosendaal, Roselaar	143
 Roosendaal, Roselaar	55
 Roosendaal, Roselaar	113
 Roosendaal, Roselaar	29
-Amsterdam Sloterdijk,80
+Amsterdam Sloterdijk	80
 Roosendaal, Station	29
 Roosendaal, Station	29
 Roosendaal, Station	31
@@ -37224,940 +37224,940 @@ Nijmegen, Station Dukenburg	18
 Waalwijk, Busstation Vredesplein	169
 Heerenveen, Busstation	96
 Heerenveen, Busstation	15
-Utrecht Centraal,76
-Worgl,0
-Antwerpen-Noorderdokken,34
+Utrecht Centraal	76
+Worgl	0
+Antwerpen-Noorderdokken	34
 Eefde, Scheuterdijk	32
 Barchem, Dollehoedsdijk	33
-Liege-Palais,0
-Leuven,0
-Hemiksem,29
-Munster (W) Zentrum Nord,37
-Amsterdam Van der Madeweg,0
-Antwerpen-Luchtbal,34
-Bork (Westf),29
-Duren,0
-Wuppertal-Barmen,30
-Livorno C,0
+Liege-Palais	0
+Leuven	0
+Hemiksem	29
+Munster (W) Zentrum Nord	37
+Amsterdam Van der Madeweg	0
+Antwerpen-Luchtbal	34
+Bork (Westf)	29
+Duren	0
+Wuppertal-Barmen	30
+Livorno C	0
 Bussum, Olmenlaan	25
 Koudum, Chr. Scholengemeenschap	21
-Usquert,33
-Overveen,39
-Winterswijk,0
-Lochem,35
-Winterswijk,0
-Goes,0
-Veenendaal-De Klomp,38
-Hengelo,48
-Rhenen,37
-Wormerveer,0
-Groningen,0
-Den Haag Centraal,61
-Stedum,2
-Kampen Zuid,38
-Koog-Zaandijk,65
-Venray,40
-Heeze,33
+Usquert	33
+Overveen	39
+Winterswijk	0
+Lochem	35
+Winterswijk	0
+Goes	0
+Veenendaal-De Klomp	38
+Hengelo	48
+Rhenen	37
+Wormerveer	0
+Groningen	0
+Den Haag Centraal	61
+Stedum	2
+Kampen Zuid	38
+Koog-Zaandijk	65
+Venray	40
+Heeze	33
 Dussen, Van der Dussenlaan	38
 Dussen, `t Middeltje	36
 Aachen, Oberforstbach Kohlshof	36
-Berlin Südkreuz,0
-Woerden,0
-Helmond Brouwhuis,33
-Oudenbosch,0
-De Vink,69
-Buitenpost,50
-Apeldoorn Osseveld,0
-Tegelen,0
-Sneek,46
-Gouda,0
-Eindhoven,0
-Steenwijk,50
-Nijmegen,0
-Nijmegen Heyendaal,49
-Dordrecht,2
-Olst,37
-Doetinchem,74
-Tilburg Reeshof,38
-Zoetermeer Oost,67
-Den Haag HS,90
-Boxmeer,0
-Bloemendaal,37
-Opheusden,24
-Hoevelaken,68
-Uithuizermeeden,33
-Hoek van Holland Strand,6
-Kruiningen-Yerseke,36
-Alkmaar,42
-Gouda,0
-Ede-Wageningen,0
-Dordrecht Zuid,69
-Veenendaal Centrum,0
-Ruurlo,31
-Mantgum,0
-Akkrum,0
-Leerdam,38
-Utrecht Terwijde,66
-Amsterdam Muiderpoort,52
-Usquert,34
-Groningen,33
-Sittard,0
-Gilze-Rijen,38
-Krommenie-Assendelft,10
-Oosterbeek,33
-Tilburg,74
-Groningen Noord,69
-Enschede,0
-Vlaardingen Oost,0
-Almelo de Riet,2
-Amersfoort,15
-Koog-Zaandijk,2
-Amsterdam Holendrecht,0
-Varsseveld,0
-Rhenen,0
-Zetten-Andelst,0
-Zaandam Kogerveld,0
-Maarssen,51
-Sappemeer Oost,0
-Susteren,0
-Bedum,0
-Rotterdam Zuid,70
-Middelburg,0
-Barendrecht,0
-Amersfoort Schothorst,64
-Dordrecht,74
-Breukelen,0
-Dordrecht,1
-Klimmen-Ransdaal,0
-Geldermalsen,1
-Duivendrecht,145
-Voorschoten,0
-Groningen,35
-Houten Castellum,76
-Den Haag Laan v NOI,69
-Barneveld Centrum,68
-Almere Muziekwijk,111
-Amsterdam Sloterdijk,106
-Hemmen-Dodewaard,24
-Leiden Centraal,104
-Ruurlo,30
-Rotterdam Centraal,0
-Lelystad Centrum,0
-Amsterdam Centraal,74
-Hoevelaken,0
-Helmond 't Hout,33
-Bergen op Zoom,38
-Hertogenbosch ('s),0
-Hilversum,40
-Roosendaal,0
-Santpoort Zuid,1
-Lunteren,0
-Utrecht Centraal,58
-Sappemeer Oost,67
-Dordrecht,0
-Amsterdam Lelylaan,116
-Harde ('t),0
-Rilland-Bath,36
-Helmond Brouwhuis,0
-Rotterdam Lombardijen,0
-Amsterdam Holendrecht,51
-Amsterdam Holendrecht,52
-Heerlen Woonboulevard,0
-Dordrecht Stadspolders,0
-Daarlerveen,27
-Heerlen,50
-Sneek Noord,0
-Bad Nieuweschans,34
-Delfzijl West,0
-Voerendaal,40
-Houthem-St Gerlach,0
-Apeldoorn De Maten,0
-Nijmegen Dukenburg,49
-Arnhem Velperpoort,0
+Berlin Südkreuz	0
+Woerden	0
+Helmond Brouwhuis	33
+Oudenbosch	0
+De Vink	69
+Buitenpost	50
+Apeldoorn Osseveld	0
+Tegelen	0
+Sneek	46
+Gouda	0
+Eindhoven	0
+Steenwijk	50
+Nijmegen	0
+Nijmegen Heyendaal	49
+Dordrecht	2
+Olst	37
+Doetinchem	74
+Tilburg Reeshof	38
+Zoetermeer Oost	67
+Den Haag HS	90
+Boxmeer	0
+Bloemendaal	37
+Opheusden	24
+Hoevelaken	68
+Uithuizermeeden	33
+Hoek van Holland Strand	6
+Kruiningen-Yerseke	36
+Alkmaar	42
+Gouda	0
+Ede-Wageningen	0
+Dordrecht Zuid	69
+Veenendaal Centrum	0
+Ruurlo	31
+Mantgum	0
+Akkrum	0
+Leerdam	38
+Utrecht Terwijde	66
+Amsterdam Muiderpoort	52
+Usquert	34
+Groningen	33
+Sittard	0
+Gilze-Rijen	38
+Krommenie-Assendelft	10
+Oosterbeek	33
+Tilburg	74
+Groningen Noord	69
+Enschede	0
+Vlaardingen Oost	0
+Almelo de Riet	2
+Amersfoort	15
+Koog-Zaandijk	2
+Amsterdam Holendrecht	0
+Varsseveld	0
+Rhenen	0
+Zetten-Andelst	0
+Zaandam Kogerveld	0
+Maarssen	51
+Sappemeer Oost	0
+Susteren	0
+Bedum	0
+Rotterdam Zuid	70
+Middelburg	0
+Barendrecht	0
+Amersfoort Schothorst	64
+Dordrecht	74
+Breukelen	0
+Dordrecht	1
+Klimmen-Ransdaal	0
+Geldermalsen	1
+Duivendrecht	145
+Voorschoten	0
+Groningen	35
+Houten Castellum	76
+Den Haag Laan v NOI	69
+Barneveld Centrum	68
+Almere Muziekwijk	111
+Amsterdam Sloterdijk	106
+Hemmen-Dodewaard	24
+Leiden Centraal	104
+Ruurlo	30
+Rotterdam Centraal	0
+Lelystad Centrum	0
+Amsterdam Centraal	74
+Hoevelaken	0
+Helmond 't Hout	33
+Bergen op Zoom	38
+Hertogenbosch ('s)	0
+Hilversum	40
+Roosendaal	0
+Santpoort Zuid	1
+Lunteren	0
+Utrecht Centraal	58
+Sappemeer Oost	67
+Dordrecht	0
+Amsterdam Lelylaan	116
+Harde ('t)	0
+Rilland-Bath	36
+Helmond Brouwhuis	0
+Rotterdam Lombardijen	0
+Amsterdam Holendrecht	51
+Amsterdam Holendrecht	52
+Heerlen Woonboulevard	0
+Dordrecht Stadspolders	0
+Daarlerveen	27
+Heerlen	50
+Sneek Noord	0
+Bad Nieuweschans	34
+Delfzijl West	0
+Voerendaal	40
+Houthem-St Gerlach	0
+Apeldoorn De Maten	0
+Nijmegen Dukenburg	49
+Arnhem Velperpoort	0
 Übach-Palenberg, Bahnhof (Bus)	41
-Amsterdam Centraal,0
-Hertogenbosch ('s),104
-Kapelle-Biezelinge,0
-Arnhem Velperpoort,98
-Amsterdam Muiderpoort,51
-Hoofddorp,76
-Rotterdam Lombardijen,3
-Rotterdam Lombardijen,0
-Overveen,0
-Driebergen-Zeist,0
-Castricum,7
-Amsterdam Centraal,9
-Hoek van Holland Haven,0
-Cuijk,49
-Groningen Noord,0
-Geleen-Lutterade,0
-Rotterdam Centraal,0
-Utrecht Maliebaan,0
-Arnhem Presikhaaf,35
-Den Helder Zuid,73
-Den Helder Zuid,3
-Capelle Schollevaar,53
-Capelle Schollevaar,54
-Utrecht Centraal,0
-Utrecht Centraal,0
-Roosendaal,0
-Roosendaal,1
-Schiedam Centrum,80
-Schiedam Centrum,142
-Schiedam Centrum,81
-Apeldoorn De Maten,72
+Amsterdam Centraal	0
+Hertogenbosch ('s)	104
+Kapelle-Biezelinge	0
+Arnhem Velperpoort	98
+Amsterdam Muiderpoort	51
+Hoofddorp	76
+Rotterdam Lombardijen	3
+Rotterdam Lombardijen	0
+Overveen	0
+Driebergen-Zeist	0
+Castricum	7
+Amsterdam Centraal	9
+Hoek van Holland Haven	0
+Cuijk	49
+Groningen Noord	0
+Geleen-Lutterade	0
+Rotterdam Centraal	0
+Utrecht Maliebaan	0
+Arnhem Presikhaaf	35
+Den Helder Zuid	73
+Den Helder Zuid	3
+Capelle Schollevaar	53
+Capelle Schollevaar	54
+Utrecht Centraal	0
+Utrecht Centraal	0
+Roosendaal	0
+Roosendaal	1
+Schiedam Centrum	80
+Schiedam Centrum	142
+Schiedam Centrum	81
+Apeldoorn De Maten	72
 Würselen, Parkhotel	57
-Utrecht Centraal,0
-Amsterdam Centraal,2
-Vlaardingen West,66
-Den Haag Centraal,29
-Rotterdam Centraal,34
-Rotterdam Centraal,54
-Zetten-Andelst,24
-Enschede Drienerlo,0
-Enschede Drienerlo,0
-Purmerend,39
-Hengelo Oost,0
-Bovenkarspel Flora,0
-Klimmen-Ransdaal,40
-Amsterdam Centraal,0
-Groningen,29
-Heerhugowaard,33
-Capelle Schollevaar,0
-Hoek van Holland Strand,0
-Krommenie-Assendelft,66
-Hindeloopen,0
-Nieuw Vennep,46
-Utrecht Terwijde,68
-Amersfoort,4
-Vlissingen Souburg,36
-Purmerend Weidevenne,40
-Groningen,8
-Duivendrecht,51
-Nieuw Amsterdam,37
-Enkhuizen,35
-Wehl,63
-Groningen Europapark,39
-Rijswijk,69
-Utrecht Zuilen,49
-Veenwouden,0
-Lunteren,38
-Klarenbeek,0
-Vierlingsbeek,0
-Den Haag Centraal,0
-Martenshoek,69
-Emmen,0
-Roosendaal,34
-Alphen a/d Rijn,0
-Deventer,0
-Abcoude,50
-Rheden,0
-Deurne,36
-Schagen,9
-Arnhem,22
-Doetinchem,29
-Venlo,0
-Marienberg,0
-Heerlen Woonboulevard,40
-Oosterbeek,0
-Varsseveld,37
-Hilversum,3
-Breukelen,50
-Enschede,29
-Groningen Europapark,41
-Den Dolder,0
-Amsterdam RAI,78
-Amsterdam Centraal,10
-Driehuis,1
-Veenendaal West,0
-Haarlem,73
-Boxtel,41
-Deurne,34
-Dordrecht,67
-Harde ('t),0
-Gouda Goverwelle,54
-Sneek,0
-Nuth,0
-Sittard,0
-Kruiningen-Yerseke,0
-Zwolle,37
-Amsterdam Bijlmer ArenA,65
-Hoorn Kersenboogerd,0
-Bilthoven,73
-Alkmaar Noord,2
-Amsterdam Science Park,1
-Heemstede-Aerdenhout,112
-Alkmaar,2
-Warffum,0
-Rotterdam Blaak,143
-Voorschoten,0
-Den Haag Moerwijk,71
-Oudenbosch,35
-Amersfoort,103
-Amsterdam Muiderpoort,1
-Rilland-Bath,0
-Maastricht,15
-Maastricht,16
-Vlaardingen Centrum,66
-Leiden Centraal,8
-Grijpskerk,0
-Almelo,0
-Breda,76
-Tilburg,146
-De Vink,69
-Arnhem,33
-Sliedrecht Baanhoek,134
-Barneveld Centrum,69
-Grijpskerk,33
-Terborg,37
-Dordrecht,1
-Nijmegen,0
-Santpoort Noord,1
-Amsterdam Zuid,102
-Goes,36
-Rotterdam Centraal,69
-Houten,76
-Best,1
-Heino,30
-Zuidhorn,0
-Hilversum Sportpark,71
-Amsterdam Lelylaan,116
-Almelo,1
-Den Haag Mariahoeve,0
-Gilze-Rijen,0
-Ede-Wageningen,33
-Groningen Noord,70
-Oldenzaal,38
-Zwolle,0
-Leiden Centraal,0
-Hertogenbosch ('s),35
-Breda-Prinsenbeek,34
-Utrecht Maliebaan,8
-Hoek van Holland Strand,0
-Hoogezand-Sappemeer,0
-Koog Bloemwijk,66
-Beverwijk,0
-Krommenie-Assendelft,65
-Rosmalen,39
-Nieuwerkerk ad IJssel,54
-Kerkrade Centrum,0
-Tilburg Reeshof,0
-Zwolle,17
-Vorden,30
-Vleuten,66
-Leiden Lammenschans,112
-Heerlen De Kissel,0
-Leiden Centraal,116
-Wolfheze,0
-Houten Castellum,0
-Dordrecht,28
-Appingedam,0
-Rotterdam Centraal,0
-Martenshoek,0
-Deventer,0
-Hoensbroek,0
-Stedum,0
-Stedum,66
-Naarden-Bussum,2
-Spaubeek,32
-Hillegom,39
-Uitgeest,62
-Voerendaal,40
-Boskoop,36
-Eijsden,17
-Alkmaar,30
-Winsum,35
-Zwolle,39
-Nunspeet,37
-Velp,35
-Amersfoort,0
-Zwijndrecht,2
-Gramsbergen,0
-Den Haag Moerwijk,69
-Dordrecht,0
-Nijverdal,30
-Woerden,113
-Deventer,117
-Rotterdam Centraal,0
-Bad Nieuweschans,21
-Schiedam Nieuwland,73
-Rotterdam Alexander,120
-Wolvega,33
-Utrecht Centraal,0
-Utrecht Terwijde,0
-Purmerend,0
-Groningen Europapark,0
-Hardenberg,0
-Amsterdam Bijlmer ArenA,5
-Barneveld Centrum,0
-Dordrecht,105
-Rijswijk,0
-Rijswijk,71
-Dordrecht,34
-Leeuwarden,15
-Bussum Zuid,2
-Amsterdam Centraal,70
-Amsterdam Centraal,38
-Amsterdam Zuid,210
-Roosendaal,17
-Santpoort Zuid,40
-Heerhugowaard,80
-Kampen Zuid,38
-Boven-Hardinxveld,67
-Schinnen,33
-Den Helder,20
-Zaltbommel,0
-Vierlingsbeek,50
-Leiden Centraal,27
-Utrecht Centraal,73
+Utrecht Centraal	0
+Amsterdam Centraal	2
+Vlaardingen West	66
+Den Haag Centraal	29
+Rotterdam Centraal	34
+Rotterdam Centraal	54
+Zetten-Andelst	24
+Enschede Drienerlo	0
+Enschede Drienerlo	0
+Purmerend	39
+Hengelo Oost	0
+Bovenkarspel Flora	0
+Klimmen-Ransdaal	40
+Amsterdam Centraal	0
+Groningen	29
+Heerhugowaard	33
+Capelle Schollevaar	0
+Hoek van Holland Strand	0
+Krommenie-Assendelft	66
+Hindeloopen	0
+Nieuw Vennep	46
+Utrecht Terwijde	68
+Amersfoort	4
+Vlissingen Souburg	36
+Purmerend Weidevenne	40
+Groningen	8
+Duivendrecht	51
+Nieuw Amsterdam	37
+Enkhuizen	35
+Wehl	63
+Groningen Europapark	39
+Rijswijk	69
+Utrecht Zuilen	49
+Veenwouden	0
+Lunteren	38
+Klarenbeek	0
+Vierlingsbeek	0
+Den Haag Centraal	0
+Martenshoek	69
+Emmen	0
+Roosendaal	34
+Alphen a/d Rijn	0
+Deventer	0
+Abcoude	50
+Rheden	0
+Deurne	36
+Schagen	9
+Arnhem	22
+Doetinchem	29
+Venlo	0
+Marienberg	0
+Heerlen Woonboulevard	40
+Oosterbeek	0
+Varsseveld	37
+Hilversum	3
+Breukelen	50
+Enschede	29
+Groningen Europapark	41
+Den Dolder	0
+Amsterdam RAI	78
+Amsterdam Centraal	10
+Driehuis	1
+Veenendaal West	0
+Haarlem	73
+Boxtel	41
+Deurne	34
+Dordrecht	67
+Harde ('t)	0
+Gouda Goverwelle	54
+Sneek	0
+Nuth	0
+Sittard	0
+Kruiningen-Yerseke	0
+Zwolle	37
+Amsterdam Bijlmer ArenA	65
+Hoorn Kersenboogerd	0
+Bilthoven	73
+Alkmaar Noord	2
+Amsterdam Science Park	1
+Heemstede-Aerdenhout	112
+Alkmaar	2
+Warffum	0
+Rotterdam Blaak	143
+Voorschoten	0
+Den Haag Moerwijk	71
+Oudenbosch	35
+Amersfoort	103
+Amsterdam Muiderpoort	1
+Rilland-Bath	0
+Maastricht	15
+Maastricht	16
+Vlaardingen Centrum	66
+Leiden Centraal	8
+Grijpskerk	0
+Almelo	0
+Breda	76
+Tilburg	146
+De Vink	69
+Arnhem	33
+Sliedrecht Baanhoek	134
+Barneveld Centrum	69
+Grijpskerk	33
+Terborg	37
+Dordrecht	1
+Nijmegen	0
+Santpoort Noord	1
+Amsterdam Zuid	102
+Goes	36
+Rotterdam Centraal	69
+Houten	76
+Best	1
+Heino	30
+Zuidhorn	0
+Hilversum Sportpark	71
+Amsterdam Lelylaan	116
+Almelo	1
+Den Haag Mariahoeve	0
+Gilze-Rijen	0
+Ede-Wageningen	33
+Groningen Noord	70
+Oldenzaal	38
+Zwolle	0
+Leiden Centraal	0
+Hertogenbosch ('s)	35
+Breda-Prinsenbeek	34
+Utrecht Maliebaan	8
+Hoek van Holland Strand	0
+Hoogezand-Sappemeer	0
+Koog Bloemwijk	66
+Beverwijk	0
+Krommenie-Assendelft	65
+Rosmalen	39
+Nieuwerkerk ad IJssel	54
+Kerkrade Centrum	0
+Tilburg Reeshof	0
+Zwolle	17
+Vorden	30
+Vleuten	66
+Leiden Lammenschans	112
+Heerlen De Kissel	0
+Leiden Centraal	116
+Wolfheze	0
+Houten Castellum	0
+Dordrecht	28
+Appingedam	0
+Rotterdam Centraal	0
+Martenshoek	0
+Deventer	0
+Hoensbroek	0
+Stedum	0
+Stedum	66
+Naarden-Bussum	2
+Spaubeek	32
+Hillegom	39
+Uitgeest	62
+Voerendaal	40
+Boskoop	36
+Eijsden	17
+Alkmaar	30
+Winsum	35
+Zwolle	39
+Nunspeet	37
+Velp	35
+Amersfoort	0
+Zwijndrecht	2
+Gramsbergen	0
+Den Haag Moerwijk	69
+Dordrecht	0
+Nijverdal	30
+Woerden	113
+Deventer	117
+Rotterdam Centraal	0
+Bad Nieuweschans	21
+Schiedam Nieuwland	73
+Rotterdam Alexander	120
+Wolvega	33
+Utrecht Centraal	0
+Utrecht Terwijde	0
+Purmerend	0
+Groningen Europapark	0
+Hardenberg	0
+Amsterdam Bijlmer ArenA	5
+Barneveld Centrum	0
+Dordrecht	105
+Rijswijk	0
+Rijswijk	71
+Dordrecht	34
+Leeuwarden	15
+Bussum Zuid	2
+Amsterdam Centraal	70
+Amsterdam Centraal	38
+Amsterdam Zuid	210
+Roosendaal	17
+Santpoort Zuid	40
+Heerhugowaard	80
+Kampen Zuid	38
+Boven-Hardinxveld	67
+Schinnen	33
+Den Helder	20
+Zaltbommel	0
+Vierlingsbeek	50
+Leiden Centraal	27
+Utrecht Centraal	73
 Eupen, Zur Clouse	4
-Zwolle,0
-Mook Molenhoek,49
-Blerick,43
-Zoetermeer,0
-Utrecht Centraal,1
-Zaandam,40
-Zetten-Andelst,24
-Koog Bloemwijk,65
-Hilversum,38
-Nijmegen Dukenburg,0
-Delfzijl,0
-Zandvoort aan Zee,0
-Velp,0
-Tegelen,76
-Vlissingen,0
-Hertogenbosch ('s),6
-Mook Molenhoek,50
-Appingedam,34
+Zwolle	0
+Mook Molenhoek	49
+Blerick	43
+Zoetermeer	0
+Utrecht Centraal	1
+Zaandam	40
+Zetten-Andelst	24
+Koog Bloemwijk	65
+Hilversum	38
+Nijmegen Dukenburg	0
+Delfzijl	0
+Zandvoort aan Zee	0
+Velp	0
+Tegelen	76
+Vlissingen	0
+Hertogenbosch ('s)	6
+Mook Molenhoek	50
+Appingedam	34
 Düren (Rheinland), Selders	27
-Kesteren,0
-Amsterdam Centraal,51
-Groningen Europapark,137
-Den Helder,0
-Driebergen-Zeist,0
-Den Dolder,73
-Terborg,37
-Woerden,115
-Den Haag HS,105
-Zoetermeer Oost,0
-Nijmegen,0
-Ommen,77
-Sittard,0
-Sauwerd,0
-Wezep,37
-Zwaagwesteinde,0
-Goor,35
-Arnhem,0
-Best,0
-Zwolle,0
-Horst-Sevenum,0
-Soestdijk,75
-Delft,180
-Vlaardingen Centrum,82
-Zoetermeer,67
-Uitgeest,36
-Den Helder,19
-Nieuw Vennep,0
-Stavoren,18
-Rotterdam Centraal,32
-Almere Parkwijk,111
-Ravenstein,0
-Rijswijk,0
-Sliedrecht,2
-Beverwijk,42
-Meerssen,72
-Zaandam Kogerveld,40
-Amsterdam Centraal,9
-Roermond,65
-Leiden Lammenschans,0
-Nijmegen,70
-Amersfoort,0
-Zoetermeer,67
-Vlaardingen Oost,75
-Den Haag Moerwijk,0
-Utrecht Centraal,0
-Vlissingen,36
-Amsterdam Amstel,0
-Zaandam Kogerveld,39
-Delden,37
-Heerlen,72
-Beesd,72
-Arnhem,38
-Tilburg,71
-Zutphen,35
-Zwolle,36
-Leiden Centraal,0
-Zevenbergen,35
-Enschede,0
-Dalfsen,0
-Hoensbroek,32
-Helmond Brouwhuis,34
-Meppel,60
-Dordrecht,55
-Hilversum,72
-Groningen,16
-Harderwijk,37
-Leiden Centraal,0
-Rotterdam Centraal,0
-Utrecht Zuilen,56
-Amersfoort Vathorst,27
-Maastricht Randwyck,0
-Arnhem Zuid,72
-Mook Molenhoek,0
-Scheemda,70
-Krabbendijke,36
-Sittard,70
-Cuijk,0
-Ede-Wageningen,68
-Heerlen Woonboulevard,40
-Krabbendijke,0
-Eygelshoven Markt,36
-Borne,2
-Echt,0
-Delfzijl,34
-Duiven,66
-Geldermalsen,0
-Roodeschool,34
-Kampen,0
-Tiel,38
-Zwolle,30
-Hoofddorp,46
-Loppersum,34
-Klimmen-Ransdaal,40
-Uithuizermeeden,34
-Koog Bloemwijk,2
-Hengelo Oost,38
-Hillegom,0
-Lunteren,38
-Alphen a/d Rijn,54
-Almere Centrum,0
-Voorschoten,69
-Amsterdam Sloterdijk,36
-Deventer,0
-Amsterdam Centraal,1
-Gorinchem,1
-Leeuwarden,47
-Deventer,0
-Amersfoort,0
-Utrecht Zuilen,0
-Voorschoten,0
-Ede-Wageningen,70
-Almere Oostvaarders,0
-Hoogeveen,38
-Obdam,0
-Kruiningen-Yerseke,36
-Gouda,122
-Maarn,50
-Vorden,0
-Nijmegen,0
-Diemen,76
-Enschede,0
-Holten,35
-Delden,0
-Baflo,35
-Purmerend Overwhere,0
-Hoorn,79
-Bunde,34
-Borne,64
-Westervoort,0
-Arnhem,69
-Bergen op Zoom,0
-Utrecht Centraal,101
-Leiden Centraal,0
-Amersfoort Schothorst,0
-Gouda Goverwelle,67
-Hemmen-Dodewaard,24
-Utrecht Centraal,0
-Amsterdam Bijlmer ArenA,0
-Amsterdam Centraal,49
-Leeuwarden,31
-Nijmegen Goffert,49
-Veenendaal-De Klomp,0
-Utrecht Centraal,0
-Dordrecht Stadspolders,67
-Amsterdam Centraal,24
-Lage Zwaluwe,34
-Utrecht Centraal,49
-Krabbendijke,36
-Delft,0
-Waddinxveen,37
-Haarlem Spaarnwoude,0
-Naarden-Bussum,108
-Schin op Geul,40
-Hardinxveld-Giessendam,67
-Zwaagwesteinde,0
-Duivendrecht,52
-Amersfoort Vathorst,0
-Venlo,0
-Blerick,38
-Nieuw Amsterdam,40
-Amersfoort,142
-Heerlen,40
-Leeuwarden Camminghaburen,0
-Zevenaar,0
-Beek-Elsloo,0
-Hertogenbosch ('s),36
-Helmond 't Hout,0
-Amersfoort,0
-Maastricht Noord,40
-Vlaardingen West,67
-Geerdijk,27
-Hoek van Holland Haven,0
-Utrecht Centraal,38
-Amersfoort,0
-Boxmeer,0
-Amsterdam Centraal,42
-Geerdijk,27
-Schinnen,0
-Venlo,1
-Sassenheim,0
-Spaubeek,33
-Amersfoort Vathorst,37
-Doetinchem,0
-Voorst-Empe,72
-Amersfoort Vathorst,36
-Weert,0
-Schiedam Nieuwland,75
-Maarssen,0
-Utrecht Centraal,38
-Bedum,68
-Arkel,1
-Soest,37
-Beverwijk,1
-Vught,0
-Wolvega,33
-Arnhem Zuid,0
-Valkenburg,72
-Rotterdam Centraal,128
-Den Haag Moerwijk,0
-Meerssen,72
-Roermond,38
-Nijmegen,54
+Kesteren	0
+Amsterdam Centraal	51
+Groningen Europapark	137
+Den Helder	0
+Driebergen-Zeist	0
+Den Dolder	73
+Terborg	37
+Woerden	115
+Den Haag HS	105
+Zoetermeer Oost	0
+Nijmegen	0
+Ommen	77
+Sittard	0
+Sauwerd	0
+Wezep	37
+Zwaagwesteinde	0
+Goor	35
+Arnhem	0
+Best	0
+Zwolle	0
+Horst-Sevenum	0
+Soestdijk	75
+Delft	180
+Vlaardingen Centrum	82
+Zoetermeer	67
+Uitgeest	36
+Den Helder	19
+Nieuw Vennep	0
+Stavoren	18
+Rotterdam Centraal	32
+Almere Parkwijk	111
+Ravenstein	0
+Rijswijk	0
+Sliedrecht	2
+Beverwijk	42
+Meerssen	72
+Zaandam Kogerveld	40
+Amsterdam Centraal	9
+Roermond	65
+Leiden Lammenschans	0
+Nijmegen	70
+Amersfoort	0
+Zoetermeer	67
+Vlaardingen Oost	75
+Den Haag Moerwijk	0
+Utrecht Centraal	0
+Vlissingen	36
+Amsterdam Amstel	0
+Zaandam Kogerveld	39
+Delden	37
+Heerlen	72
+Beesd	72
+Arnhem	38
+Tilburg	71
+Zutphen	35
+Zwolle	36
+Leiden Centraal	0
+Zevenbergen	35
+Enschede	0
+Dalfsen	0
+Hoensbroek	32
+Helmond Brouwhuis	34
+Meppel	60
+Dordrecht	55
+Hilversum	72
+Groningen	16
+Harderwijk	37
+Leiden Centraal	0
+Rotterdam Centraal	0
+Utrecht Zuilen	56
+Amersfoort Vathorst	27
+Maastricht Randwyck	0
+Arnhem Zuid	72
+Mook Molenhoek	0
+Scheemda	70
+Krabbendijke	36
+Sittard	70
+Cuijk	0
+Ede-Wageningen	68
+Heerlen Woonboulevard	40
+Krabbendijke	0
+Eygelshoven Markt	36
+Borne	2
+Echt	0
+Delfzijl	34
+Duiven	66
+Geldermalsen	0
+Roodeschool	34
+Kampen	0
+Tiel	38
+Zwolle	30
+Hoofddorp	46
+Loppersum	34
+Klimmen-Ransdaal	40
+Uithuizermeeden	34
+Koog Bloemwijk	2
+Hengelo Oost	38
+Hillegom	0
+Lunteren	38
+Alphen a/d Rijn	54
+Almere Centrum	0
+Voorschoten	69
+Amsterdam Sloterdijk	36
+Deventer	0
+Amsterdam Centraal	1
+Gorinchem	1
+Leeuwarden	47
+Deventer	0
+Amersfoort	0
+Utrecht Zuilen	0
+Voorschoten	0
+Ede-Wageningen	70
+Almere Oostvaarders	0
+Hoogeveen	38
+Obdam	0
+Kruiningen-Yerseke	36
+Gouda	122
+Maarn	50
+Vorden	0
+Nijmegen	0
+Diemen	76
+Enschede	0
+Holten	35
+Delden	0
+Baflo	35
+Purmerend Overwhere	0
+Hoorn	79
+Bunde	34
+Borne	64
+Westervoort	0
+Arnhem	69
+Bergen op Zoom	0
+Utrecht Centraal	101
+Leiden Centraal	0
+Amersfoort Schothorst	0
+Gouda Goverwelle	67
+Hemmen-Dodewaard	24
+Utrecht Centraal	0
+Amsterdam Bijlmer ArenA	0
+Amsterdam Centraal	49
+Leeuwarden	31
+Nijmegen Goffert	49
+Veenendaal-De Klomp	0
+Utrecht Centraal	0
+Dordrecht Stadspolders	67
+Amsterdam Centraal	24
+Lage Zwaluwe	34
+Utrecht Centraal	49
+Krabbendijke	36
+Delft	0
+Waddinxveen	37
+Haarlem Spaarnwoude	0
+Naarden-Bussum	108
+Schin op Geul	40
+Hardinxveld-Giessendam	67
+Zwaagwesteinde	0
+Duivendrecht	52
+Amersfoort Vathorst	0
+Venlo	0
+Blerick	38
+Nieuw Amsterdam	40
+Amersfoort	142
+Heerlen	40
+Leeuwarden Camminghaburen	0
+Zevenaar	0
+Beek-Elsloo	0
+Hertogenbosch ('s)	36
+Helmond 't Hout	0
+Amersfoort	0
+Maastricht Noord	40
+Vlaardingen West	67
+Geerdijk	27
+Hoek van Holland Haven	0
+Utrecht Centraal	38
+Amersfoort	0
+Boxmeer	0
+Amsterdam Centraal	42
+Geerdijk	27
+Schinnen	0
+Venlo	1
+Sassenheim	0
+Spaubeek	33
+Amersfoort Vathorst	37
+Doetinchem	0
+Voorst-Empe	72
+Amersfoort Vathorst	36
+Weert	0
+Schiedam Nieuwland	75
+Maarssen	0
+Utrecht Centraal	38
+Bedum	68
+Arkel	1
+Soest	37
+Beverwijk	1
+Vught	0
+Wolvega	33
+Arnhem Zuid	0
+Valkenburg	72
+Rotterdam Centraal	128
+Den Haag Moerwijk	0
+Meerssen	72
+Roermond	38
+Nijmegen	54
 Nörvenich, Rath Schmiede	2
-Hertogenbosch ('s),62
-Woerden,0
-Breda,0
-Amersfoort,125
-Grou-Jirnsum,0
-Sittard,35
-Hilversum Media Park,75
-Kesteren,24
-Hengelo Gezondheidspark,0
-Barendrecht,3
-Enschede,33
-Amsterdam Centraal,3
-Brummen,35
-Heiloo,76
-Leerdam,3
-Spaubeek,0
-Zuidbroek,1
-Ede Centrum,76
+Hertogenbosch ('s)	62
+Woerden	0
+Breda	0
+Amersfoort	125
+Grou-Jirnsum	0
+Sittard	35
+Hilversum Media Park	75
+Kesteren	24
+Hengelo Gezondheidspark	0
+Barendrecht	3
+Enschede	33
+Amsterdam Centraal	3
+Brummen	35
+Heiloo	76
+Leerdam	3
+Spaubeek	0
+Zuidbroek	1
+Ede Centrum	76
 Laar, De Raak	0
-Kropswolde,0
-Beverwijk,45
-Hoorn,35
-Vleuten,68
-Nijmegen Dukenburg,49
-Nunspeet,0
-Maastricht,33
-Bodegraven,38
-Eindhoven,0
-Swalmen,76
-Weert,34
-Almere Muziekwijk,108
-Driebergen-Zeist,88
-Rilland-Bath,36
-Meerssen,0
-Santpoort Noord,37
-Venlo,40
-De Vink,0
-Twello,0
-Leiden Centraal,28
-Maastricht,39
-Amsterdam Amstel,125
-Heerenveen,0
-Hilversum Sportpark,0
-Kropswolde,70
-Duivendrecht,0
-Delft,187
-Breda-Prinsenbeek,0
-Geldrop,33
-Weesp,78
-Roosendaal,0
-Hemmen-Dodewaard,0
-Weert,0
-Venray,9
-Winschoten,18
-Alkmaar,34
-Soest,38
-Landgraaf,0
-Leeuwarden,33
-Culemborg,76
-Almelo,87
-Hengelo,37
-Vught,39
-Hoofddorp,0
-Vriezenveen,27
-Beek-Elsloo,33
-Heino,30
-Zwijndrecht,69
-Venlo,40
-Didam,63
-Leeuwarden,0
-Bodegraven,0
-Rijssen,0
-Kampen Zuid,0
-Hoogkarspel,0
-Soestdijk,0
-Maassluis,0
-Swalmen,0
-Utrecht Overvecht,70
-Amsterdam Centraal,6
-Aalten,37
-Gaanderen,0
-Boven-Hardinxveld,0
-Maastricht,0
-Nijmegen Heyendaal,0
-Utrecht Leidsche Rijn,39
-Beesd,3
-Den Haag Laan v NOI,75
-Heino,15
-Amsterdam Amstel,123
-Halfweg-Zwanenburg,75
-Uitgeest,3
-Hertogenbosch ('s),34
-Amsterdam Sloterdijk,147
-Abcoude,0
-Nijverdal,30
-Didam,0
-Weesp,78
-Veenendaal West,50
-Oss West,0
-Rotterdam Zuid,3
-Harlingen,33
-Boskoop,0
-Kerkrade Centrum,0
-Lage Zwaluwe,35
-Utrecht Centraal,71
-Anna Paulowna,39
-Hertogenb ('s) Oost,36
-Rheden,35
-Amsterdam Centraal,38
-Helmond,69
-Hoogkarspel,74
-Tilburg Universiteit,0
-Alkmaar Noord,80
-Almelo,0
-Hertogenbosch ('s),0
-Utrecht Leidsche Rijn,0
-Landgraaf,38
-Geleen Oost,32
-Amsterdam Centraal,22
-Nuth,32
-Rijssen,35
-Groningen,34
-Breda,0
-Harlingen,0
-Ede-Wageningen,0
-Horst-Sevenum,36
-Hoogezand-Sappemeer,69
-Almelo,35
-Valkenburg,72
-Bad Nieuweschans,1
-Barneveld Zuid,0
-Utrecht Centraal,0
-Helmond Brandevoort,0
-Rotterdam Centraal,0
-Glanerbrug,67
-Marienberg,38
-Harderwijk,37
-De Vink,0
-Zandvoort aan Zee,38
-Buitenpost,48
-Breda,0
-Warffum,36
-Reuver,38
-Coevorden,50
-Voorhout,39
-Venlo,0
-Schinnen,32
-Haarlem,37
-Loppersum,34
-Oss West,36
-Groningen,3
-Arkel,76
-Wijhe,37
-Abcoude,53
-Hardenberg,50
-Ermelo,37
+Kropswolde	0
+Beverwijk	45
+Hoorn	35
+Vleuten	68
+Nijmegen Dukenburg	49
+Nunspeet	0
+Maastricht	33
+Bodegraven	38
+Eindhoven	0
+Swalmen	76
+Weert	34
+Almere Muziekwijk	108
+Driebergen-Zeist	88
+Rilland-Bath	36
+Meerssen	0
+Santpoort Noord	37
+Venlo	40
+De Vink	0
+Twello	0
+Leiden Centraal	28
+Maastricht	39
+Amsterdam Amstel	125
+Heerenveen	0
+Hilversum Sportpark	0
+Kropswolde	70
+Duivendrecht	0
+Delft	187
+Breda-Prinsenbeek	0
+Geldrop	33
+Weesp	78
+Roosendaal	0
+Hemmen-Dodewaard	0
+Weert	0
+Venray	9
+Winschoten	18
+Alkmaar	34
+Soest	38
+Landgraaf	0
+Leeuwarden	33
+Culemborg	76
+Almelo	87
+Hengelo	37
+Vught	39
+Hoofddorp	0
+Vriezenveen	27
+Beek-Elsloo	33
+Heino	30
+Zwijndrecht	69
+Venlo	40
+Didam	63
+Leeuwarden	0
+Bodegraven	0
+Rijssen	0
+Kampen Zuid	0
+Hoogkarspel	0
+Soestdijk	0
+Maassluis	0
+Swalmen	0
+Utrecht Overvecht	70
+Amsterdam Centraal	6
+Aalten	37
+Gaanderen	0
+Boven-Hardinxveld	0
+Maastricht	0
+Nijmegen Heyendaal	0
+Utrecht Leidsche Rijn	39
+Beesd	3
+Den Haag Laan v NOI	75
+Heino	15
+Amsterdam Amstel	123
+Halfweg-Zwanenburg	75
+Uitgeest	3
+Hertogenbosch ('s)	34
+Amsterdam Sloterdijk	147
+Abcoude	0
+Nijverdal	30
+Didam	0
+Weesp	78
+Veenendaal West	50
+Oss West	0
+Rotterdam Zuid	3
+Harlingen	33
+Boskoop	0
+Kerkrade Centrum	0
+Lage Zwaluwe	35
+Utrecht Centraal	71
+Anna Paulowna	39
+Hertogenb ('s) Oost	36
+Rheden	35
+Amsterdam Centraal	38
+Helmond	69
+Hoogkarspel	74
+Tilburg Universiteit	0
+Alkmaar Noord	80
+Almelo	0
+Hertogenbosch ('s)	0
+Utrecht Leidsche Rijn	0
+Landgraaf	38
+Geleen Oost	32
+Amsterdam Centraal	22
+Nuth	32
+Rijssen	35
+Groningen	34
+Breda	0
+Harlingen	0
+Ede-Wageningen	0
+Horst-Sevenum	36
+Hoogezand-Sappemeer	69
+Almelo	35
+Valkenburg	72
+Bad Nieuweschans	1
+Barneveld Zuid	0
+Utrecht Centraal	0
+Helmond Brandevoort	0
+Rotterdam Centraal	0
+Glanerbrug	67
+Marienberg	38
+Harderwijk	37
+De Vink	0
+Zandvoort aan Zee	38
+Buitenpost	48
+Breda	0
+Warffum	36
+Reuver	38
+Coevorden	50
+Voorhout	39
+Venlo	0
+Schinnen	32
+Haarlem	37
+Loppersum	34
+Oss West	36
+Groningen	3
+Arkel	76
+Wijhe	37
+Abcoude	53
+Hardenberg	50
+Ermelo	37
 Herzogenrath, Merkstein Plitschard Dorf	41
-Lichtenvoorde-Groenlo,30
-Hertogenbosch ('s),0
-Geleen Oost,0
-Boven-Hardinxveld,67
-Enschede,33
-Sliedrecht,67
-Harlingen Haven,0
-Almere Muziekwijk,0
-Zwolle,0
-Houten,0
-Marienberg,39
-Maastricht Randwyck,49
-Bunde,0
-Den Helder,0
-Almere Parkwijk,0
-Nijmegen Lent,70
-Vught,39
-Bunde,33
-Arnhem,5
-Varsseveld,37
-Eindhoven Stadion,0
-Maastricht,34
-Hoogkarspel,8
-Rotterdam Noord,0
-Den Haag Centraal,9
-Oisterwijk,0
-Klarenbeek,36
-Waddinxveen,36
-Rotterdam Centraal,33
-Hoogeveen,0
-Veenwouden,0
-Appingedam,34
-De Vink,0
-Helmond,70
-Nijmegen,14
-Koog-Zaandijk,66
-Hardenberg,49
-Rotterdam Centraal,6
-Helmond 't Hout,34
-Wierden,59
-Bloemendaal,40
-Schagen,36
-Hoensbroek,33
-Veenendaal West,49
-Winterswijk West,0
-Voorburg,67
-Assen,0
-Aalten,0
-Zwolle,0
-Zuidhorn,38
-Hoorn Kersenboogerd,41
-Daarlerveen,0
-Etten-Leur,37
-Arnhem,70
-Koudum-Molkwerum,36
-Maarheeze,0
-Oldenzaal,0
-Wormerveer,2
-Best,34
-Enkhuizen,0
-Almere Buiten,0
-Emmen Zuid,0
-Dronten,38
-Enschede,23
-Koudum-Molkwerum,0
-Arnemuiden,0
-Warffum,34
-Heeze,0
-Terborg,0
-Vriezenveen,27
-Deventer,62
-Glanerbrug,0
-Groningen,16
-Amersfoort,1
-Rheden,35
-Tiel Passewaaij,76
-Alphen a/d Rijn,0
-Ermelo,0
-Utrecht Lunetten,76
-Sauwerd,68
-Wijchen,0
-Bovenkarspel-Grootebroek,45
-Marienberg,27
-Emmen Zuid,77
-Amsterdam Zuid,0
-Rotterdam Centraal,13
-Hindeloopen,36
-Beek-Elsloo,0
-Nuth,33
-Wolfheze,33
-Diemen Zuid,76
-Brummen,0
-Maastricht Noord,40
-Nijkerk,37
-Amsterdam Centraal,45
-Assen,68
-Coevorden,38
-Holten,0
-Chevremont,76
-Voorburg,67
-Amsterdam Bijlmer ArenA,53
-Enschede,19
-Gouda,120
-Klarenbeek,36
-Zutphen,31
-Heemskerk,1
-Waddinxveen,0
-Beverwijk,0
-Delden,35
-Delft,0
-Boskoop,37
-Oisterwijk,0
-Heemstede-Aerdenhout,110
-Bodegraven,38
-Geleen-Lutterade,34
-Hilversum Sportpark,72
-Amsterdam Bijlmer ArenA,51
-Maastricht,71
-Den Haag Ypenburg,67
-Wormerveer,0
-Arnemuiden,36
-Voorhout,40
-Leeuwarden,19
-Ravenstein,36
-Driehuis,37
-Schagen,1
-Zutphen,0
-Arnemuiden,36
-Apeldoorn Osseveld,33
-Den Haag Centraal,70
-Den Haag Centraal,41
-Driebergen-Zeist,87
-Haarlem Spaarnwoude,76
-Zevenbergen,33
-Boxmeer,49
-Hertogenbosch ('s),0
-Horst-Sevenum,36
-Culemborg,76
-Roermond,32
-Weesp,76
-Akkrum,33
-Winschoten,23
-Apeldoorn,82
-Kampen,37
-Boxmeer,50
+Lichtenvoorde-Groenlo	30
+Hertogenbosch ('s)	0
+Geleen Oost	0
+Boven-Hardinxveld	67
+Enschede	33
+Sliedrecht	67
+Harlingen Haven	0
+Almere Muziekwijk	0
+Zwolle	0
+Houten	0
+Marienberg	39
+Maastricht Randwyck	49
+Bunde	0
+Den Helder	0
+Almere Parkwijk	0
+Nijmegen Lent	70
+Vught	39
+Bunde	33
+Arnhem	5
+Varsseveld	37
+Eindhoven Stadion	0
+Maastricht	34
+Hoogkarspel	8
+Rotterdam Noord	0
+Den Haag Centraal	9
+Oisterwijk	0
+Klarenbeek	36
+Waddinxveen	36
+Rotterdam Centraal	33
+Hoogeveen	0
+Veenwouden	0
+Appingedam	34
+De Vink	0
+Helmond	70
+Nijmegen	14
+Koog-Zaandijk	66
+Hardenberg	49
+Rotterdam Centraal	6
+Helmond 't Hout	34
+Wierden	59
+Bloemendaal	40
+Schagen	36
+Hoensbroek	33
+Veenendaal West	49
+Winterswijk West	0
+Voorburg	67
+Assen	0
+Aalten	0
+Zwolle	0
+Zuidhorn	38
+Hoorn Kersenboogerd	41
+Daarlerveen	0
+Etten-Leur	37
+Arnhem	70
+Koudum-Molkwerum	36
+Maarheeze	0
+Oldenzaal	0
+Wormerveer	2
+Best	34
+Enkhuizen	0
+Almere Buiten	0
+Emmen Zuid	0
+Dronten	38
+Enschede	23
+Koudum-Molkwerum	0
+Arnemuiden	0
+Warffum	34
+Heeze	0
+Terborg	0
+Vriezenveen	27
+Deventer	62
+Glanerbrug	0
+Groningen	16
+Amersfoort	1
+Rheden	35
+Tiel Passewaaij	76
+Alphen a/d Rijn	0
+Ermelo	0
+Utrecht Lunetten	76
+Sauwerd	68
+Wijchen	0
+Bovenkarspel-Grootebroek	45
+Marienberg	27
+Emmen Zuid	77
+Amsterdam Zuid	0
+Rotterdam Centraal	13
+Hindeloopen	36
+Beek-Elsloo	0
+Nuth	33
+Wolfheze	33
+Diemen Zuid	76
+Brummen	0
+Maastricht Noord	40
+Nijkerk	37
+Amsterdam Centraal	45
+Assen	68
+Coevorden	38
+Holten	0
+Chevremont	76
+Voorburg	67
+Amsterdam Bijlmer ArenA	53
+Enschede	19
+Gouda	120
+Klarenbeek	36
+Zutphen	31
+Heemskerk	1
+Waddinxveen	0
+Beverwijk	0
+Delden	35
+Delft	0
+Boskoop	37
+Oisterwijk	0
+Heemstede-Aerdenhout	110
+Bodegraven	38
+Geleen-Lutterade	34
+Hilversum Sportpark	72
+Amsterdam Bijlmer ArenA	51
+Maastricht	71
+Den Haag Ypenburg	67
+Wormerveer	0
+Arnemuiden	36
+Voorhout	40
+Leeuwarden	19
+Ravenstein	36
+Driehuis	37
+Schagen	1
+Zutphen	0
+Arnemuiden	36
+Apeldoorn Osseveld	33
+Den Haag Centraal	70
+Den Haag Centraal	41
+Driebergen-Zeist	87
+Haarlem Spaarnwoude	76
+Zevenbergen	33
+Boxmeer	49
+Hertogenbosch ('s)	0
+Horst-Sevenum	36
+Culemborg	76
+Roermond	32
+Weesp	76
+Akkrum	33
+Winschoten	23
+Apeldoorn	82
+Kampen	37
+Boxmeer	50
 Aachen, Hansemannplatz	406
-Utrecht Centraal,53
-Grijpskerk,35
-Workum,18
-Amsterdam Sloterdijk,64
-Vorden,31
-Den Haag Mariahoeve,0
-Enschede De Eschmarke,67
-Amsterdam Sloterdijk,94
-Nieuw Amsterdam,0
-Ruurlo,0
-Heemskerk,37
-Meppel,60
-Schagen,39
-Duiven,0
-Dordrecht,0
-Utrecht Centraal,0
-Nijkerk,37
-Winschoten,35
-Tilburg,0
-Barendrecht,70
-Leeuwarden,17
+Utrecht Centraal	53
+Grijpskerk	35
+Workum	18
+Amsterdam Sloterdijk	64
+Vorden	31
+Den Haag Mariahoeve	0
+Enschede De Eschmarke	67
+Amsterdam Sloterdijk	94
+Nieuw Amsterdam	0
+Ruurlo	0
+Heemskerk	37
+Meppel	60
+Schagen	39
+Duiven	0
+Dordrecht	0
+Utrecht Centraal	0
+Nijkerk	37
+Winschoten	35
+Tilburg	0
+Barendrecht	70
+Leeuwarden	17
 Aachen, Maria-Lipp-Straße	3
 Euskirchen, Bahnhof	0
 Utrecht, P+R Westraven	275
@@ -38535,7 +38535,7 @@ Aachen, Walheim Hasbach	12
 Würselen, Markt	48
 Aachen, Walheim Friedhof	43
 Aachen, Walheim Friedhof	51
-Maastricht,17
+Maastricht	17
 Stolberg (Rheinland), Atsch Schwarzenbruch	26
 Aachen, Ehrenmal / Lousberg	88
 Eschweiler (Rheinland), Peter-Paul-Straße	49
@@ -38549,7 +38549,7 @@ Eupen, Kettenis An den Weihern	24
 Aachen, Köpfchen Grenze	24
 Aachen, Eilendorf Nirmer Platz	27
 Aachen, Eilendorf Nirmer Platz	35
-Haarlem,5
+Haarlem	5
 Aachen, Vaalserquartier Keltenstraße	104
 Erkelenz, Kaulhausen	30
 Eschweiler (Rheinland), Röhe Villa	0
@@ -39130,7 +39130,7 @@ Herzogenrath, Kohlscheid Forensberger Straße	10
 Herzogenrath, Kohlscheid Forensberger Straße	10
 Herzogenrath, Kohlscheid Forensberger Straße	64
 Herzogenrath, Kohlscheid Forensberger Straße	40
-Amsterdam Lelylaan,0
+Amsterdam Lelylaan	0
 Herzogenrath, Kohlscheid Forensberger Straße	66
 Herzogenrath, Kohlscheid Forensberger Straße	74
 Aachen, Polizeipräsidium	27
@@ -39179,7 +39179,7 @@ Aachen, Berensberg	46
 Aachen, Grundhaus	27
 Stolberg (Rheinland), Donnerberg Kaserne	22
 Aachen, Luisenhospital	87
-Rotterdam Blaak,0
+Rotterdam Blaak	0
 Heinsberg (Rheinland), Gewerbegebiet	43
 Schleiden (Eifel), Morsbach Vogelsang IP Walberhof (B266)	9
 Schleiden (Eifel), Morsbach Vogelsang IP Walberhof (B266)	10
@@ -39246,7 +39246,7 @@ Düren (Rheinland), Lendersdorf May + Spieß	4
 Aachen, Kornelimünster Klause	47
 Vettweiß, Jakobwüllesheim (Bus)	19
 Monschau, Mützenich Alter Gerstenhof	27
-Nijmegen Lent,72
+Nijmegen Lent	72
 Gaanderen, Slakweg	20
 Erkelenz, Gerderath Friedhof	10
 Baesweiler, Oidtweiler Ort	8
@@ -39340,7 +39340,7 @@ Simmerath, Erkensruhr Anfang	1
 Kampen, Vijverhof	14
 Kampen, Koornmarkt	33
 Düren (Rheinland), Oberstraße	12
-Putten,0
+Putten	0
 Woerden, Minkema College	25
 Woerden, Minkema College	25
 Jülich, Süd	2
@@ -39924,7 +39924,7 @@ Heinsberg (Rheinland), Randerath Bahnhof (Bus)	8
 Simmerath, Lammersdorf Radarstation	11
 Titz, Hasselsweiler ehem. Wasserwerk	25
 Vettweiß, Müddersheim Parktor	12
-Oss,72
+Oss	72
 Zülpich, Bahnhof (Bus)	6
 Niederkrüchten, Schulzentrum	1
 Baesweiler, Rathaus	62
@@ -40318,7 +40318,7 @@ Kreuzau, Abzw. Bogheim	8
 Westkapelle, Domineeshofweg	15
 Stolberg (Rheinland), Dorff	21
 Stolberg (Rheinland), Dorff	28
-Hengelo Oost,38
+Hengelo Oost	38
 Aachen, Kuckelkorn	178
 Stolberg (Rheinland), Mausbach Am Wimblech	28
 Düren (Rheinland), Birkesdorf Hovener Straße	22
@@ -40583,7 +40583,7 @@ Renesse, Transferium	32
 Düren (Rheinland), Oststraße	6
 Hückelhoven, Friedrichplatz	19
 Monschau, Kalterherberg Bahnhof	1
-Delft Zuid,0
+Delft Zuid	0
 Groningen, Stavangerweg	12
 Kreuzau, Landstraße L327	5
 Selfkant, Saeffelen Schule	14
@@ -40664,8 +40664,8 @@ Sprang Capelle, Achter de Hoven	37
 Sprang Capelle, Achter de Hoven	37
 Hulst, Markt	7
 Tiel, Rauwenhof	18
-Zevenaar,66
-Vierlingsbeek,49
+Zevenaar	66
+Vierlingsbeek	49
 Aachen, Horbach	29
 Aachen, Adenauerallee	10
 Weurt, Kerkstraat	15
@@ -40730,7 +40730,7 @@ Arnhem, Jacob Cremerstraat	94
 Arnhem, de Praets	285
 Arnhem, van Berkumstraat	34
 Arnhem, van Berkumstraat	37
-Stuttgart Hbf,1
+Stuttgart Hbf	1
 Arnhem, Maaslaan	122
 Arnhem, Waalstraat	122
 Arnhem, Randweg	98
@@ -40743,7 +40743,7 @@ Oosterhout, Van Woerkomstraat	34
 Eindhoven, Castilielaan	51
 Waalre, Bosweg	41
 Weert, Kazernelaan	24
-Rotterdam Centraal,70
+Rotterdam Centraal	70
 Scharmer, Woudbloemlaan	23
 Hellum, Hoofdweg 92	34
 Nieuwe Pekela, Doorsnee	33
@@ -40785,15 +40785,15 @@ Ees, Dorpsstraat	16
 Leeuwarden, Kalverdijkje	51
 Leeuwarden, Newtonlaan	38
 Engwierum, Eesterweg	13
-Deventer Colmschate,0
-Heerlen,0
-Breda,0
-Oisterwijk,34
+Deventer Colmschate	0
+Heerlen	0
+Breda	0
+Oisterwijk	34
 Rijsoord, De Beuken	37
 Zaandijk, Beeldentuin	16
 Hoorn, Luifel	32
 Arnhem, Bronbeek	65
-Helmond,0
+Helmond	0
 Houten, Het Raaigras	8
 Kamerik, Sluis	43
 Dordrecht, Weizigtpark	61
@@ -40984,7 +40984,7 @@ Vught, Jan van Galenstraat	31
 Aachen, Rolandstraße	59
 Breda, Poolseweg	36
 Lennisheuvel, Kerk	11
-Heeze,33
+Heeze	33
 Fijnaart, Molenstraat	30
 Chaam, Bredaseweg	31
 Zevenbergen, Blokweg	11
@@ -40993,7 +40993,7 @@ Heerle, Vijfhoek	16
 Oosterhout, Wilhelminalaan	24
 Tilburg, Baflostraat	75
 Drimmelen, Haven	0
-Hoorn Kersenboogerd,76
+Hoorn Kersenboogerd	76
 Leeuwarden, Busstation	59
 Neede, Busstation	16
 Gieten, OV Knooppunt N33/N34 (Perron D)	32
@@ -41067,10 +41067,10 @@ Oosterhout, Kreeksluisweg	32
 Biervliet, Driewegen	8
 Hoofdplaat, Dorp	8
 Amsterdam, Kapoeasweg	24
-Houthem-St Gerlach,40
+Houthem-St Gerlach	40
 Maarn, Planetenbaan	22
-Santpoort Zuid,37
-Dordrecht,0
+Santpoort Zuid	37
+Dordrecht	0
 Diemen, Stammerkamp	90
 Leeuwarden, Rixtwei	31
 Arnhem, Rietgrachtstraat	171
@@ -41079,13 +41079,13 @@ Kreuzau, Rathaus	44
 Aalsmeer, Gloxiniastraat	42
 Utrecht, Theemsdreef	241
 Drachten, Van Knobelsdorffplein	13
-Bilzen,30
-Liege-Jonfosse,0
-Boom,29
-Antwerpen-Zuid,29
-Hoboken-Polder,29
-Ruisbroek-Sauvegarde,29
-Tongeren,30
+Bilzen	30
+Liege-Jonfosse	0
+Boom	29
+Antwerpen-Zuid	29
+Hoboken-Polder	29
+Ruisbroek-Sauvegarde	29
+Tongeren	30
 Schiphol-Rijk, Douglassingel	53
 Almere Buiten, Landgoederenbuurt	172
 Purmerend, Salland	115
@@ -41093,7 +41093,7 @@ Almere Buiten, Molenbuurt Zuid	219
 Almere Buiten, Oostvaardersbuurt	125
 Sas van Gent, Bolwerk	32
 Almere Stad, Beatrixpark	196
-Hertogenb ('s) Oost,36
+Hertogenb ('s) Oost	36
 Arkel, Peperhof	19
 Rijsoord, Voorweg	37
 Übach-Palenberg, Bahnhof (Bus)	1
@@ -41104,7 +41104,7 @@ Nörvenich, Eschweiler über Feld Ollesheim	21
 Oirschot, Wevershoek	43
 Merzenich (Kreis Düren), Festplatz	15
 Standdaarbuiten, Oudendijk	14
-Zaandam,127
+Zaandam	127
 Krimpen a/d IJssel, Industrieweg	18
 Weesp, Station	17
 Aalsmeer, Camping A'damse Bos	40
@@ -41120,7 +41120,7 @@ Hellevoetsluis, Ebstroom	33
 Hellevoetsluis, Ebstroom	32
 Berkenwoude, Dorp	0
 Berkenwoude, Dorp	2
-Dordrecht Stadspolders,67
+Dordrecht Stadspolders	67
 Stolberg (Rheinland), Schevenhütte Helenasruh	19
 Stolberg (Rheinland), Breinig Barbarastraße	21
 Roermond, Wilhelminaplein	154
@@ -41322,7 +41322,7 @@ Dordrecht, Spirea	62
 Nieuweroord, Noorderweg	8
 Emmen, Station (Perron C)	42
 Emmen, Station (Perron D)	41
-Ede Centrum,0
+Ede Centrum	0
 Weert, Station Perron B	96
 Weert, Station Perron C	38
 Scheemda, Badhuislaan	25
@@ -41342,13 +41342,13 @@ Eschweiler (Rheinland), St. Jöris Am Klosterweiher	20
 Aachen, Brand Goertzbrunnstraße	37
 Aachen, Horbach Forsterheide	2
 Aachen, Krauthausen	11
-Zuidbroek,2
-Reuver,38
-Leiden Centraal,1
-Lochem,0
-Vlaardingen Centrum,0
-Wierden,37
-Amsterdam Bijlmer ArenA,65
+Zuidbroek	2
+Reuver	38
+Leiden Centraal	1
+Lochem	0
+Vlaardingen Centrum	0
+Wierden	37
+Amsterdam Bijlmer ArenA	65
 Zwinderen, Brug	17
 Groningen, Maluslaan	37
 Groningen, Esserweg	61
@@ -41379,7 +41379,7 @@ Aachen, Brand Eilendorfer Straße	37
 Aachen, Laurensberg Adele-Weidtman-Straße	10
 Aachen, Hörnstieg	69
 Aachen, Hörnstieg	67
-Amsterdam Stadion,0
+Amsterdam Stadion	0
 Aachen, Oberforstbach Gewerbegebiet	1
 Aachen, Auf der Hörn	56
 Aachen, Auf der Hörn	62
@@ -41776,7 +41776,7 @@ Monschau, Mützenich Kleinbüchel	24
 Übach-Palenberg, Boscheln Brünestraße	0
 Hürtgenwald, Raffelsbrand Ringstraße	11
 Geilenkirchen, Lindern Bahnhof (Bus)	57
-Utrecht Centraal,0
+Utrecht Centraal	0
 Hürtgenwald, Raffelsbrand Rote Kaul	10
 Eschweiler (Rheinland), Rathaus/City-Center	125
 Monschau, Rohren Kirche	21
@@ -41914,7 +41914,7 @@ Zeeland, Kreitsberg	30
 Reek, Mgr. Borretstraat	33
 Reek, Mgr. Borretstraat	30
 Hürtgenwald, Bergstein Anfang	27
-Hertogenbosch ('s),6
+Hertogenbosch ('s)	6
 Selfkant, Kleinwehrhagen	12
 Groeningen, De Zandpoort	12
 Zülpich, Enzen Am Backesgarten	34
@@ -42003,7 +42003,7 @@ Baesweiler, CasinoPark	28
 Düren (Rheinland), Gürzenich Schule	0
 Hückelhoven, Haagstraße	27
 Venray, Station Veolia	135
-Lichtenvoorde-Groenlo,31
+Lichtenvoorde-Groenlo	31
 Baesweiler, Puffendorf van Roy	37
 Aachen, Blücherplatz	259
 Aachen, Marienhospital	9
@@ -42229,8 +42229,8 @@ Deurne, Emmalaan	32
 Deurne, Hogeweg	33
 Deurne, Hogeweg	32
 Roetgen, Wanderstation/Bahnhof	31
-Almere Poort,0
-Beesd,3
+Almere Poort	0
+Beesd	3
 Nörvenich, Binsfeld Sportplatz	30
 Budel-Dorplein, Hoofdstraat	24
 Handel, Pastoor Castelijnsstraat	13
@@ -42258,13 +42258,13 @@ Gangelt, Stahe Kreuzberg	7
 Hückelhoven, Zeche	74
 Hürtgenwald, Horm Ort	6
 Eupen, Meyerskreuz	4
-Sneek,18
+Sneek	18
 Kreuzau, Winden Keubgen	20
 Hückelhoven, Hilfarth Kleiststraße	4
 Roetgen, Fringshaus	45
 Kreuzau, Drove Anfang	19
 Stolberg (Rheinland), Finkensief	82
-Rosmalen,36
+Rosmalen	36
 Stolberg (Rheinland), Mausbach Franzosenkreuz	13
 Hückelhoven, Friedrichstraße	11
 Wegberg, Gerichhausen	28
@@ -42283,7 +42283,7 @@ Simmerath, Einruhr	10
 Gangelt, Langbroich Kapelle	20
 Aachen, Walheim Freizeitgelände	14
 Erftstadt, Herrig Siedlung	1
-Blerick,0
+Blerick	0
 Aachen, Walheim	48
 Langerwehe, Jüngersdorf Holzstraße	21
 Alsdorf (Rheinland), Weinstraße	17
@@ -42325,10 +42325,10 @@ Raeren, Pley	5
 Aachen, Wiesental	25
 Aachen, Theater	174
 Düren (Rheinland), Oststraße	12
-Wezep,36
+Wezep	36
 Simmerath, Rurberg Seeufer	19
 Kreuzau, Stockheim Am Burgholz	14
-Zwolle,31
+Zwolle	31
 Linnich, Tetz Alte Burgstraße	5
 Aachen, Hüls Friedhof	33
 Wegberg, Arsbeck Petersholz	32
@@ -42373,12 +42373,12 @@ Erkelenz, Mennekrath	8
 Eupen, Schilsweg	4
 Erkelenz, Granterath	73
 Wegberg, Bahnübergang	4
-Hengelo,36
+Hengelo	36
 Erkelenz, Salierring	6
-Amsterdam Centraal,65
+Amsterdam Centraal	65
 Aachen, Neuhaus	20
 's-Hertogenbosch, Maaspoortweg	60
-Eindhoven,33
+Eindhoven	33
 Leeuwarden, Goutum	42
 Herzogenrath, Merkstein Plitschard Siedlung	41
 Herzogenrath, Merkstein Plitschard Siedlung	36
@@ -42392,7 +42392,7 @@ Aachen, Walheim	51
 Übach-Palenberg, Marienberg Am Erbbusch	33
 Hückelhoven, Millich Jettchenweg	73
 Hückelhoven, Bad	14
-Kapelle-Biezelinge,36
+Kapelle-Biezelinge	36
 Helmond, Ruusbroeclaan	40
 Kerkrade, Pastoor Theelenstraat	24
 's-Hertogenbosch, Sint Jan	40
@@ -42472,14 +42472,14 @@ Gangelt, Birgden Schule	5
 Euskirchen, Euenheim	16
 Merzenich (Kreis Düren), S-Bahnhof (Bus)	16
 Linnich, Ederen K6/Brunnenstraße	3
-Geerdijk,0
+Geerdijk	0
 Stolberg (Rheinland), Münsterbusch Am Südhang	9
 Kreuzau, Stadion	21
 Monschau, Konzen Breite Straße	19
 Herzogenrath, Kohlscheid Ebertstraße	0
 Aachen, Köpfchen Grenze	25
 Aachen, Laurensberg Kirche	43
-St. Johann im Pongau,0
+St. Johann im Pongau	0
 Eschweiler (Rheinland), Pumpe Steinkohlenfeld	32
 Jülich, Leo-Brandt-Straße	0
 Waardenburg, Achterweg	19
@@ -42506,8 +42506,8 @@ Sint Nicolaasga, Wilhelminaoord	24
 Ferwoude, Doniaburen	6
 Heerde, Brinklaan	100
 Drachten, Van Knobelsdorffplein	63
-Zwolle,0
-Castricum,103
+Zwolle	0
+Castricum	103
 Nörvenich, Eschweiler über Feld Golzheimer Straße	21
 Gangelt, Niederbusch Kleiner Weg	9
 Den Haag, Megastores	149
@@ -42521,11 +42521,11 @@ Wassenberg, Krafeld Krafelder Straße	8
 Neerkant, Rechte Heitraksedijk	14
 Molenwijk, Molenstraat	30
 Molenwijk, Peelse Huis	30
-Blerick,36
-Schiermonnikoog,5
+Blerick	36
+Schiermonnikoog	5
 Wetering, Wetering	13
-Zwolle,37
-Bunde (Westf.),7
+Zwolle	37
+Bunde (Westf.)	7
 Aachen, Sief Magelspfad	9
 Aachen, Rosenquelle	137
 Aachen, Kellershaustraße	20
@@ -42599,7 +42599,7 @@ Rumpt, Raadsteeg	17
 Kreuzau, Rathaus	46
 Nörvenich, Rath Schmiede	4
 Niederzier, Krauthausen Wellpappenfabrik	2
-Voorst-Empe,0
+Voorst-Empe	0
 Monschau, Kalterherberg Bäckerei Thomas	18
 Monschau, Kalterherberg Bäckerei Thomas	17
 Jülich, Pattern Moesges Weg	14
@@ -42613,7 +42613,7 @@ Wegberg, Moorshoven	30
 Merzenich (Kreis Düren), Lindenplatz	19
 Mönchengladbach, Hockstein Schützenstraße	0
 Wassenberg, Am Stern	30
-Deventer,0
+Deventer	0
 Son, Wilhelminalaan	30
 Breugel, Pieter Brueghelplein	19
 Breugel, Pieter Brueghelplein	12
@@ -42636,7 +42636,7 @@ Monschau, Ursulinen / Burgau	6
 Nörvenich, Hochkirchen	13
 Gangelt, Birgden Kirche	46
 Düren (Rheinland), Anna-Schoeller-Haus	22
-Wolfheze,34
+Wolfheze	34
 Aachen, Elsassstraße	284
 Hückelhoven, Baal Süd	16
 Alsdorf (Rheinland), Warden Am Höfchen	3
@@ -42653,8 +42653,8 @@ Hilversum, Zeverijnplantsoen	60
 Hilversum, Nimrodpark	34
 Hilversum, Schapenkamp	26
 Alverna, Oosterweg	19
-Assen,0
-Antwerpen-Berchem,62
+Assen	0
+Antwerpen-Berchem	62
 Nideggen, Milchbar	12
 Drachten, Van Knobelsdorffplein	61
 Groningen, Pop Dijkemaweg	132
@@ -42739,8 +42739,8 @@ Dudzele, Wissel 7	15
 Aardenburg, Peurssensstraat	6
 Eede, Rijksweg/Brieverstraat	7
 Cadzand-Dorp, Mariastraat	3
-Aix-en Provence TGV,0
-Bourg-St-Maurice,0
+Aix-en Provence TGV	0
+Bourg-St-Maurice	0
 Kudelstaart, Schweitzerstraat	55
 Kudelstaart, Gravin Aleidstraat	55
 Norg, Meent	17
@@ -42749,8 +42749,8 @@ Doetinchem, Rozengaardseweg	48
 Würselen, Ringstraße	41
 Aachen, Frankenberg	53
 Emmeloord, Smeden	50
-Zevenaar,0
-Doetinchem De Huet,129
+Zevenaar	0
+Doetinchem De Huet	129
 Nijmegen, Akkerlaan	86
 Den Helder, Lombokstraat	62
 Den Helder, Lombokstraat	62
@@ -42769,7 +42769,7 @@ Draaibrug, Draaibrugseweg	25
 Amsterdam, Jan Tooropstraat	134
 Amsterdam, Centraal Station	0
 Jülich, Schlehdornweg	15
-Utrecht Centraal,6
+Utrecht Centraal	6
 Papendrecht, Winkelcentrum de Meent	25
 Papendrecht, Rosmolenweg	54
 Zoetermeer, Driemanspolder	100
@@ -42783,7 +42783,7 @@ Groenlo, Busstation	29
 Balkbrug, Centrum	13
 Rotterdam, Plantagelaan	0
 Wassenaar, Houtlaan	19
-Geldermalsen,74
+Geldermalsen	74
 Aachen, Schmithof Schule	20
 Aachen, Laurensberg Rahe Im Ring	5
 Aachen, Steinbergweg	80
@@ -42798,7 +42798,7 @@ Zoutelande, Melsesweg	15
 Rhenen, Noda	68
 Wegberg, Grundschule	25
 Blijham, Kochspad	25
-Plochingen,1
+Plochingen	1
 Rijsenhout, Aarbergerweg	3
 Kolham, Eikenlaan	17
 Weert, Dries	65
@@ -43048,7 +43048,7 @@ Kapelle, Noordweg	25
 's-Gravenpolder, Schuitweg	21
 Hansweert, Boomdijk	12
 Hansweert, Braakmanstraat	12
-Eygelshoven,37
+Eygelshoven	37
 Hansweert, Braakmanstraat	14
 Hansweert, Braakmanstraat	12
 Hansweert, Braakmanstraat	14
@@ -43183,64 +43183,64 @@ Dieverbrug, Busstation	21
 Baaiduinen, Kinnum	11
 Holten, Scholengemeenschap	5
 Wegberg, Merbecker Busch	3
-Veenendaal Centrum,49
-IJlst,36
-Dieren,70
-Helmond Brandevoort,34
-Gouda,0
-Roosendaal,0
-Utrecht Centraal,0
-Gouda Goverwelle,38
-Middelburg,36
-Zwijndrecht,0
-Den Haag Centraal,29
-Martenshoek,70
-Hoogeveen,38
-Nijmegen,36
-Eygelshoven,0
-Ravenstein,36
-Westervoort,66
-Almere Centrum,71
-Rotterdam Lombardijen,70
-Hurdegaryp,35
-Geldermalsen,76
-Amsterdam Centraal,2
-Rotterdam Centraal,71
-Maassluis West,0
-Rotterdam Blaak,3
-Baarn,38
-Rotterdam Lombardijen,70
-Nijmegen,36
-Almelo,2
-Groningen,0
-Hilversum,112
-Geldermalsen,0
-Sassenheim,46
-Best,39
-Wehl,0
-Nieuwerkerk ad IJssel,53
-Vroomshoop,0
-Groningen,3
-Zwolle,37
-Wijhe,36
-Nijmegen Heyendaal,50
-Baarn,37
-Bovenkarspel Flora,82
-Zutphen,0
-Goor,36
-Maastricht Noord,0
-Swalmen,0
-Dronten,38
-Groningen,0
-Duiven,63
-Geleen Oost,33
-Meppel,12
-Amersfoort,68
-Obdam,33
-Weert,62
-Chevremont,0
-Wierden,9
-Geldermalsen,38
+Veenendaal Centrum	49
+IJlst	36
+Dieren	70
+Helmond Brandevoort	34
+Gouda	0
+Roosendaal	0
+Utrecht Centraal	0
+Gouda Goverwelle	38
+Middelburg	36
+Zwijndrecht	0
+Den Haag Centraal	29
+Martenshoek	70
+Hoogeveen	38
+Nijmegen	36
+Eygelshoven	0
+Ravenstein	36
+Westervoort	66
+Almere Centrum	71
+Rotterdam Lombardijen	70
+Hurdegaryp	35
+Geldermalsen	76
+Amsterdam Centraal	2
+Rotterdam Centraal	71
+Maassluis West	0
+Rotterdam Blaak	3
+Baarn	38
+Rotterdam Lombardijen	70
+Nijmegen	36
+Almelo	2
+Groningen	0
+Hilversum	112
+Geldermalsen	0
+Sassenheim	46
+Best	39
+Wehl	0
+Nieuwerkerk ad IJssel	53
+Vroomshoop	0
+Groningen	3
+Zwolle	37
+Wijhe	36
+Nijmegen Heyendaal	50
+Baarn	37
+Bovenkarspel Flora	82
+Zutphen	0
+Goor	36
+Maastricht Noord	0
+Swalmen	0
+Dronten	38
+Groningen	0
+Duiven	63
+Geleen Oost	33
+Meppel	12
+Amersfoort	68
+Obdam	33
+Weert	62
+Chevremont	0
+Wierden	9
+Geldermalsen	38
 Kleve, Kellen Offenberg	19
 Kleve, Haus Schmithausen	19
 Kleve, Lippenhof	17
@@ -43324,7 +43324,7 @@ Alsdorf (Rheinland), Siedlung Ost Feuerwehrhaus	28
 Aachen, Rabentalweg (Mensa Vita)	3
 Erkelenz, Abzw. Oerath Oerather Mühlenfeld	37
 Erkelenz, Abzw. Oerath Oerather Mühlenfeld	38
-Bonn Hbf,3
+Bonn Hbf	3
 Arnhem, Marktplein	95
 Arnhem, Zaslaan	95
 Arnhem, Oremusplein	65
@@ -43674,14 +43674,14 @@ Leersum, De Oude Kolk	22
 Drachten, Van Knobelsdorffplein	32
 Heerenveen, Busstation	14
 Bussum, Olmenlaan	25
-Venray,0
-IJlst,0
-Harlingen Haven,33
+Venray	0
+IJlst	0
+Harlingen Haven	33
 Linnich, Sägewerk	52
 Düren (Rheinland), Eiswiese	51
-Bischofshofen,0
-Brussel-Zuid/Midi,42
-Brussel Nat. Luchthaven,32
+Bischofshofen	0
+Brussel-Zuid/Midi	42
+Brussel Nat. Luchthaven	32
 Hürtgenwald, Gey Broichstraße	20
 Weesp, Station Weesp	27
 Aachen, Lichtenbusch Erlenpütz	24
@@ -43813,7 +43813,7 @@ Zutphen, Prins Bernhardlaan	19
 Zutphen, Prins Bernhardlaan	20
 Keijenborg, Kerkstraat	32
 Laag Keppel, Manege	21
-Nijmegen,0
+Nijmegen	0
 Laag-Keppel, Manege	30
 Laag-Keppel, Manege	35
 Laag-Keppel, Gouden Leeuw	12
@@ -43921,7 +43921,7 @@ Erkelenz, Hagelkreuz	59
 Vettweiß, Sievernich Landstraße	10
 Hückelhoven, Hilfarth Denkmal	41
 Heinsberg (Rheinland), Horst Ort	13
-Breda-Prinsenbeek,34
+Breda-Prinsenbeek	34
 Alsdorf (Rheinland), Schaufenberg Nordstraße	14
 Herzogenrath, Kohlscheid Waldschänke	10
 Geilenkirchen, Amtsgericht	130
@@ -44047,7 +44047,7 @@ Roetgen, Pilgerborn	46
 Amsterdam, Henk Sneevlietweg	7
 Aachen, Adenauerallee	168
 Düren (Rheinland), Merken Mühle	18
-Sittard,65
+Sittard	65
 Badhoevedorp, Badhoevelaan	63
 Erkelenz, Kaulhausen Kaulhausener Straße	30
 Selfkant, Isenbruch Rodebachaue	11
@@ -44182,7 +44182,7 @@ Alverna, Heumenseweg	18
 Nijmegen, Tolhuis 10e straat	72
 Nijmegen, Steve Bikoplein	83
 Nijmegen, Zwanenveld 10e str.	87
-Den Haag Laan v NOI,0
+Den Haag Laan v NOI	0
 Berg en Dal, Prins Alexanderlaan	61
 Beek, Lindestraat	10
 Beek, Kulturhus	10
@@ -44233,14 +44233,14 @@ Tiel, Heiligestraat	16
 Aachen, Hansemannplatz	42
 Tiel, Santwyckse Poort	18
 Baesweiler, Parkstraße	94
-Barneveld Zuid,106
+Barneveld Zuid	106
 Düren (Rheinland), Niederau Kirche	37
 Roetgen, Rott Kindergarten	20
 Simmerath, Strauch Zäunchen	21
 Heinsberg (Rheinland), Unterbrucher Straße	65
 Düren (Rheinland), Mariaweiler Rheinstraße	5
 Kreuzau, Winden Üdinger Weg	20
-Heerlen De Kissel,76
+Heerlen De Kissel	76
 Heinsberg (Rheinland), Waldenrath Heffels	25
 Jülich, Koslar Hasenfelder Straße	22
 Heinsberg (Rheinland), Uetterath Nygen	14
@@ -44275,7 +44275,7 @@ Titz, Kalrath	18
 Mariaheide, Duifhuizerweg	18
 Mariaheide, Rondweg	18
 Veghel, Hintelstraat	94
-Amsterdam RAI,0
+Amsterdam RAI	0
 Maarheeze, Puttenstraat	2
 Maarheeze, De Neerlanden	11
 Jülich, Merzenhausen Denkmal	3
@@ -44295,11 +44295,11 @@ Noordgouwe, Haneweg	11
 Aachen, Hörn Kastanienweg	24
 Monschau, Imgenbroich Bushof	21
 Langerwehe, Geich Schule	20
-Zutphen,36
+Zutphen	36
 Haamstede, Noordstraat	35
 Haamstede, Noordstraat	33
 Westenschouwen, A.v.d.Weydeweg	33
-Heerlen,34
+Heerlen	34
 Goes, Kloetingseweg	51
 Amsterdam, Victorieplein	110
 Amsterdam, Victorieplein	303
@@ -44353,13 +44353,13 @@ Titz, Opherten Kalrather Straße	4
 Jülich, Welldorf Güstener Straße	47
 Langerwehe, Geich Schule	18
 Alsdorf (Rheinland), Annapark Bahnhof (Bus)	70
-Dieren,71
+Dieren	71
 Drunen, Admiraalsweg	46
 Hückelhoven, Rathaus	113
 Waldfeucht, Obspringen Wasserwerk	8
 Erkelenz, Keyenberg	30
 Übach-Palenberg, Frelenberg Urweg	7
-Zutphen,0
+Zutphen	0
 Euskirchen, Bahnhof	16
 Harenermolen, Rijksstraatweg 356	36
 Düren (Rheinland), Birkesdorf Isolaplatz	10
@@ -44372,7 +44372,7 @@ Nörvenich, Dorweiler	4
 Linnich, Gereonsweiler Post	16
 Monschau, Mützenich Reichensteiner Straße	36
 Heinsberg (Rheinland), Oberbruch Richard-Wagner-Straße	48
-Almere Buiten,108
+Almere Buiten	108
 Wegberg, Kehrbusch	13
 Hückelhoven, Altmyhl Abzw. Myhl	10
 Wegberg, Große Riet	3
@@ -44400,7 +44400,7 @@ Aachen, Hüls Friedhof	17
 Aachen, Eisenbahnweg	37
 Beuningen, Distelakkerstraat	98
 Beuningen, Distelakkerstraat	15
-Wierden,43
+Wierden	43
 Hien, Kerk	16
 Nistelrode, Raadhuisplein	17
 Nistelrode, Van Tilburg	19
@@ -44414,16 +44414,16 @@ Herzogenrath, Kohlscheid Rumpen Brücke	85
 Würselen, Immeln	54
 Herzogenrath, Kohlscheid Pannesheide	127
 Euskirchen, Elsig	20
-Utrecht Lunetten,76
-Vroomshoop,27
-Weert,63
-Almere Oostvaarders,38
-Lage Zwaluwe,0
+Utrecht Lunetten	76
+Vroomshoop	27
+Weert	63
+Almere Oostvaarders	38
+Lage Zwaluwe	0
 Halfweg, Eldorado	11
 Sondel, Kruspaed	26
 Meppel, Steenwijkerstraatweg	22
 Bolsward, De Marne	45
-Warszawa Centralna,0
+Warszawa Centralna	0
 Alsdorf (Rheinland), Begau Paulstraße	3
 Heimbach (Eifel), Kloster Mariawald	7
 Kreuzau, Obermaubach Staumauer	2
@@ -44432,7 +44432,7 @@ Nideggen, Brück Bahnhof (Bus)	13
 Westerhaar, Vroomshoopseweg	28
 's-Hertogenbosch, Bollenveld	62
 's-Hertogenbosch, Bollenveld	60
-Hardinxveld Blauwe Zoom,80
+Hardinxveld Blauwe Zoom	80
 Dordrecht, Merwehal	3
 Nes a/d Amstel, Porseleinhuisje	12
 Jülich, Brückenkopfpark	46
@@ -44455,9 +44455,9 @@ Den Ilp, Nr 186	14
 Den Haag, Haagse Poort	58
 Deil, Zoetenhoek	16
 Übach-Palenberg, Scherpenseel Schule	12
-Eindhoven Beukenlaan,0
-Eindhoven Beukenlaan,0
-Eindhoven Beukenlaan,0
+Eindhoven Beukenlaan	0
+Eindhoven Beukenlaan	0
+Eindhoven Beukenlaan	0
 Düren (Rheinland), Kaiserplatz	99
 Monschau, Imgenbroich Alte Monschauer Straße	17
 Euskirchen, Euenheim BZE	16
@@ -44484,8 +44484,8 @@ Linnich, Boslar Ort	35
 Sas van Gent, Suikerplein	31
 Uithoorn, Busstation	0
 Emmeloord, Busstation	14
-Almelo,35
-Amsterdam Sloterdijk,38
+Almelo	35
+Amsterdam Sloterdijk	38
 Baesweiler, Setterich Siedlung	71
 Jülich, Linnicher Straße	4
 Linnich, SIG Combibloc Bahnhof (Bus)	1
@@ -44497,21 +44497,21 @@ Aachen, Floriansdorf	3
 Monschau, Ursulinen / Burgau	40
 Bergen op Zoom, Antwerpsestraat	37
 Hilversum, Lopes Diaslaan	30
-Amersfoort,0
-Dordrecht,0
-Heerhugowaard,1
+Amersfoort	0
+Dordrecht	0
+Heerhugowaard	1
 Roermond, Bredeweg/ Roncalli	32
 Roermond, Stadskantoor/Outlet	0
 Meijel, Kapelkesweg	37
 Pey, Marisheem	17
 Sevenum, Toverland	24
-Sint-Katelijne-Waver,0
-Berlin-Schönefeld Flugh.,0
-Berlin Hbf,12
-Berlin Ostbahnhof,6
-Braunschweig Hbf,0
-Berlin-Spandau,12
-Dresden-Neustadt,0
+Sint-Katelijne-Waver	0
+Berlin-Schönefeld Flugh.	0
+Berlin Hbf	12
+Berlin Ostbahnhof	6
+Braunschweig Hbf	0
+Berlin-Spandau	12
+Dresden-Neustadt	0
 Maastricht, Gouvernement	150
 Maastricht, Gouvernement	152
 Heerlen, Busstation Perron F	107
@@ -44566,7 +44566,7 @@ Waldfeucht, Haaren Alte Schule	12
 Düren (Rheinland), Weierstraße	71
 Simmerath, Einruhr Abzw. Erkensruhr	10
 Wegberg, Abzw. Tetelrath	28
-Sittard,64
+Sittard	64
 Aachen, Theater	173
 Eindhoven, Gezondheidscentrum Strijp	25
 Eindhoven, Klundertstraat	25
@@ -44594,12 +44594,12 @@ Lippenhuizen, De Driehoek	49
 Lippenhuizen, De Driehoek	48
 Terwispel, Aldedyk	12
 Terwispel, Aldedyk	11
-Velp,35
+Velp	35
 Nideggen, Brück (Ort)	5
-Breda,75
+Breda	75
 Würselen, Salmanusplatz	10
-Haarlem,73
-Franeker,33
+Haarlem	73
+Franeker	33
 Zoetermeer, Station Zoetermeer Oost	43
 Zülpich, Geich Flimm	20
 Düren (Rheinland), Bretzelnweg	10
@@ -44657,7 +44657,7 @@ Hilleshagen, Hilleshagerweg 122	17
 Bovensmilde, Meestersbrug	55
 Horst, Verpleeghuis	53
 Leeuwarden, Vliet	93
-Alphen a/d Rijn,77
+Alphen a/d Rijn	77
 Amsterdam, Contactweg	115
 Amsterdam, Van Nijenrodeweg	5
 Slootdorp, Kerkstraat	13
@@ -44719,7 +44719,7 @@ Oosterhout, Lage Molenpolderweg	11
 Oosterhout, Hildebrandlaan	7
 Goes, Tiendenschuur	150
 Biezelinge, Middenweg	10
-Rotterdam Noord,53
+Rotterdam Noord	53
 Aachen, Richterich Kirche	21
 Aachen, Steppenberg	100
 Stolberg (Rheinland), Steinfurt	31
@@ -44735,7 +44735,7 @@ Almere Hout, Infopunt Nobelhorst	22
 Almere Haven, De Steiger	0
 Langeraar, Kerkpad	6
 Langeraar, Kerkpad	5
-Dresden Hbf,0
+Dresden Hbf	0
 Aalsmeer, Gloxiniastraat	248
 Spijkenisse, Dallelaan	37
 Dordrecht, Ziekenhuis Dordwijk	14
@@ -44750,12 +44750,12 @@ Breda, Lunetstraat	61
 Zaandam, Station	12
 Zeist, Griftlaan	39
 Zeist, Alg. Begraafplaats	13
-Anna Paulowna,37
+Anna Paulowna	37
 Aachen, Muffet	45
 Ter Borg, Ter Borg	18
 Vlissingen, Sloeweg	29
 Edam, Busstation	0
-Heemstede-Aerdenhout,0
+Heemstede-Aerdenhout	0
 Aachen, Schmithof Schule	0
 Wassenberg, Waldschänke	36
 Aalsmeer, Kerkweg	42
@@ -44776,20 +44776,20 @@ Alkmaar, Station	90
 Alkmaar, Station	49
 Monschau, Konzen Schmiede	39
 Wegberg, Merbeck Schule	32
-Horst-Sevenum,0
+Horst-Sevenum	0
 Haarlem, Schalkwijk Centrum	74
 Kortgene, Kaaidijk	19
 Kortgene, Molen	29
 Kortgene, Molen	28
 Middelburg, Hof van Tange	61
 Kamperland, Veersedam Noord	30
-Bressoux,35
-Brussel-Centraal,32
+Bressoux	35
+Brussel-Centraal	32
 Waarde, Julianastraat	5
 Waarde, Kerkweg	5
 Aachen, Elsassstraße	175
 Kreuzau, Bergheim Im Weidchen	9
-Baflo,35
+Baflo	35
 Baesweiler, Place de Montesson	75
 Simmerath, Berufsschule	27
 Roetgen, Markt	50
@@ -44802,7 +44802,7 @@ Helmond, De Pannehoeve	26
 Gemert, Sint Gerardusplein	19
 Asten, Missiehuis	53
 Simmerath, Strauch Am Roßbach	16
-Heiloo,3
+Heiloo	3
 Aachen, Hauptbahnhof (Bus)	274
 Den Haag, Waterweegbree	36
 Geilenkirchen, Immendorf Friedhof	36
@@ -44814,14 +44814,14 @@ Dronten, Het Spaarne	19
 Aalst, Lissevenlaan	76
 Heerlen, Schaesbergerweg	96
 Schiphol, Knooppunt Schiphol Noord	201
-Barneveld Noord,0
+Barneveld Noord	0
 Almere Stad, Kruidenwijk West	209
 Wegberg, Dalheim Kirche	31
 Maldegem, Zwembad	5
 Maldegem, Zwembad	5
 Maldegem, Markt	0
 Maldegem, Markt	5
-Deventer,73
+Deventer	73
 Maldegem, Gidsenlaan	5
 Alkmaar, Station	78
 Alkmaar, Station	51
@@ -44981,66 +44981,66 @@ Raamsdonksveer, Van Wijngaardenstraat	15
 Aachen, Blücherplatz	250
 Aachen, Goethestraße (Hangeweiher)	51
 Aachen, Goethestraße (Hangeweiher)	57
-Preussen,29
-Gronau Westf,67
-Blerick,36
-Zwolle,7
-Almere Oostvaarders,43
-Leeuwarden Camminghaburen,68
-Vlaardingen West,0
-Sliedrecht Baanhoek,1
-Arnhem Velperpoort,101
-Vlissingen Souburg,36
-Grou-Jirnsum,34
-Grou-Jirnsum,33
-Dordrecht,0
-Almelo de Riet,67
-Almelo de Riet,64
-Hillegom,40
-Bussum Zuid,79
-Utrecht Centraal,52
-Almere Oostvaarders,68
-Amsterdam Muiderpoort,78
-Oudenbosch,33
-Kesteren,24
-Winterswijk West,61
-Bussum Zuid,75
-Den Haag Mariahoeve,69
-Den Haag Mariahoeve,0
-Enkhuizen,7
-Geleen-Lutterade,33
-Winterswijk,37
-Utrecht Overvecht,76
-Utrecht Overvecht,0
-Utrecht Overvecht,146
-Alkmaar Noord,80
-Hollandsche Rading,40
-Hollandsche Rading,38
+Preussen	29
+Gronau Westf	67
+Blerick	36
+Zwolle	7
+Almere Oostvaarders	43
+Leeuwarden Camminghaburen	68
+Vlaardingen West	0
+Sliedrecht Baanhoek	1
+Arnhem Velperpoort	101
+Vlissingen Souburg	36
+Grou-Jirnsum	34
+Grou-Jirnsum	33
+Dordrecht	0
+Almelo de Riet	67
+Almelo de Riet	64
+Hillegom	40
+Bussum Zuid	79
+Utrecht Centraal	52
+Almere Oostvaarders	68
+Amsterdam Muiderpoort	78
+Oudenbosch	33
+Kesteren	24
+Winterswijk West	61
+Bussum Zuid	75
+Den Haag Mariahoeve	69
+Den Haag Mariahoeve	0
+Enkhuizen	7
+Geleen-Lutterade	33
+Winterswijk	37
+Utrecht Overvecht	76
+Utrecht Overvecht	0
+Utrecht Overvecht	146
+Alkmaar Noord	80
+Hollandsche Rading	40
+Hollandsche Rading	38
 Zülpich, Geich Schneider	20
-Hollandsche Rading,0
-Heerhugowaard,46
-Gramsbergen,21
-Eindhoven,66
-Hurdegaryp,33
-Utrecht Centraal,2
-Utrecht Centraal,105
-Utrecht Centraal,70
-Zwaagwesteinde,0
-Hertogenbosch ('s),0
-Harde ('t),36
-Zaltbommel,36
-Zoetermeer Oost,67
-Lelystad Centrum,74
-Lelystad Centrum,0
-Lelystad Centrum,33
-Lelystad Centrum,80
-Deventer Colmschate,35
-Nieuw Vennep,46
-Ede-Wageningen,38
-Almere Centrum,110
-Almere Centrum,109
-Hoek van Holland Haven,6
-Hoek van Holland Haven,45
+Hollandsche Rading	0
+Heerhugowaard	46
+Gramsbergen	21
+Eindhoven	66
+Hurdegaryp	33
+Utrecht Centraal	2
+Utrecht Centraal	105
+Utrecht Centraal	70
+Zwaagwesteinde	0
+Hertogenbosch ('s)	0
+Harde ('t)	36
+Zaltbommel	36
+Zoetermeer Oost	67
+Lelystad Centrum	74
+Lelystad Centrum	0
+Lelystad Centrum	33
+Lelystad Centrum	80
+Deventer Colmschate	35
+Nieuw Vennep	46
+Ede-Wageningen	38
+Almere Centrum	110
+Almere Centrum	109
+Hoek van Holland Haven	6
+Hoek van Holland Haven	45
 Alsdorf (Rheinland), Rathaus	0
 Aachen, Vaalserquartier Keltenstraße	101
 Stolberg (Rheinland), Dienstleistungszentrum	4
@@ -45364,23 +45364,23 @@ Amsterdam, Centraal Station	0
 Nieuwegein, Stadscentrum	11
 Almere Stad, Station Centrum	116
 Almere Stad, Station Centrum	154
-Schwarzach-St. Veit,0
-St. Johann in Tirol,0
-Zell am See,0
-Brussel-Noord,32
+Schwarzach-St. Veit	0
+St. Johann in Tirol	0
+Zell am See	0
+Brussel-Noord	32
 Nederhorst den Berg, Lange Wetering	19
 Nederhorst den Berg, Lange Wetering	20
 Nederhorst den Berg, Centrum	19
 Nieuwveen, Kattenbrug	6
 Kolham, Molenhoek	17
 Kolham, Molenhoek	16
-Dortmund-Derne,29
-Eilendorf,0
-Dortmund-Kirchderne,29
+Dortmund-Derne	29
+Eilendorf	0
+Dortmund-Kirchderne	29
 Almere Buiten, Baltimoreplein	211
 Almere Buiten, Bloemenbuurt	172
 Almere Buiten, Hefbrugweg	23
-Dordrecht,55
+Dordrecht	55
 Weesp, Station	23
 Weesp, Station	17
 Rotterdam, Klein Nieuwland	60
@@ -45466,7 +45466,7 @@ Amsterdam, Bos en Lommerplein	71
 Amsterdam, Bos en Lommerplein	7
 Zaandam, Diepenbroekstraat	29
 Zoutelande, Melsesweg	17
-Maastricht Randwyck,18
+Maastricht Randwyck	18
 Gendt, Julianaplein	35
 Gendt, Baron van Gendtlaan	35
 Haalderen, Kolkweg	35
@@ -45541,14 +45541,14 @@ Aachen, Elisenbrunnen	231
 Vettweiß, Ginnick	14
 Alsdorf (Rheinland), Anna I	142
 Alphen a/d Rijn, Lokhorst	33
-Rotterdam Zuid,0
+Rotterdam Zuid	0
 Voorburg, Laan van Heldenburg	22
-Kapellen,34
-Osnabruck Hbf,14
+Kapellen	34
+Osnabruck Hbf	14
 Hilversum, Snelliuslaan	30
 Hilversum, V.d. Laakenstraat	30
-Leiden Centraal,110
-Beilen,36
+Leiden Centraal	110
+Beilen	36
 Groningen, De Trefkoel	218
 Hellum, Veenweg	34
 Gennep, Zuid-Oostwal	76
@@ -45585,8 +45585,8 @@ Nootdorp, Veenhage	10
 Emmen, Station (Perron F)	72
 Workum, Merk	6
 Noordwolde, Zuiderweg	15
-Amsterdam Centraal,47
-Kutno,0
+Amsterdam Centraal	47
+Kutno	0
 Aachen, Adenauerallee	169
 Huissen, Binnenveld	41
 Huissen, Valom	32
@@ -45616,13 +45616,13 @@ Heijen, Heijense Molen	52
 Groet, Hoogduinen	10
 Delft, De Bieslandhof	36
 Ulft, Berghseweg	58
-Alessandria,0
+Alessandria	0
 Haaksbergen, Busstation	48
 Eemdijk, Ringweg	10
 Dordrecht, Kapteynweg	62
 Hoogmade, Stenenbrug	29
 Heemstede, Rijnlaan	60
-Purmerend,40
+Purmerend	40
 Hilversum, Oude Haven	32
 Maurikseveld, Tielsestraat 43	18
 Maurikseveld, Tielsestraat 43	18
@@ -45674,13 +45674,13 @@ Geertruidenberg, Strijenlaan	2
 Sleeuwijk, Rijksstraatweg	33
 Hilvarenbeek, Safaripark	48
 Veendam, Eems	56
-Den Haag Mariahoeve,69
-Utrecht Lunetten,0
-Maarheeze,33
-Zaandam,128
-Dalen,41
-Nunspeet,36
-Maastricht Randwyck,39
+Den Haag Mariahoeve	69
+Utrecht Lunetten	0
+Maarheeze	33
+Zaandam	128
+Dalen	41
+Nunspeet	36
+Maastricht Randwyck	39
 Aachen, Sonnenweg	33
 Vaals, Heuvel	11
 Stolberg (Rheinland), Vicht Wingertsberg	34
@@ -45741,8 +45741,8 @@ Düren (Rheinland), Lendersdorf Am Broich	41
 Düren (Rheinland), Haas	12
 Hürtgenwald, Vossenack Mestrenger Mühle	1
 Nijmegen, Spijkerhofweg	85
-Zaandam,2
-Naarden-Bussum,78
+Zaandam	2
+Naarden-Bussum	78
 Wegberg, Große Riet	4
 Aachen, Gillesbachtal	119
 Gangelt, Breberen Bredburplatz	26
@@ -45768,7 +45768,7 @@ Edam, Busstation	70
 Edam, Busstation	0
 Edam, Busstation	28
 Edam, Busstation	73
-Goes,36
+Goes	36
 Arnhem, Beethovenlaan	28
 Arnhem, Chopinstraat	93
 Arnhem, Moscowa	28
@@ -45777,16 +45777,16 @@ Velp, Den Heuvel	28
 Velp, Velperbroek	52
 Velp, Velperbroek	6
 Eschweiler (Rheinland), Nothberg Kreis	22
-Den Haag Centraal,32
-Bunnik,50
+Den Haag Centraal	32
+Bunnik	50
 Amsterdam, Jan Voermanstraat	4
 Amsterdam, Jan Voermanstraat	7
 Titz, Jackerath Sportplatz	18
 Herzogenrath, Bierstraß Schule	20
 Gangelt, Stahe Post	16
 Geilenkirchen, Leiffarth Abzw.Beeck	7
-Barneveld Noord,137
-Den Haag Moerwijk,0
+Barneveld Noord	137
+Den Haag Moerwijk	0
 Nideggen, Dürener Tor	9
 Alsdorf (Rheinland), Hoengen Otto-Lilienthal-Straße	0
 Geilenkirchen, Teveren Waidmühle	13
@@ -45802,9 +45802,9 @@ Düren (Rheinland), StadtCenter	130
 Dieren, Olmenhof	12
 Monschau, Konzen Grundschule	5
 Erkelenz, Katzem Schule	25
-Rotterdam Alexander,0
-Kapelle-Biezelinge,36
-Enschede De Eschmarke,0
+Rotterdam Alexander	0
+Kapelle-Biezelinge	36
+Enschede De Eschmarke	0
 Düren (Rheinland), Paradiesstraße	4
 Düren (Rheinland), Sieben Häuser	29
 Elsdorf (Rheinland), Angelsdorf	2
@@ -45815,7 +45815,7 @@ Simmerath, Erkensruhr Anfang	2
 Hürtgenwald, Vossenack Kloster	18
 Stolberg (Rheinland), Venwegen Süd	17
 Titz, Jackerath Sportplatz	18
-Susteren,32
+Susteren	32
 Panningen, Gemeentehuis	96
 Tilburg, Regge	35
 Ouderkerk a/d IJssel, De Zijde	20
@@ -45836,21 +45836,21 @@ Amersfoort, Boreelstraat	148
 Zuidland, Stationsweg	32
 Ubbergen, Waterleidingmij	35
 Rozenburg, Aalsmeerderweg	94
-Rotterdam Zuid,70
+Rotterdam Zuid	70
 Driel, Kerkstraat	29
 Wijchen, Weegbree	12
 Wijchen, Weegbree	12
 Valburg, Kerkplein	25
 Valburg, Tielsestraat	24
 Haarlem, Station	169
-Tilburg Universiteit,35
-Tilburg Universiteit,38
-Tilburg Universiteit,38
-Purmerend Weidevenne,39
-Purmerend Overwhere,40
-Purmerend Overwhere,39
-Eindhoven,35
-Eindhoven,68
+Tilburg Universiteit	35
+Tilburg Universiteit	38
+Tilburg Universiteit	38
+Purmerend Weidevenne	39
+Purmerend Overwhere	40
+Purmerend Overwhere	39
+Eindhoven	35
+Eindhoven	68
 Hürtgenwald, Abzw. Vossenack	23
 Hürtgenwald, Abzw. Vossenack	27
 Hürtgenwald, Vossenack Sparkasse	27
@@ -46013,8 +46013,8 @@ Haarlem, Centrum/Verwulft	173
 Schiphol-Rijk, Koolhovenlaan	9
 Rozenburg, Kruisweg 365	30
 Rozenburg, Kruisweg 365	142
-Maarssen,54
-Amsterdam Centraal,0
+Maarssen	54
+Amsterdam Centraal	0
 Deventer, Teugseplein	32
 Middelbeers, Hertog Janstraat	21
 Middelbeers, Hertog Janstraat	21
@@ -46108,9 +46108,9 @@ De Koog, Maartenhuis	16
 Texel, Californieweg-Californie	16
 Texel, Californieweg-So What	16
 Texel, Pontweg-Schumakersweg	16
-Schwerte (Ruhr),28
+Schwerte (Ruhr)	28
 Hückelhoven, Ratheim Schacht IV	11
-Amsterdam Centraal,3
+Amsterdam Centraal	3
 Waldfeucht, Haaren Soperich	12
 Nootdorp, Kievitsbloem	36
 Utrecht, Willem Dreeslaan	95
@@ -46130,14 +46130,14 @@ Maastricht, Academisch Ziekenhuis	238
 Vaals, Heuvel	100
 Zijdewind, Hartweg	13
 Aachen, Hüls Schulzentrum	40
-Boisheim,36
-Franeker,0
-Apeldoorn,68
+Boisheim	36
+Franeker	0
+Apeldoorn	68
 Monschau, Konzen Kirche	33
 Nideggen, Berg Frankenstraße	13
-Dordrecht Zuid,67
+Dordrecht Zuid	67
 Jülich, Stetternich Stallbusch	28
-Oudenbosch,0
+Oudenbosch	0
 Gouda, Viaduct	6
 Wassenberg, Effeld Neuer Weg	14
 Roetgen, Mulartshütte	19
@@ -46232,7 +46232,7 @@ Dordrecht, Kreekweg	12
 Wassenaar, Bronckhorstlaan	19
 Leiden, Meerburgerkade	126
 Amstelveen, Uilenstede	5
-Wehl,66
+Wehl	66
 Wegberg, Harbeck Im Ländchen	26
 Aachen, Wendlingweg	94
 Arnhem, Randweg	128
@@ -46247,7 +46247,7 @@ Hückelhoven, Doveren Markt	40
 Assen, Industrieweg	34
 Cruquius, Paswerk 2B	6
 Linnich, Markt	52
-Voorburg,0
+Voorburg	0
 Wegberg, Moorshoven	34
 Hückelhoven, Kleingladbach Im Siel Brücke	5
 Übach-Palenberg, Übach Kirche	29
@@ -46345,7 +46345,7 @@ Poeldijk, Paul Captijnlaan	98
 Goirle, Wittendijk	61
 Eindhoven, Wijnpeerstraat	64
 Aalsmeer, Mendelstraat	90
-Steinfurt-Burgsteinfurt,37
+Steinfurt-Burgsteinfurt	37
 Wijngaarden, NH Kerk	19
 Eindhoven, Pieter Eijffhuis	30
 Almere Stad, Sallandsekant	0
@@ -46356,8 +46356,8 @@ Zuidland, Ramshilseweg	44
 Eindhoven, P+R Meerhoven	202
 Arnhem, Graaf Ottoplein	94
 Goes, Goese Lyceum	9
-Aachen Rothe Erde,0
-Aachen West,0
+Aachen Rothe Erde	0
+Aachen West	0
 Amersfoort, Oudegein	86
 Amersfoort, Amerhorst	36
 Amersfoort, Birkhoven Park	36
@@ -46372,7 +46372,7 @@ Rijnsburg, Splitsing	30
 Rijnsburg, Splitsing	88
 Rijnsburg, Splitsing	88
 Schiphol, Cateringweg	168
-Groningen,33
+Groningen	33
 Reek, Kruisbeeld	29
 Rosmalen, Nicolaas Fierlantsstraat	30
 Tilburg, Stadhuisplein	394
@@ -46409,17 +46409,17 @@ Breskens, Scheldekade	8
 Aachen, Laurensberg Rahe	16
 Würselen, Weiden Kirche	59
 Gemert, Pelgrimsrust	13
-Amsterdam Sloterdijk,5
+Amsterdam Sloterdijk	5
 Aachen, Richterich Berensberger Straße	118
 Wegberg, Rath-Anhoven Schule	16
 Düren (Rheinland), Glashüttenstraße	4
 Zoetermeer, Centrum West	0
 Emmen, Houtweg	31
 Aachen, Kronenberg	66
-Freiburg (Breisgau) Hbf,3
+Freiburg (Breisgau) Hbf	3
 Kelmis, Hergenrather Weg	36
 Ommen, Danteweg	13
-Helmond Brandevoort,33
+Helmond Brandevoort	33
 Berg a/d Maas, Julianastr/Steegstr	33
 Berg a/d Maas, Julianastr/Steegstr	34
 Bingelrade, Dorpsstraat 25	19
@@ -47263,7 +47263,7 @@ Zeist, Schaerweydelaan	59
 Zeist, Pr. Margrietlaan 405	30
 Zeist, Pr. Margrietlaan 235	30
 Bilthoven, Station Bilthoven	101
-Assen,75
+Assen	75
 Austerlitz, Dorpsplein	12
 Langbroek, Julianalaan	35
 Langbroek, Julianalaan	33
@@ -47420,7 +47420,7 @@ Hazerswoude Rd, Gemeneweg	29
 Woubrugge, Kerkweg	44
 Alphen a/d Rijn, Marsdiep	29
 Alphen a/d Rijn, Poortwachter	30
-Uitgeest,3
+Uitgeest	3
 Alphen a/d Rijn, Europalaan	19
 Alphen a/d Rijn, Hoorn/Genielaan	6
 Alphen a/d Rijn, Hoorn/Genielaan	6
@@ -47817,7 +47817,7 @@ Spoordonk, Bernadettestraat	26
 Oirschot, Bellefleur	26
 Rijen, Gemeentehuis	0
 Raamsdonksveer, Collegeweg	31
-Heerenveen,49
+Heerenveen	49
 Meeuwen, Van Buurenstraat	25
 Drongelen, Kruisstraat	12
 Hilvarenbeek, Goirlesedijk	11
@@ -47916,15 +47916,15 @@ Den Helder, Falga	29
 Breda, Edisonstraat	59
 Den Haag, Centraal	0
 Voorburg, Laan van Heldenburg	22
-Wijchen,36
-Bovenkarspel-Grootebroek,0
-Amsterdam Centraal,20
-Maarn,49
-Amsterdam Bijlmer ArenA,2
-Harderwijk,0
-Uithuizen,67
-Utrecht Leidsche Rijn,38
-Diemen,78
+Wijchen	36
+Bovenkarspel-Grootebroek	0
+Amsterdam Centraal	20
+Maarn	49
+Amsterdam Bijlmer ArenA	2
+Harderwijk	0
+Uithuizen	67
+Utrecht Leidsche Rijn	38
+Diemen	78
 Lommel, Kliniek	10
 Wyler, Schulweg	3
 Aachen, Laurensberg Adele-Weidtman-Straße	16
@@ -48123,7 +48123,7 @@ Aachen, Brand Am Tiergarten	20
 Geilenkirchen, Rischden	45
 Oostwold, Gavelaan	12
 Meerssen, Station Veolia	69
-Chambery,0
+Chambery	0
 Utrecht, Centraal Museum	83
 De Bilt, Biltse Hoek	40
 Maarn, Ted Visserweg	21
@@ -48180,8 +48180,8 @@ Brugge, Station	0
 Brugge, Dudzelesteenweg	0
 Almere Buiten, Stripheldenbuurt-O.	92
 Delft, Julianalaan	92
-Wuppertal Hbf,30
-Wuppertal-Vohwinkel,30
+Wuppertal Hbf	30
+Wuppertal-Vohwinkel	30
 Almere Stad, Greta Garboplantsoen	193
 Eindhoven, Vigliuslaan	25
 Eindhoven, Klundertstraat	25
@@ -48204,8 +48204,8 @@ Heerle, Vijfhoek	16
 Venlo, Station Perron F	34
 Sleeuwijk, Tol Oost	29
 Amsterdam, Station Sloterdijk	130
-Loppersum,0
-Leiden Centraal,3
+Loppersum	0
+Leiden Centraal	3
 Sprang Capelle, Waspiksedijk	24
 Almere Buiten, Station Buiten	2
 Eschweiler (Rheinland), Pumpe Steinkohlenfeld	31
@@ -48220,7 +48220,7 @@ Kampen, Station Zuid	12
 Amsterdam, Kelbergen	121
 Amsterdam, Schaarsbergenstraat	93
 Düren (Rheinland), Bahnhof / ZOB (Bus)	8
-Deurne,0
+Deurne	0
 Zaandam, Peperstraat	218
 Gangelt, Langbroich Kirche	14
 Wassenberg, Frowein	46
@@ -48304,7 +48304,7 @@ Zeeland, Eikenhof	30
 Erftstadt, Herrig Peter-Mörs-Platz	2
 Düren (Rheinland), Binsfelder Straße	27
 Hürtgenwald, Brandenberg Schule	12
-Driehuis,40
+Driehuis	40
 Zalk, Brinkweg	7
 Hückelhoven, Ratheim Myhler Straße	27
 Übach-Palenberg, Scherpenseel Kirche	10
@@ -48337,15 +48337,15 @@ Aachen, Wiesental	24
 Würselen, Broichweiden Euchen	12
 Düren (Rheinland), Römerstraße	6
 Mesch, Steenbergweg	0
-Amsterdam Sloterdijk,75
+Amsterdam Sloterdijk	75
 Geilenkirchen, Teveren Schule	13
 Moergestel, Heiligenboom	26
 Heinsberg (Rheinland), Laffeld Genstraße (Schulbus)	4
 Hoorn, Station	10
 Weert, Station	10
 Aachen, Eilendorf Schlackstraße	0
-Sittard,0
-Amsterdam Centraal,9
+Sittard	0
+Amsterdam Centraal	9
 Kreuzau, Stockheim Am Torfberg	11
 Marijenkampen, Marijenkampen	14
 Jubbega, Hartstraweg	15
@@ -48498,9 +48498,9 @@ Zutphen, Weerdslag 100/193	35
 Zutphen, Weerdslag 100/193	33
 Herwen, De Bijland	20
 Alsdorf (Rheinland), Schaufenberger Straße	81
-Roosendaal,75
+Roosendaal	75
 Zeist, Griftlaan	113
-Hurdegaryp,0
+Hurdegaryp	0
 Utrecht, Eerste Westerparklaan	0
 Utrecht, Musicalkade	63
 Utrecht, Walter Kollolaan	63
@@ -48550,23 +48550,23 @@ Gangelt, Brüxgen	13
 Kreuzau, Winden Allmende	20
 Würselen, Salmanusplatz	11
 Westenschouwen, A.v.d.Weydeweg	35
-Eindhoven Strijp-S,39
+Eindhoven Strijp-S	39
 Elsdorf (Rheinland), Angelsdorf	5
 Heinsberg (Rheinland), Dremmen Falder Straße	10
 Alsdorf (Rheinland), Hoengen Jahnstraße	12
 Mönchengladbach, Voosen	0
 Selfkant, Süsterseel Westerheide	14
 Zülpich, Adenauerplatz	8
-Goppingen,1
+Goppingen	1
 Sneek, Boeierstraat	25
-Olst,0
-Elst,0
-Landeck,0
+Olst	0
+Elst	0
+Landeck	0
 Aachen, Schleckheim Kapelle	68
 Zuidoostbeemster, Jonk	26
 Nideggen, Schmidt Spielplatz	8
 Simmerath, Huppenbroich	8
-Eindhoven Beukenlaan,0
+Eindhoven Beukenlaan	0
 Heeze, Ds. Kremerstraat	27
 Helmond, Fokkerlaan	12
 Wegberg, Zum Thomeshof	26
@@ -48574,7 +48574,7 @@ Roetgen, Knott	20
 Eindhoven, Stationsweg	29
 Schiphol, Skyport	430
 Schiphol, Airport/Plaza	76
-Aalten,37
+Aalten	37
 Erkelenz, Anton-Heinen Straße	30
 Aachen, Burtscheid	145
 Terneuzen, W. de Zwijgerlaan	29
@@ -48670,7 +48670,7 @@ Oudesluis, Slikkerdijk	3
 Amsterdam, Abcoudermeer	64
 Weesp, Van Houtenlaan	27
 Maartensdijk, Achterwetering	31
-Saalfelden,0
+Saalfelden	0
 Baesweiler, Loverich Bäckerei	5
 Gangelt, Luisenring	27
 Erkelenz, Brückstraße	6
@@ -48678,10 +48678,10 @@ St.Jansklooster, Verlengde Duinweg	32
 Vollenhove, Weyert	37
 Gangelt, Hastenrather Weg	0
 Herzogenrath, Merkstein Hofstadt Anfang	24
-Valkenburg,0
+Valkenburg	0
 Vlissingen-Oost, Engelandweg	10
 Vlissingen-Oost, Engelandweg	10
-Maassluis,67
+Maassluis	67
 Amsterdam, Hagedoornplein	57
 Amsterdam, Steigereiland	196
 Sterksel, Providentia	10
@@ -48704,7 +48704,7 @@ Monschau, Höfen Hermesstraße	18
 Monschau, Kalterherberg Malmedyer Straße	18
 Düren (Rheinland), Arnoldsweiler Abzw. Merzenich	27
 Geilenkirchen, Niederheid von-Humboldt-Straße	10
-Nijmegen Goffert,0
+Nijmegen Goffert	0
 Beek, Makado	17
 Heinsberg (Rheinland), Waldenrath Drogerie	18
 Zandvoort, Tentenkamp	32
@@ -48718,7 +48718,7 @@ Nijmegen, Panovenlaan	63
 Streefkerk, Van Donk	27
 Kreuzau, Bilstein Kapelle	14
 Groningen, Lubeckweg	110
-Breukelen,91
+Breukelen	91
 Veendam, Steenstraat	8
 Maastricht, Pergamijndonk	55
 Zwolle, Assendorperdijk	6
@@ -48732,7 +48732,7 @@ De Bilt, Dr. Letteplein	92
 De Bilt, Groenekanseweg	89
 Amersfoort, Borneoplein	36
 Amersfoort, Blekerssingel	148
-Almere Centrum,69
+Almere Centrum	69
 Leeuwarden, Busstation	95
 Kolham, Buitenhuizen	34
 Weende, Weenderstraat 30	13
@@ -48741,31 +48741,31 @@ Amsterdam, Gein	95
 Amsterdam, Station Gein	95
 Amsterdam, Station Gein	93
 Haarlem, Station	0
-Eindhoven Airport,0
+Eindhoven Airport	0
 Lith, Markt	15
-Purmerend Weidevenne,0
+Purmerend Weidevenne	0
 Ouderkerk a/d IJssel, Baas	18
 Zwijndrecht, Hillenraad	18
 Stolberg (Rheinland), Donnerberg Kaserne	18
 Assen, Balkenweg	33
-Amsterdam Muiderpoort,76
+Amsterdam Muiderpoort	76
 Drachten, Van Knobelsdorffplein	203
 Heerenveen, Busstation	34
 Rijswijk, Station Rijswijk (Perron D)	117
 Nijmegen, Dr. de Blecourtstraat	34
 Wognum, Tramweg	32
-Feanwalden,35
-De Westereen,33
-De Westereen,0
-Feanwalden,0
-De Westereen,35
+Feanwalden	35
+De Westereen	33
+De Westereen	0
+Feanwalden	0
+De Westereen	35
 Amersfoort, Blekerseiland	174
 Schiphol-Rijk, Capronilaan	48
-Usti nad Labem,0
-Aachen Hbf,0
+Usti nad Labem	0
+Aachen Hbf	0
 Schiphol, Knooppunt Schiphol Noord	52
 De Bilt, Dr. Letteplein	91
-Utrecht Centraal,0
+Utrecht Centraal	0
 Amersfoort, Blekerseiland	180
 Ottoland, Vlietbrug	10
 Ottoland, Vlietbrug	16
@@ -48816,7 +48816,7 @@ Diever, Hoofdstraat	13
 Diever, Hoofdstraat	35
 Diever, Doldersummerweg	13
 Diever, Doldersummerweg	12
-Geldermalsen,0
+Geldermalsen	0
 Diever, Brink	13
 Hoogeveen, Buizerdlaan	29
 Noordscheschut, Schooldijkje	29
@@ -48907,7 +48907,7 @@ Veenendaal, Smetanadreef	22
 Veenendaal, Station Centrum	0
 Veenendaal, Station Centrum	27
 Veenendaal, Wolweg/Centrum	60
-Bovenkarspel-Grootebroek,37
+Bovenkarspel-Grootebroek	37
 Veenendaal, Wolweg/Centrum	59
 Huissen, Grevenveld	107
 Huissen, Grevenveld	102
@@ -48970,9 +48970,9 @@ Dordrecht, Centraal Station (perron A)	37
 Den Ham, Noordmeer	26
 Den Ham, Noordmeer	25
 Rijssen, Station	16
-Marne-la-Vallee-Chessy,0
-Marseille-St-Charles,0
-Moutiers-Salins-Brides,0
+Marne-la-Vallee-Chessy	0
+Marseille-St-Charles	0
+Moutiers-Salins-Brides	0
 Ede, Pascalstraat	1
 Ede, Pascalstraat	1
 Veenendaal, Bergweg	52
@@ -49056,7 +49056,7 @@ IJsselmuiden, Burg. van Engelenweg	19
 Kampen, Akelei	26
 Kampen, Vijverhof	14
 Dronten, Roggebotsluis	15
-Amsterdam Sloterdijk,80
+Amsterdam Sloterdijk	80
 Heerde, Transferium Horsthoek	98
 Heerde, Transferium Horsthoek	80
 Nieuw-Vennep, Getsewoud P en R	132
@@ -49164,11 +49164,11 @@ Langenboom, Kerk	13
 Langenboom, Kerk	13
 Langenboom, MOB-Complex	13
 Langenboom, MOB-Complex	13
-Rijssen,37
+Rijssen	37
 Sambeek, Grotestraat	11
 Boxmeer, Weijerplein	11
 Boxmeer, Weijerplein	11
-Rotterdam Centraal,74
+Rotterdam Centraal	74
 Mill, Domeinenstraat	26
 Mill, Driesprong	13
 Mill, Driesprong	13
@@ -49367,13 +49367,13 @@ Aachen, Kornelimünster Steinkaulweid	23
 Kleve, Hoherweg	17
 Hückelhoven, Abzw. Schaufenberg	87
 Heinsberg (Rheinland), Schafhausen Kuhlertgraben	7
-Putten,37
+Putten	37
 Staphorst, Reggersweg	1
 Aachen, Zentis	20
 Amsterdam, Van Nijenrodeweg	5
 Düren (Rheinland), Nippesstraße	21
 Helmond, Spoorstraat	44
-Deventer Colmschate,37
+Deventer Colmschate	37
 Veenendaal, Jan Vermeerstraat	22
 Nieuwegein, Poort van Nieuwegein	12
 Almere Buiten, Regenboogbuurt Zuid	148
@@ -49398,8 +49398,8 @@ Düren (Rheinland), Arnoldsweiler Abzw. Merzenich	18
 Veendam, Veenlustpassage	8
 Veendam, Kerkplein	8
 Monschau, Höfen Heidgen	24
-Utrecht Centraal,93
-Venlo,0
+Utrecht Centraal	93
+Venlo	0
 Roosendaal, Basaltdijk	58
 Hoek van Holland, Schelpweg	33
 Hoek van Holland, Schelpweg	33
@@ -49408,7 +49408,7 @@ Hoek van Holland, Herman Visser	33
 Varsselder, Dorp	16
 Beek, van Randwijckweg	25
 Drempt, NH Kerk	19
-Amsterdam Centraal,21
+Amsterdam Centraal	21
 Aalst, Den Hof	9
 Lommel, Autoweg	10
 Velden, Taurus	9
@@ -49418,23 +49418,23 @@ Assen, Domeinpad	63
 Zutphen, Polsbroek	48
 Heerlen, Bredastraat	32
 Castenray, Kerk	33
-Utrecht Centraal,36
+Utrecht Centraal	36
 Leeuwarden, Oud Tolhuis	56
 Halfweg, Eldorado	11
 Amsterdam, Kinkerstraat	235
 Alkmaar, Eggestraat	64
 Castricum, Mient	42
 Hem, Marktweg	11
-Naarden-Bussum,32
+Naarden-Bussum	32
 Nuenen, Refeling	37
 Helmond, Uiverlaan	26
 Helmond, Ziekenhuis	24
 Dussen, Baan 4	24
-Groningen,34
+Groningen	34
 Loppersum, Stork	30
 Lelystad, Wold	32
 Gangelt, Bahnhof	7
-Hoogezand-Sappemeer,70
+Hoogezand-Sappemeer	70
 Boomhoek, Boomhoek	14
 Heeswijk, RBB	46
 Heide, De Heide	33
@@ -49444,7 +49444,7 @@ Emmen, Boslaan	19
 Grolloo, Uteringsweg	18
 Goes, Station	52
 Noordwijk, Gooweg	19
-Vlaardingen Oost,73
+Vlaardingen Oost	73
 Burgum, Zwembad	21
 Amstelveen, Brink	127
 Sondel, Kruspaed	22
@@ -49452,21 +49452,21 @@ Akmarijp, Akmarijp	19
 Bussum, Boslaan	25
 Boyl, Kerkweg	18
 Kamerik, Overzicht	14
-Zwolle,38
+Zwolle	38
 Deil, Oudenhof	16
 Amsterdam, Aalsmeerplein	0
-Echt,32
+Echt	32
 Schoorl, Koningsweg	32
 Graft, Globdijk	10
 Lepelstraat, Kerkstraat	14
-Deurne,36
+Deurne	36
 Made, Adelstraat	31
 Edam, Tjaskermolen	99
 Heeswijk, RBB	49
 Veendam, Eems	64
-Zaandam,39
+Zaandam	39
 Lent, Station Lent	93
-Breda,33
+Breda	33
 Aachen, Preusweg	84
 Aachen, Richterich Vetschauer Weg	30
 Aachen, Süsterfeld	36
@@ -49481,8 +49481,8 @@ Tilburg, Pallasstraat	57
 Den Hout, Hespelaar	11
 Rijen, Tropical	8
 Kuitaart, Molen	13
-Voorschoten,69
-Groningen,8
+Voorschoten	69
+Groningen	8
 Aachen, Eulersweg	27
 Düren (Rheinland), Oberstraße	21
 Düren (Rheinland), Rurbrücke	60
@@ -49498,12 +49498,12 @@ Titz, Mitte	56
 Aachen, Brand Am Tiergarten	18
 Herzogenrath, Worm Brücke	64
 Düren (Rheinland), Walzmühle	49
-Gilze-Rijen,38
-Eygelshoven Markt,0
-Waddinxveen Noord,73
+Gilze-Rijen	38
+Eygelshoven Markt	0
+Waddinxveen Noord	73
 Titz, Bahnhof	14
 Waddinxveen, Coenecoop 135	12
-Gorinchem,67
+Gorinchem	67
 Geilenkirchen, Flahstraße	1
 Waddinxveen, Prins Bernhardlaan	12
 Nideggen, Berg Thuir	9
@@ -49511,7 +49511,7 @@ Roetgen, Markt	49
 Roetgen, Am Roetgenbach	3
 Roetgen, Roetgenbachstraße	2
 Euskirchen, Elsig	16
-Bunnik,49
+Bunnik	49
 Gangelt, Birgden Bahnübergang	17
 De Hoek, De Hoek	272
 Simmerath, Abzw. Huppenbroich	6
@@ -49525,7 +49525,7 @@ Arnhem, Dalweg	65
 Monschau, Umgehungsstraße	32
 Zülpich, Bergheimer Straße	8
 Aachen, Ronheider Weg	76
-Raalte,30
+Raalte	30
 Vettweiß, Gladbach	17
 Aachen, Am Weißenberg	45
 Aachen, Laurensberg Laurentiusstraße	45
@@ -49550,7 +49550,7 @@ Wassenberg, Effeld Steinkirchen	14
 Wegberg, Gerichhausen	30
 Kreuzau, Untermaubach Burgplatz	4
 Herzogenrath, Merkstein Hofstadt Ende	10
-Oisterwijk,35
+Oisterwijk	35
 Baesweiler, Setterich Im Weinkeller	76
 Geilenkirchen, Berliner Ring	8
 Katwijk, Duinoord	77
@@ -49585,7 +49585,7 @@ Aachen, Lintert Schießstand	24
 Jülich, Kartaus	5
 Aachen, Normaluhr	74
 Brugge, De Veste	15
-Coesfeld (Westf),29
+Coesfeld (Westf)	29
 Kreuzau, Drove Burgweg	19
 Oosterhout, Het Goorke	1
 Oosterhout, Zuiderhout	0
@@ -49611,8 +49611,8 @@ Nieuwe-Tonge, Faunapark	23
 Amstelveen, Wimbledonpark	44
 Apeldoorn, Schumanpark	24
 Schaijk, Runstraat	7
-Hengelo,62
-Aime-la-Plagne,0
+Hengelo	62
+Aime-la-Plagne	0
 Kelmis, Hattigweg	33
 Amstelveen, Uilenstede	5
 Niederzier, Krauthausen Aachener Straße	4
@@ -49681,7 +49681,7 @@ Haaksbergen, Metaalstraat	59
 Vasse, Bovenesweg	24
 Heino, Wolfkamp	15
 De Glind, Schoonderbekerweg	10
-Soest Zuid,0
+Soest Zuid	0
 Westerhaar, De Klaampe	25
 Vriezenveen, Westerveenweg	26
 Westerhaar, Dalweg	26
@@ -49720,16 +49720,16 @@ Wassenberg, Lindenhof	36
 Eschweiler (Rheinland), Weisweiler Heidesiedlung	17
 Gangelt, Stahe Zaunbrecher	32
 Genne, Dashorstweg	6
-Oetztal,0
-Zutphen,0
+Oetztal	0
+Zutphen	0
 Aachen, Prager Ring	169
 Wapserveen, Westeinde	13
 Breda, Elzenbroek	61
 Erftstadt, Herrig Peter-Mörs-Platz	1
-Utrecht Centraal,0
+Utrecht Centraal	0
 Weert, Het College	1
 Spaarndam, Fl. Balthasarstraat	16
-Ennepetal (Gevelsberg),30
+Ennepetal (Gevelsberg)	30
 Arnhem, Metamorfosenallee	33
 Hilversum, Anna's Hoeve	25
 Hoorn, Station	31
@@ -49811,7 +49811,7 @@ Bilthoven, Sperwerlaan	38
 De Meern, Europaweg	50
 Woerden, Viaduct	26
 Benschop, Halfweg	52
-Hardinxveld-Giessendam,67
+Hardinxveld-Giessendam	67
 Leiden, Blauwe Vogelweg	33
 Alphen a/d Rijn, Stadhoudersplein	47
 Haarlem, Nagtzaamplein	88
@@ -49831,12 +49831,12 @@ Haaren, Het Eind	23
 Genderen, Bulkstraat	25
 Genderen, Bulkstraat	24
 Genderen, Kelderstraat	24
-Konin,0
+Konin	0
 Roosendaal, Strausslaan	58
 Tilburg, Laarstraat	47
 Kaatsheuvel, Erasstraat	11
-Twello,33
-Zevenbergen,0
+Twello	33
+Zevenbergen	0
 Hürtgenwald, Raffelsbrand	10
 Aachen, Oberforstbach	66
 Sumar, Achterwei	34
@@ -49893,7 +49893,7 @@ Keijenborg, Kerkstraat	32
 Düren (Rheinland), StadtCenter	97
 Hückelhoven, Hilfarth Tannenstraße	8
 Linnich, Schulzentrum	33
-Weesp,75
+Weesp	75
 Düren (Rheinland), Krauthausen Schoellershammer	40
 Gangelt, Breberen Post	14
 Erkelenz, GIPCO	43
@@ -49948,8 +49948,8 @@ Voorburg, Heer Hubrechtstraat	71
 Gendt, Markt	35
 Düren (Rheinland), Binsfelder Straße	41
 Erkelenz, Grambusch Abzw.	40
-Gouda,37
-Almelo,27
+Gouda	37
+Almelo	27
 Eindhoven, Koenraadlaan	0
 Eindhoven, HTC/Vijver	22
 Son, Kanaalbrug	30
@@ -49977,7 +49977,7 @@ Langerwehe, Schulzentrum	8
 Geilenkirchen, Gillrath Birgdener Straße	23
 Delft, Olof Palmestraat	32
 Utrecht, Racinelaan	109
-Innsbruck Hbf,0
+Innsbruck Hbf	0
 Zülpich, Nemmenich	31
 Gangelt, Mercator Schule	27
 Simmerath, Krankenhaus	31
@@ -50005,12 +50005,12 @@ Oosterbeek, Tuin de Lage Oorsprong	10
 Aachen, Philipp-Neri-Weg	80
 Monschau, Parkhaus	21
 Linnich, Im Gansbruch	52
-Baflo,0
+Baflo	0
 Breskens, Veerhaven	0
 Schiphol, Airport	417
 Aachen, Ochsenstock	25
-Lokeren,0
-Nieuwkerken-Waas,0
+Lokeren	0
+Nieuwkerken-Waas	0
 Maasbree, Heeske	57
 Kortgene, Oostdijk	18
 Dordrecht, Stadskantoor	141
@@ -50031,7 +50031,7 @@ Abcoude, Burg. des Tombeweg	1
 Lelystad, Station Centrum	0
 Lelystad, Station Centrum	0
 Aachen, Ponttor	21
-Wezep,0
+Wezep	0
 Maldegem, Gidsenlaan	5
 Maldegem, 't Moleken	5
 Maldegem, Aardenburg Kalseide	5
@@ -50059,8 +50059,8 @@ Aachen, Drimborn	29
 Heenvliet, Brug Voornse kanaal	74
 Vaals, De lange Akker	0
 Vaals, Busstation	60
-Venlo,2
-Roosendaal,36
+Venlo	2
+Roosendaal	36
 Dordrecht, Goudestein	61
 Hellevoetsluis, Voorweg	5
 Nijmegen, Mr. Franckenstraat	62
@@ -50078,7 +50078,7 @@ Den Helder, Station	21
 Aarle Rixtel, Bosscheweg/Klokstraat	11
 Wegberg, Klinkum Backhaus	32
 Stolberg (Rheinland), Zweifall Kirche	20
-Gouda,134
+Gouda	134
 Hückelhoven, Schlee	0
 Heimbach (Eifel), Volksbank	12
 Wassenberg, Myhl Erkelenzer Straße	36
@@ -50103,7 +50103,7 @@ Walem, Walem	18
 Best, Mecklenburgweg	27
 Eindhoven, Spottersweg	20
 Heijen, Heijense Molen	9
-Den Haag Ypenburg,0
+Den Haag Ypenburg	0
 Emmerich, Neuer Steinweg	17
 Zevenbergschen Hoek, Plein 1940	11
 Wageningen, Oranje Nassau's Oord	10
@@ -51296,7 +51296,7 @@ Hall, School	13
 Hardenberg, Gemeentehuis	43
 Hardenberg, Molenplein	42
 Mijnsheerenland, Provincialeweg	18
-Didam,66
+Didam	66
 Uithoorn, Poelweg	112
 Son, Vijverlaan	11
 Steenwijk, Station	0
@@ -51380,7 +51380,7 @@ Udenhout, Gommelsestraat	23
 Udenhout, Kuil	11
 Udenhout, Kuil	11
 Mill, Vorleweg	13
-Puurs,15
+Puurs	15
 Botlek, ESSO	75
 Nieuwolda, Hoofdstraat	19
 Amstelveen, Jupiter	24
@@ -51396,7 +51396,7 @@ Alsdorf (Rheinland), Begau Siedlung	57
 Wanroij, Molen	13
 Amersfoort, Silverstein	155
 Egmond aan Zee, Pr. Hendrikstichting	57
-Leeuwarden Achter De Hoven,3
+Leeuwarden Achter De Hoven	3
 De Krim, Molenweg	26
 Amersfoort, Curiestraat	85
 Leeuwarden, Techum	38
@@ -51458,7 +51458,7 @@ Haarlem, Spaarnhovenstraat	84
 Hückelhoven, Baal Kirche	54
 Wervershoof, v.d. Gulik	22
 Leiden, Damlaan	32
-Tiel,0
+Tiel	0
 Nieuwleusen, Gereformeerde Kerk	73
 Nieuwleusen, Zwembad	73
 Amersfoort, De Kei	148
@@ -51685,17 +51685,17 @@ Kampen, Station	7
 Kampen, Station	25
 Kampen, Station	4
 Kampen, Station	39
-Duisburg Hbf,17
-Altenberge,37
+Duisburg Hbf	17
+Altenberge	37
 Katwoude, Hotel Volendam	171
-Melsele,0
+Melsele	0
 Leeuwarden, Harmonie	241
 Rijnsburg, Splitsing	29
 Roosendaal, Kroevenlaan	32
 Stavenisse, Tolweg	13
 Alverna, Rijdtsestraat	18
 Alsdorf (Rheinland), Kellersberg Broicher Straße	20
-Boxtel,34
+Boxtel	34
 Bussum, Keizer Ottostraat	29
 Wijchen, Industriepark	30
 Almere Buiten, Bouwmeesterbuurt-O.	174
@@ -51716,7 +51716,7 @@ Middelburg, Stromenweg	2
 Middelburg, Industrieweg	10
 Dudzele, Pelikaan	15
 Zuidzande, Potjes	3
-Koln Hbf,17
+Koln Hbf	17
 Eindhoven, Koenraadlaan	25
 Rijsenhout, Bennebroekerweg	19
 Rijsenhout, Centrum Schouwstraat	21
@@ -52298,8 +52298,8 @@ Langweer, Dorp	8
 Bareveld, 36e laan	19
 Utrecht, Balijelaan	143
 Utrecht, Balijelaan	145
-Uitgeest,4
-Gouda Goverwelle,0
+Uitgeest	4
+Gouda Goverwelle	0
 Aachen, Grundhaus	34
 Aachen, Walheim Hochhausring	51
 Arnhem, Oude Huissenseweg	103
@@ -52325,7 +52325,7 @@ Panningen, De Wietel	96
 Amsterdam, Herman Bonpad	133
 Amsterdam, Louwesweg	151
 Velserbroek, Vromaadweg	54
-Rotterdam Zuid,0
+Rotterdam Zuid	0
 Hilversum, Anna's Hoeve	27
 Kortenhoef, De Zuwe	3
 Amsterdam, Echtenstein	4
@@ -52340,7 +52340,7 @@ Nieuwerkerk, Busstation	40
 Westdorpe, Vissersverkorting	11
 IJzendijke, Turkeije	12
 Wyler, Altes Zollamt	27
-Olst,0
+Olst	0
 Papendrecht, Westeind	27
 Amsterdam, Zamenhofstraat	49
 Zoetermeer, Salomeschouw	17
@@ -52402,7 +52402,7 @@ Akkrum, Nesserhuizen	10
 Nieuwpoort, Industrieterrein Gelkenes	6
 Abcoude, Dr. van Doornplein	32
 Steenwijk, Dr. Dreesstraat	13
-Wolfheze,0
+Wolfheze	0
 Driebergen, Loolaan/A12	95
 Monschau, Imgenbroich Süd	55
 Soesterberg, De Stompert	25
@@ -52459,7 +52459,7 @@ Nieuw-Vennep, Hoofdweg 1194	30
 Arnhem, Onder de Linden	29
 Amsterdam, Kattenburg	5
 Almere Stad, Station Muziekwijk	239
-Winterswijk,30
+Winterswijk	30
 Simmerath, Strauch Gerstenhof	12
 Waarland, Veluweweg	13
 Waarland, Veluweweg	12
@@ -52522,7 +52522,7 @@ Aachen, Staudenweg	24
 Odijk, Rijnseweg	30
 Buitenpost, Haersma Hiem	9
 Nieuwveen, RK Kerk	28
-Feanwalden,33
+Feanwalden	33
 Linschoten, Hoogspanningskabels	26
 Oploo, Kerk	21
 Amsterdam, Hoofddorpplein	0
@@ -52553,8 +52553,8 @@ Neeltje Jans, Deltapark	28
 Angerlo, Gemeentehuis	7
 Almere Buiten, Stripheldenbuurt-O.	0
 Rijsenhout, Aalsmeerderdijk 519	3
-Zutphen,1
-Barendrecht,0
+Zutphen	1
+Barendrecht	0
 Baesweiler, Urweg	20
 Erkelenz, Unterwestrich Abzw. Berverath	30
 Vettweiß, Froitzheim Martinusstraße	32
@@ -52565,7 +52565,7 @@ Vlissingen, Westerhavenweg	20
 Middenbeemster, K. Hogetoornlaan	26
 Haarlem, Amelandstraat	75
 Wittenberg, Tolnegenweg	26
-Albertville,0
+Albertville	0
 De Lutte, De Grote Zwaan	15
 De Lutte, Hanhofweg	15
 Leeuwarden, Daslook	43
@@ -52574,12 +52574,12 @@ Helmond, Geysendorfferstraat	11
 Schiphol, Toekanweg	415
 Schiphol, Handelskade	270
 Wognum, Tramweg	33
-Unna,28
+Unna	28
 Abcoude, De Weert	31
 Amsterdam, Isolatorweg	0
 Ens, Ens	40
 Lage Vuursche, Venwoude	13
-Dronten,0
+Dronten	0
 Nieuwegein, Zorgcentrum Zuilenstein	102
 Nieuwegein, Orpheuslaan	102
 Velp, Reigerstraat	14
@@ -52636,7 +52636,7 @@ Deventer, Industrieweg	33
 Nieuwleusen, Oosterhulst	62
 Harderwijk, Boomkamp	0
 Lopik, Batuwebrug	11
-Oss,0
+Oss	0
 Wassenberg, Kirchstraße	76
 Jülich, Barmen Post	18
 Geilenkirchen, Immendorf Friedhof	36
@@ -52728,15 +52728,15 @@ Goes, Erasmuspark	10
 Krabbendijke, Westelijke Parallelweg	7
 Rozendaal, Hertog van Gelrestraat	28
 Bergen, Mosselenbuurt	18
-Echt,34
+Echt	34
 Workum, Merk	6
-Roermond,0
+Roermond	0
 Putten, Station	20
 Woerden, Wilhelminaweg/Rijnstraat	8
 Zoeterwoude Rd, Goede Herder	41
 Apeldoorn, Sebastiaanplein	90
 Apeldoorn, Bosweg	71
-Utrecht Centraal,13
+Utrecht Centraal	13
 Enschede, Zuid Hollandlaan	75
 Enschede, Wkc Boswinkel	73
 Enschede, Wkc Stroinkslanden	17
@@ -52757,12 +52757,12 @@ Aachen, Ochsenstock	22
 Aachen, Schanz (Jakobstraße)	84
 Geilenkirchen, Markt	161
 Würselen, Bahnhofstraße	58
-Wijhe,0
+Wijhe	0
 Halsteren, Molenplein	3
 Arnemuiden, Clasinastraat	4
-Emmerich,0
-Metelen Land,37
-Hertogenbosch ('s),4
+Emmerich	0
+Metelen Land	37
+Hertogenbosch ('s)	4
 Oldemarkt, De Boterberg	13
 Didam, Wilhelminastraat	12
 Gennep, Stiemensweg	9
@@ -52788,7 +52788,7 @@ Krimpen a/d Lek, School	19
 Sliedrecht, Watertoren	20
 Haarlem, Zaanenstraat	15
 Heemskerk, Helmlaan	30
-Amsterdam Science Park,76
+Amsterdam Science Park	76
 Utrecht, Oregondreef	47
 Breda, Hamdijk	59
 Roosendaal, Beetslaan	38
@@ -52797,7 +52797,7 @@ Würselen, Broichweiden Neusen Fronhofstraße	39
 Stolberg (Rheinland), Donnerberg Am Sender	20
 Kelmis, Bruch	36
 Stolberg (Rheinland), Donnerberg Distelweg	32
-Amsterdam Centraal,33
+Amsterdam Centraal	33
 Aachen, Misereor	88
 Aachen, Soerser Au	62
 Stolberg (Rheinland), Vicht Brücke	34
@@ -52841,18 +52841,18 @@ Nideggen, Schmidt Zweifallshammer	1
 Wegberg, Zum Thomeshof	29
 Jülich, Merzenhausen Denkmal	3
 Heimbach (Eifel), Hergarten Waldsiedlung	4
-Deventer,3
+Deventer	3
 Aachen, Talbot	169
 Son, Ekkersrijt	58
 Goirle, Baarsven	61
 Kreuzau, Stockheim Sparkasse	6
-Vlissingen,0
-Borne,67
+Vlissingen	0
+Borne	67
 De Wijk, Schoonveldeweg	11
 Langerwehe, Jüngersdorf Auf dem Feldchen	7
 Heinsberg (Rheinland), Karken Hirtstraße	15
-Hengelo,49
-Haarlem,72
+Hengelo	49
+Haarlem	72
 Kreuzau, Leversbach Boicher Weg	11
 Hückelhoven, Baal Porschestraße	52
 Nörvenich, Pingsheim Friedhof	0
@@ -52873,7 +52873,7 @@ Aachen, Siegel	98
 Linnich, Rurdorf Siedlung	21
 Erkelenz, Bahnhof (Bus)	21
 Geilenkirchen, Tripsrath Kindergarten	17
-Offenburg,3
+Offenburg	3
 Emmen, Boermarkeweg 23	118
 Amsterdam, Weltevreden	64
 Heimbach (Eifel), Hasenfeld Schwammenauel	10
@@ -52887,13 +52887,13 @@ Inden (Rheinland), Pier Krauthausen Industriegebiet	0
 Kerpen (Rheinland), Lindenhof	0
 Joure, De Ekers	20
 Erkelenz, Wockerath	30
-Gouda Goverwelle,37
-Vroomshoop,27
+Gouda Goverwelle	37
+Vroomshoop	27
 Milsbeek, Helweg	25
-Zaltbommel,36
+Zaltbommel	36
 Zeewolde, Trekkersveld	21
 Herzogenrath, Kohlscheid Bank Finkenstraße	19
-Lichtenvoorde-Groenlo,0
+Lichtenvoorde-Groenlo	0
 Arnhem, Centraal Station	163
 Hoogwoud, C. v. Nootstraat	32
 St. Maartensvlotbrug, Belkmerweg	17
@@ -53030,7 +53030,7 @@ Slagharen, Vergouwlaan	32
 Santpoort-Zuid, Rusburglaan	11
 Santpoort-Zuid, Rusburglaan	11
 Soest, Soestdijk Noord	52
-Rijswijk,0
+Rijswijk	0
 Maastricht, Cabergerweg	28
 Rilland, Dorpshuis	7
 Muntendam, Oude verlaat	14
@@ -53170,7 +53170,7 @@ Uithoorn, Busstation	24
 Zierikzee, Sas	2
 Almere Poort, Station Poort	46
 Steenwijk, Station	67
-Basel Bad Bf,3
+Basel Bad Bf	3
 Veendam, Scholthuizen	35
 Wegberg, Dalheim VDK-Siedlung	34
 Amsterdam, Klaprozenweg	57
@@ -53181,7 +53181,7 @@ Ede, Veenderweg	1
 Almere Buiten, Groene Kadeweg	46
 Brugge, Komvest	15
 Utrecht, CS Centrumzijde (Perron B5)	83
-Amsterdam Centraal,31
+Amsterdam Centraal	31
 Emmeloord, Medisch Centrum	62
 Heetveld, Heetveld	31
 Egmond a/d Hoef, Egmonderstraatweg	57
@@ -53230,7 +53230,7 @@ Leeuwarden, Oosterbrug	56
 Leeuwarden, MFC Het Mozaiek	38
 Leeuwarden, Tesselschadestraat	118
 Ingelum, Ingelum	21
-Bilthoven,76
+Bilthoven	76
 Wierum, Wierum	9
 Jouswier, Jouswier	13
 Arum, Grauwe Kat	22
@@ -53397,7 +53397,7 @@ Zoeterwoude, Dorp	106
 Leiden, Gerard Brandtstraat	59
 Haarlem, Belgielaan	76
 Haarlem, Belgielaan	75
-Maassluis West,44
+Maassluis West	44
 Noordwijkerhout, Leeweg	19
 Noordwijkerhout, Langelaan	19
 Noordwijkerhout, Langelaan	19
@@ -53416,13 +53416,13 @@ Bergen op Zoom, Noordzijde Zoom	32
 Borne, Blauwgras	33
 Den Ham, Smitstraat	27
 Aachen, Hahn Steinbruch	33
-Lille Europe,2
-Apeldoorn,0
+Lille Europe	2
+Apeldoorn	0
 Middelburg, Spinhuisweg	11
 Driewegen, v.Tilburghstraat	10
 Moerdijk, Steenweg	12
 Zaandam, Station	70
-Weesp,2
+Weesp	2
 Onstwedde, Verlengde Luringstraat	18
 Jülich, Kirchberg Papierfabrik	21
 Hürtgenwald, Vossenack Kaulen	20
@@ -53464,11 +53464,11 @@ De Meern, Meernbrug	96
 Selfkant, Heilder	22
 Erkelenz, Kückhoven Markt	30
 Alsdorf (Rheinland), Martinstraße	24
-Anna Paulowna,1
+Anna Paulowna	1
 Waldfeucht, Hontem	19
 Langerwehe, Wenau	1
 Jülich, Dürener Straße	5
-Hardinxveld Blauwe Zoom,1
+Hardinxveld Blauwe Zoom	1
 Aachen, Prager Ring	136
 Deurne, Het Vreek	3
 Noordwijk, Herenweg	88
@@ -53487,7 +53487,7 @@ Roetgen, Brandstraße	20
 Lopik, Verwey	11
 Halsteren, Jannelandseweg	48
 Hoogerheide, Korteven	37
-Susteren,34
+Susteren	34
 Arnhem, Ziekenhuis Rijnstate	93
 Waldfeucht, Obspringen Marktplatz	10
 Eind, Brug	19
@@ -53499,8 +53499,8 @@ Aachen, Pius-Gymnasium	1
 Monschau, Hargard	49
 Grootschermer, Aanplakbord	7
 Würselen, Teuterhof	11
-Opheusden,0
-Sassenheim,46
+Opheusden	0
+Sassenheim	46
 Drijber, Berkenweg 31	9
 Alkmaar, Oudorperdijkje	121
 Alkmaar, Nieuwe Schermerweg	91
@@ -53519,11 +53519,11 @@ Nispen, Dorpstraat	12
 Den Burg, VVV Texel	41
 Doetinchem, Den Ooiman	35
 Wegberg, Holtum Spielplatz	61
-Amsterdam RAI,77
+Amsterdam RAI	77
 Axel, Drieschouwen	22
 Axel, Drieschouwen	22
-Valence TGV,0
-Nieuwerkerk ad IJssel,0
+Valence TGV	0
+Nieuwerkerk ad IJssel	0
 Amsterdam, Centraal Station IJzijde	0
 Chaam, Legstraat	17
 Amersfoort, Fideliostraat	64
@@ -53553,7 +53553,7 @@ Assendelft, S. de Beauvoirstraat	53
 Purmerend, Retiropark	87
 Kwadijk, Stationsweg	4
 Kwadijk, Nieuwe Gouw	8
-Mantgum,47
+Mantgum	47
 Panheel, Pater J Schreursweg 1a	18
 Rotterdam, Homerusstraat	92
 Rotterdam, Schiemond	93
@@ -53626,7 +53626,7 @@ Born, Mgr. Buckxstraat	39
 Assen, Rolderstraat	81
 Eys, Overeys	28
 Sittard, Dalderhaag	31
-Arnhem Zuid,70
+Arnhem Zuid	70
 Leeuwarden, NHL Hogeschool	2
 Leeuwarden, Breitnerstraat	31
 Leeuwarden, Harlingersingel	27
@@ -53651,7 +53651,7 @@ Amsterdam, Buiksloterweg	193
 Drempt, de Braamberg	21
 Tiel, Voetveer	18
 Tholen, Deltaweg	31
-Milmort,30
+Milmort	30
 Beek, Makado	34
 Aachen, Berensberg	27
 Eschweiler (Rheinland), Bohl	35
@@ -53670,7 +53670,7 @@ Euskirchen, Euenheim BZE	20
 Erkelenz, Grambusch	20
 Zoetermeer, Centrum West	17
 Zierikzee, De Val	49
-Rotterdam Noord,54
+Rotterdam Noord	54
 Jülich, Dürener Straße	2
 Hückelhoven, Ratheim Busch	116
 Noordwijk, Herenweg	43
@@ -53692,25 +53692,25 @@ Vught, Bosscheweg	84
 Rosmalen, Laaghemaal	31
 Leeuwarden, Busstation	49
 Arnhem, Velperplein	12
-Bilthoven,0
+Bilthoven	0
 Zutphen, De Waarden	33
 Hoogeveen, Buizerdlaan	29
 Hee, Westend	11
 Alsdorf (Rheinland), Gesamtschule	3
 Gangelt, Stahe Krings	65
-Voorhout,0
+Voorhout	0
 Kreuzau, Drove Schule	20
-Buitenpost,0
-Kufstein,0
+Buitenpost	0
+Kufstein	0
 Langbroek, Gooyerdijk	32
 Helmond, Vossenbeemd	14
-Roodeschool,0
-Best,73
+Roodeschool	0
+Best	73
 Aachen, Wilhelm-Pitz-Weg	6
 Katwijk, Estec	0
 t Zandt, Korendijk	17
 Aachen, ASEAG	30
-Winsum,36
+Winsum	36
 Geesteren, School	22
 Den Haag, Jozef Israëlsplein	65
 Den Haag, Van Hoytemastraat	65
@@ -53735,7 +53735,7 @@ Velsen Noord, Velser Traverse	99
 Amersfoort, Boreelstraat	148
 Simmerath, Steckenborn Felderstraße	6
 Langerwehe, Schönthal Schönthaler Hof	19
-Culemborg,0
+Culemborg	0
 Amersfoort, Arubalaan	36
 Schaijk, Runstraat	7
 Ottoland, NH Kerk	26
@@ -53765,7 +53765,7 @@ Zwolle, Katwolderplein/Centrum	38
 Zwolle, Katwolderplein/centrum	193
 Zwolle, Katwolderplein/centrum	289
 Zwolle, Katwolderplein/centrum	77
-Kontich,0
+Kontich	0
 Simmerath, Am Gericht	5
 Breskens, Veerhaven	34
 Usselo, Usseler Esch	38
@@ -53797,23 +53797,23 @@ Wilhelminadorp, Roodewijk	33
 Meerlo, Brug	19
 Vettweiß, Soller	12
 Aachen, Bayernallee	130
-Reuver,0
+Reuver	0
 Nütterden, Siedlung	20
 Titz, Spiel Neuspiel	5
-Dordrecht Zuid,0
+Dordrecht Zuid	0
 Deventer, Siemelinksweg	36
 Würselen, Mauerfeldchen	48
 Düren (Rheinland), Birkesdorf Buchenstraße	10
-Liege-Jonfosse,30
+Liege-Jonfosse	30
 Rotterdam, Dokhaven	11
 Rotterdam, Rotterdam Centraal	102
-Den Haag HS,110
+Den Haag HS	110
 Venlo, Straelseweg	33
 Capelle ad IJssel, Sibeliusweg	12
 Rotterdam, Waalhaven Westzijde	71
 Rotterdam, Erasmus MC	98
 Rotterdam, Kastanjeplein	31
-Hertogenb ('s) Oost,0
+Hertogenb ('s) Oost	0
 Rotterdam, Schinnenbaan	117
 Schiedam, Bachplein	128
 Rotterdam, Breeplein	141
@@ -53828,7 +53828,7 @@ Lopik, Industrieweg	21
 Lopik, Kruispunt Graaf	44
 Lopik, Kruispunt Graaf	21
 Tilburg, Paterstraat	47
-Paris-Nord,9
+Paris-Nord	9
 Cuijk, Station	4
 Deventer, Herfordstraat	7
 Amersfoort, Peutzerf	68
@@ -53849,8 +53849,8 @@ Egmond-Binnen, Kerklaan	9
 Uithoorn, Busstation	112
 Rheeze, Junglecamping	5
 Titz, Müntz Kloster	19
-Augsburg Hbf,1
-Schiedam Centrum,0
+Augsburg Hbf	1
+Schiedam Centrum	0
 Thij, Thij	14
 Elst, Brahmsstraat	32
 Kessel, Veer	0
@@ -53898,7 +53898,7 @@ Schoonhoven, Mr. Kesperplein	44
 Schoonhoven, Mr. Kesperplein	22
 Schoonhoven, Mr. Kesperplein	61
 Schoonhoven, Mr. Kesperplein	22
-Steenwijk,49
+Steenwijk	49
 Cabauw/Zevender, v.d. Ende	11
 Almen, Groot Have	20
 Schoonhoven, St. Helena	11
@@ -54003,7 +54003,7 @@ Streefkerk, Bergstoep 33	27
 Streefkerk, Dorp Zuid	5
 Streefkerk, Randweg	5
 Schimmert, Oensel	32
-Leeuwarden,0
+Leeuwarden	0
 Abbenes, Hanepoel	10
 Amstelveen, Sacharovlaan	115
 Druten, Busstation	34
@@ -54012,8 +54012,8 @@ Nieuwaal, Kerk	19
 Reusel, Busstation	22
 Aachen, Brand	96
 Puth, Bovenste Puth	18
-Haarlem,1
-Kalmthout,34
+Haarlem	1
+Kalmthout	34
 Baesweiler, Gymnasium	20
 Herzogenrath, Noppenberg Ort	0
 Düren (Rheinland), Kreishaus	50
@@ -54022,11 +54022,11 @@ Baesweiler, Setterich Rathaus	9
 Waldfeucht, Selsten Mitte	4
 Zülpich, Bergheimer Straße	12
 Arnhem, Rietgrachtstraat	178
-Meppel,0
+Meppel	0
 Arnhem, Blankenweg	60
 Erkelenz, Burg	65
 Baesweiler, Grengracht	28
-Dieren,0
+Dieren	0
 Übach-Palenberg, Palenberg Wurmtalbrücke	39
 Niederzier, Apotheke	32
 Wassenberg, Myhl Myhlerfeld	12
@@ -54038,11 +54038,11 @@ Linnich, Welz	21
 Würselen, Weiden Kirche	51
 Gangelt, Tonwerk	21
 Soest, Heezerspoor	24
-Hopfgarten,0
-Kirchberg in Tirol,0
+Hopfgarten	0
+Kirchberg in Tirol	0
 Jülich, Bahnhof / ZOB (Bus)	37
 Baesweiler, Im Brühl	40
-Delfzijl West,68
+Delfzijl West	68
 Langelille, De Driesprong	12
 Langelille, Speeltuin	4
 Düren (Rheinland), Friedrich-Ebert-Platz	28
@@ -54055,10 +54055,10 @@ Beverwijk, Station	30
 Groningen, Hoofdstation (Perron F)	242
 Egmond a/d Hoef, Sabine van Beierenlaan	31
 Egmond a/d Hoef, Sabine van Beierenlaan	31
-Belsele,0
-Landry,0
+Belsele	0
+Landry	0
 Doorn, Sonora	61
-Dusseldorf Hbf,49
+Dusseldorf Hbf	49
 Niederzier, Ellen Reitweg	34
 Hückelhoven, Kleingladbach Ratheimer Straße	32
 Nes, Ostrea	13
@@ -54066,7 +54066,7 @@ Den Haag, Strandweg	0
 Den Haag, Geysterenweg	101
 Benschop, Kooikersbrug	49
 Rheden, Overweg	5
-Raalte,30
+Raalte	30
 Gorinchem, Station (perron F)	1
 Sint Anthonis, Dokter Verbeecklaan	13
 IJlst, Piekemeer	3
@@ -54085,7 +54085,7 @@ Rotterdam, Oostplein	0
 Rotterdam, Oostplein	130
 Ridderkerk, Randweg	9
 Vlijmen, Tunnelweg	46
-Gouda,132
+Gouda	132
 Tilburg, Paterstraat	46
 Jülich, Römerstraße	52
 Blijham, Kochspad	25
@@ -54093,7 +54093,7 @@ Heinsberg (Rheinland), Dremmen Abzw. Herb	7
 Wegberg, Industriestraße	3
 Aachen, Soers	58
 Aachen, Lukasstraße	23
-Obdam,33
+Obdam	33
 Schleiden (Eifel), Kinoplatz	9
 Esch, Markt	1
 Almelo, Centraal Station	81
@@ -54108,17 +54108,17 @@ Hengelo, IKEA	60
 Almelo, Pergola	29
 Heino, Brinkzicht	28
 Sassenheim, Postbrug	33
-Wolvega,0
+Wolvega	0
 Eschweiler (Rheinland), Dürwiß Karl-Arnold-Straße	35
 Soest, Laanstraat	50
 Jülich, Bahnhof / ZOB (Bus)	38
 Geffen, Bredeweg	12
-Rotterdam Blaak,141
+Rotterdam Blaak	141
 Eupen, Kettenis An den Weihern	22
 Huizen, Voormaat	79
 Zeeland, Kreitsberg	17
 Helmond, Hindestraat	12
-Frankfurt (M) Hbf,9
+Frankfurt (M) Hbf	9
 Lexmond, 't Lam	28
 Groningen, Dukdalf	11
 Raeren, Belven 60	5
@@ -54141,7 +54141,7 @@ Zülpich, Dürscheven	20
 Ransdorp, Dorpsweg	14
 Leunen, Kerk	51
 Reuver, Pont Kessel - Beesel	36
-Den Haag HS,93
+Den Haag HS	93
 Winkel, Scheidersweg	25
 Ter Apel, Steenbraam	48
 Leeuwarden, Newtonlaan	38
@@ -54161,7 +54161,7 @@ Oudorp, Venusstraat	31
 Oudorp, 't Wuiver	31
 Asenray, Elmpterweg	18
 Zaandijk, Beeldentuin	17
-Steenwijk,0
+Steenwijk	0
 Boskoop, Roemer	32
 Hillegom, Patrimonium	61
 Weesp, Papelaan	34
@@ -54175,7 +54175,7 @@ Blerick, 3 Decembersingel	15
 Borssele, Monsterweg	17
 Dordrecht, Marisplein	58
 Leiden, De Heyderweg	25
-Eijsden,18
+Eijsden	18
 Heemstede, Glipperdreef	30
 Hoofddorp, Assumburg	65
 Aachen, Venskyhäuschen	178
@@ -54203,12 +54203,12 @@ Haarlem, Kampersingel	68
 Jülich, Brückenkopfpark	35
 Langerwehe, Bahnhof (Bus)	24
 Aachen, Richterich Kirche	35
-Oosterbeek,34
+Oosterbeek	34
 Aachen, Haaren Birkenweg	4
 Aachen, Hüls	47
 Geilenkirchen, Bauchem Flandernstraße	57
 Herzogenrath, Merkstein Herbach	76
-Vise,35
+Vise	35
 Wegberg, Arsbeck Roermonder Bahn	31
 Aachen, Danziger Straße	55
 Selfkant, Großwehrhagen	15
@@ -54216,7 +54216,7 @@ Blerick, 3 Decembersingel	15
 Oudorp, Dommelstraat	30
 Raeren, Belven 96	5
 Aachen, Preusweg	77
-Breda,34
+Breda	34
 Hürtgenwald, Hürtgen Post	20
 Vettweiß, Gladbach Siedlung	2
 Blerick, Maashofpark	15
@@ -54225,11 +54225,11 @@ Hürtgenwald, Gey Broichstraße	22
 Geilenkirchen, Lindern Kirche	28
 Nörvenich, Binsfeld Kirche	30
 Linnich, Gevenich Kreuz	22
-Tegelen,0
+Tegelen	0
 Blerick, Maashofpark	15
 Geilenkirchen, Amtsgericht	132
 Titz, Meerhöfe	25
-Uitgeest,0
+Uitgeest	0
 Gees, Oude Steeg	17
 Aachen, Diepenbenden	53
 Jülich, Kirchberg Teichstraße	21
@@ -54238,18 +54238,18 @@ Wegberg, Venn	4
 Wegberg, Sporthalle	69
 Jülich, Abzw. Bourheim	17
 Vettweiß, Rengershauser Mühle	12
-Maassluis,66
-Woerden,28
+Maassluis	66
+Woerden	28
 Weert, Het College	1
 Wier, Wier	31
 Hückelhoven, Hilfarth Rurbrücke	39
-Bedum,0
+Bedum	0
 Den Haag, Leyweg	233
-Sneek Noord,47
-Sittard,0
+Sneek Noord	47
+Sittard	0
 Horbach, Linde	32
-Steinfurt-Borghorst,37
-Zutphen,73
+Steinfurt-Borghorst	37
+Zutphen	73
 Vught, Biezenwei	33
 Beilen, Lieving 29	36
 Aachen, Kennedypark	112
@@ -54392,7 +54392,7 @@ Utrecht, CS Centrumzijde (Perron B8)	121
 Utrecht, CS Centrumzijde (Perron B10)	80
 Utrecht, CS Centrumzijde (Perron B11)	66
 Utrecht, CS Centrumzijde (Perron B12)	80
-Tilburg Reeshof,38
+Tilburg Reeshof	38
 Kleve, Bahnhof	18
 Heetveld, Heetveld	32
 Arnhem, Burgemeestersplein	35
@@ -54442,7 +54442,7 @@ Waskemeer, Waskemeer	17
 Een, Haulerwijksterweg	13
 Wijnjewoude, Klein Groningen	19
 Wijnjewoude, Merskenweg	18
-Harlingen,9
+Harlingen	9
 Leeuwarden, Ludinga	38
 Delft, Hoefslagendreef	38
 Delft, Hoefslagendreef	38
@@ -54456,14 +54456,14 @@ Ede, Sweelincklaan	11
 Heerenveen, Busstation	0
 Den Haag, Waterweegbree	36
 Vrouwenparochie, Hervormde Kerk	22
-Delft Zuid,69
+Delft Zuid	69
 Lemmer, Gemini	22
 Haarlem, Raaksbrug	293
 Haarlem, Stadsschouwburg	1
 Ransdorp, Dorpsweg	14
 Sneek, Tinga	71
 Lemmer, Houtmolen	13
-Den Helder,16
+Den Helder	16
 Graft, Gemeentehuis	7
 Appel, Akkerweg	4
 Den Haag, Noordweg	38
@@ -54488,13 +54488,13 @@ Maarssen, Vredenburg	34
 Breukelen, Broeckland	34
 Leuth, Morgenbad	35
 Aachen, Oberforstbach Kohlshof	35
-Holwerd,7
+Holwerd	7
 Linnich, Tetz Mitte	45
-Hoorn,0
+Hoorn	0
 Aachen, Brand	37
 Aachen, Brand Kollenbruch	5
 Selfkant, Heilder	24
-Rotterdam Centraal,73
+Rotterdam Centraal	73
 Kreuzau, Schneidhausen	41
 Selfkant, Stein	11
 Aachen, Waldfriedhof	73
@@ -54504,10 +54504,10 @@ Selfkant, Stein	24
 Simmerath, Bushof	27
 Vettweiß, Sportheim	36
 Kreuzau, Schneidhausen	41
-Emmen,22
+Emmen	22
 Dudzele, Melkerij	15
 Linnich, Floßdorf	17
-Sittard,0
+Sittard	0
 Emmen, Holdert	118
 Thij, Thij	13
 Spijkenisse, De Vier Werelden	0
@@ -54526,7 +54526,7 @@ Rouveen, Oude Rijksweg	1
 Roetgen, Vogelsangstraße	3
 Haastrecht, Kleine Betuwe	36
 Schoonhoven, Hemstoep	27
-Zwolle,37
+Zwolle	37
 Helmond, Helmondselaan	25
 Helmond, Noordende	40
 Well, Grote Waay	9
@@ -54564,7 +54564,7 @@ Hürtgenwald, Gey Eingang	18
 Reuver, Lommerbergen	36
 Venlo, Goltziusstraat	66
 Roermond, WC Roercenter	33
-Leiden Centraal,80
+Leiden Centraal	80
 Venlo, Rijnbeekstraat 12	32
 Venlo, Rijnbeekstraat 12	33
 Klijndijk, Hoofdweg 66	16
@@ -54584,7 +54584,7 @@ Rijs, Hotel Jans	22
 Rijs, Rijsterbosch	26
 Akkrum, Heechein	19
 Akkrum, Heechein	19
-Bloemendaal,1
+Bloemendaal	1
 Amsterdam, Lorentzlaan	62
 Amsterdam, Maxwellstraat	153
 Monschau, Hargard	47
@@ -54601,7 +54601,7 @@ Amsterdam, Kostverlorenstraat	140
 Amsterdam, Ten Katestraat	256
 Aachen, Walheim	48
 Den Helder, Steiger TESO-boot	0
-Texel,16
+Texel	16
 Alkmaar, Kanaalkade	17
 Erkelenz, Pestalozzischule	49
 Purmerend, De Graeffweg	256
@@ -54707,20 +54707,20 @@ Utrecht, CS Jaarbeurszijde (Perron C6)	228
 Utrecht, CS Jaarbeurszijde (Perron C4)	34
 Elburg, Klaverplein	55
 Elburg, Zilverschoon	62
-Rotterdam Stadion,0
-Rotterdam Stadion,0
+Rotterdam Stadion	0
+Rotterdam Stadion	0
 Zeeland, Molen	10
 Zeeland, Molen	10
 Erkelenz, Süd	52
 Tilburg, Centraal Station (N)	46
 Rotterdam, Zuidplein	0
 Breda, Nieuwe Prinsenkade	62
-Hasselt,15
-Uithuizermeeden,0
+Hasselt	15
+Uithuizermeeden	0
 Selfkant, Saeffelen Kirche	24
 Vettweiß, Kelz Kirchstraße	7
 Erkelenz, Lövenich Bruchstraße	22
-Nijmegen Goffert,49
+Nijmegen Goffert	49
 Erftstadt, Herrig Siedlung	2
 Gangelt, Hastenrather Weg	52
 Baesweiler, Puffendorf van Roy	39
@@ -54733,14 +54733,14 @@ Simmerath, Paustenbach Post	6
 Monschau, Flora	69
 Simmerath, Rösberg	16
 Würselen, EUREGIO-Kolleg	10
-Zutphen,34
-Hengelo,2
+Zutphen	34
+Hengelo	2
 Simmerath, Witzerath	16
-Workum,0
+Workum	0
 Raeren, Eynatten Depot	19
 Aachen, Drimborn	27
 Liessel, Molen	15
-Eindhoven,62
+Eindhoven	62
 Aachen, Elisenbrunnen	192
 Delft, Olof Palmestraat	0
 Zülpich, Post	20
@@ -54749,14 +54749,14 @@ Cothen, Kleidijk	79
 Jülich, Forschungszentrum Feuerwehr	2
 Kreuzau, Drove Am Sandberg	13
 Aachen, Goethestraße (Hangeweiher)	4
-Haren,41
+Haren	41
 Gulpen, Busstation	0
-Halfweg-Zwanenburg,0
+Halfweg-Zwanenburg	0
 Kreuzau, Boich Im Bend	5
 Leersum, Hoogstraat	57
 Mill, Fitland	38
 Geleen, Busstation Perron A	89
-Ommen,0
+Ommen	0
 Delft, Bankastraat	0
 Den Haag, Breitnerlaan	63
 Den Haag, Lozerlaan	110
@@ -54819,7 +54819,7 @@ Zeewolde, Klein Hoefblad	48
 Zeewolde, Kwartiermakerslaan	43
 Amersfoort, Oudegein	88
 Alkmaar, Station	35
-Aachen Schanz,0
+Aachen Schanz	0
 Kwadijk, Stationsweg	4
 Wervershoof, Gemeentehuis	43
 Zelhem, Kerkwijk	16
@@ -54827,7 +54827,7 @@ Zelhem, Kerkwijk	17
 Zelhem, Dennenhoeve	16
 Zelhem, Dennenhoeve	17
 Zelhem, De Betteld	16
-Etten-Leur,38
+Etten-Leur	38
 Roelofarendsveen, Middenweg	10
 Hilversum, Beeld en Geluid	29
 Enschede, Borgbos	38
@@ -54837,7 +54837,7 @@ Groningen, De Trefkoel	149
 Groningen, De Trefkoel	15
 Groningen, De Trefkoel	235
 Kanne, Plaats	18
-Rotterdam Centraal,34
+Rotterdam Centraal	34
 Erkelenz, Geneiken	14
 Blerick, Rabobank	35
 Wilnis, Begraafplaats	0
@@ -54849,9 +54849,9 @@ Wegberg, Merbeck Schürensteg	32
 Nijswiller, Nijswiller	87
 Herkingen, Tuindorp	23
 Oud-Beijerland, Zoomhoek	5
-Enschede Kennispark,64
-Rosmalen,0
-Beek-Elsloo,34
+Enschede Kennispark	64
+Rosmalen	0
+Beek-Elsloo	34
 Leiderdorp, Alrijne Ziekenhuis	73
 Leiderdorp, Touwbaan	61
 Leiden, Alrijne Ziekenhuis	34
@@ -54910,7 +54910,7 @@ Rolde, Ruigeveld	33
 Assen, Europaweg Oost	17
 Assen, Europaweg Oost	16
 Kerkrade, Nieuwstr/Schummerstr	36
-Schin op Geul,40
+Schin op Geul	40
 Delft, Sadatweg	103
 Catsop, Op De Dries	17
 Kerkrade, Kerkradersteenweg	72
@@ -55005,20 +55005,20 @@ Mönchengladbach, Bau	1
 Zülpich, Adenauerplatz	8
 Rijen, Europalaan	31
 Bareveld, 42e laan	19
-Hoogeveen,0
+Hoogeveen	0
 Aachen, Misereor	87
-Mechelen,32
+Mechelen	32
 Aachen, Normaluhr	115
 Alsdorf (Rheinland), Hoengen Schillerstraße	63
-Almere Poort,111
-Heide,34
+Almere Poort	111
+Heide	34
 Zülpich, Langendorf	2
 Alsdorf (Rheinland), Siedlung Ost Berliner Platz	3
 Erkelenz, Gerderath Hover Busch	12
 Monschau, Gymnasium	36
 Aachen, Eilendorf Linde	61
 Erkelenz, Pescherkamp	31
-Uitgeest,0
+Uitgeest	0
 Titz, Höllen	31
 Monschau, Dreistegen	22
 Langerwehe, Heistern	18
@@ -55028,7 +55028,7 @@ Wegberg, Beeck Am Grüngürtel	28
 Langerwehe, Luchem Lindenhof	6
 Simmerath, Lammersdorf Bahnhof	29
 Linnich, Gereonsweiler Post	24
-Gaanderen,74
+Gaanderen	74
 Eindhoven, Merckthoef	29
 Hürtgenwald, Gey Eingang	20
 Oosterbeek, Station Oosterbeek	63
@@ -55042,67 +55042,67 @@ Bilthoven, Gemeentehuis	40
 Düren (Rheinland), Neuer Friedhof	27
 Titz, Hompesch	19
 Utrecht, Slotlaan	115
-Uitgeest,40
+Uitgeest	40
 Aachen, Orsbach Schule	22
 Würselen, Schweilbach	11
 Groningen, P+R Zernike (Perron B)	24
 Herzogenrath, Merkstein Floeßer Straße	36
-Haarlem,2
+Haarlem	2
 Aachen, Debyestraße	18
 Hürtgenwald, Gey Forsthaus Hubertushöhe	23
 Delft, Marlotlaan	13
 Linde, Ommerweg 37	21
 Vianen, Laanakkerweg	56
-Mortsel-Oude God,0
+Mortsel-Oude God	0
 Baesweiler, Roskaul	43
 Erkelenz, Holzweiler Kirche	29
 Heinsberg (Rheinland), Oberbruch Volkspark	87
-Eindhoven Beukenlaan,0
+Eindhoven Beukenlaan	0
 Langerwehe, Luchem Blumenstraße	13
 Wegberg, Flassenberg	20
 Geilenkirchen, Niederheid Niederheiderhof	20
 Ommen, Schurinkstraat	13
 Ommen, Schurinkstraat	13
 Ommen, Station NS	0
-Bergen op Zoom,39
+Bergen op Zoom	39
 Zülpich, Bürvenich Wildenburg	7
 Erkelenz, Gerderath Sparkasse	35
 Arnhem, Burgers' Zoo	0
 Duiven, Grasklokje	37
 Hückelhoven, Ratheim Kirche	78
-Veenendaal Centrum,38
-Eindhoven,73
-Gouda,0
+Veenendaal Centrum	38
+Eindhoven	73
+Gouda	0
 Beilen, Station	24
 Alkmaar, Station	88
 Ridderkerk, Zwaluw	18
 Euskirchen, Kirchstraße	14
 Buinen, Eeserweg	15
 Jülich, Neubourheim	32
-Zwijndrecht,0
-Munchen Hbf,0
-Winsum,0
+Zwijndrecht	0
+Munchen Hbf	0
+Winsum	0
 Arnhem, Willemsplein	124
 Lauwersmeer, Strandweg	8
-Twello,33
+Twello	33
 Gronsveld, Kerk	18
 Kunrade, Heerlerweg	84
 Maastricht, Kommel	100
 Groningen, Osloweg	21
 Vaals, Eschberg	18
-Den Haag HS,0
+Den Haag HS	0
 Aachen, Eilendorf St. Severin	36
 Raeren, Neuenbau	5
 Visvliet, Heirweg	7
 Jülich, Süd	5
 Zülpich, Juntersdorf Ort	2
-Mantgum,46
+Mantgum	46
 Utrecht, Archeologiepark	62
-Bad Bentheim,14
-Zwolle,0
-Praha hl.n.,0
+Bad Bentheim	14
+Zwolle	0
+Praha hl.n.	0
 Roetgen, Süd	45
-Chur,0
+Chur	0
 Erkelenz, Neu-Immerath	31
 Titz, Ralshoven	13
 Hoogkerk, Brug Vierverlaten	27
@@ -55112,15 +55112,15 @@ Laar, Kruising	18
 Maastricht, Cannerplein	52
 Schiedam, Warande	1
 Hedel, Baronieweg	34
-Amersfoort,76
-Dalfsen,49
-Maarn,0
+Amersfoort	76
+Dalfsen	49
+Maarn	0
 Titz, Gevelsdorf	13
-Middelburg,36
+Middelburg	36
 Vettweiß, Bahnübergang	3
 Titz, Spiel Neuspiel	15
 Selfkant, Saeffelen Kirche	35
-Sittard,0
+Sittard	0
 Erkelenz, Katzem Kirche	25
 Heerlen, Sterflat	66
 Maastricht, Dorpstraat / kerk	62
@@ -55129,23 +55129,23 @@ Venlo, A. Cuypstraat	33
 Reuver, Industriestraat/Heyenkamp	11
 Monster, Vlotlaan	33
 Zoetermeer, Aluminiumstraat	10
-Legden,29
+Legden	29
 Aachen, Zeppelinstraße	173
 Waldfeucht, Hontem	11
-Kropswolde,69
-Liers,30
-Zwolle,0
+Kropswolde	69
+Liers	30
+Zwolle	0
 Lisse, Eikenlaan	19
-Houten,76
-Roermond,60
-Hengelo,0
-Arnhem,69
-Dalfsen,50
+Houten	76
+Roermond	60
+Hengelo	0
+Arnhem	69
+Dalfsen	50
 Wassenberg, Orsbeck	60
 Kreuzau, Thum Mitte	11
-Essen (Belgie),34
+Essen (Belgie)	34
 Wegberg, Beeck Am Grüngürtel	30
-Landgraaf,36
+Landgraaf	36
 Den Haag, Spui	454
 Delft, IKEA	58
 Vijlen, Linde	17

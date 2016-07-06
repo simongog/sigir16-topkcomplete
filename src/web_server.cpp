@@ -67,6 +67,7 @@ int main(int argc, char* argv[]){
   if ( sdsl::load_from_file(topk_index, index_file) ) {
       std::cout<<"Index load from file " << index_file << std::endl;
   } else {
+    // TODO: generate index, if it does not yet exist
     std::cerr<<"Could not load index from file " << index_file << std::endl;
     return 1;
   }
