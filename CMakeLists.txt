@@ -9,6 +9,7 @@ project(AUTOCOMPLETE CXX C)
 INCLUDE_DIRECTORIES(${CMAKE_HOME_DIRECTORY}/include
                     ${CMAKE_BINARY_DIR}/external/sdsl-lite/include
                     ${CMAKE_BINARY_DIR}/external/sdsl-lite/external/libdivsufsort/include
+                    ${CMAKE_HOME_DIRECTORY}/external/mongoose
                    )
 
 LINK_DIRECTORIES(${CMAKE_BINARY_DIR}/external/sdsl-lite/lib
@@ -33,3 +34,8 @@ FOREACH(line ${index_lines})
                  INDEX_TYPE=${index_type} 
                  INDEX_NAME="${index_name}")
 ENDFOREACH()
+
+ADD_EXECUTABLE(web_server src/web_server.cpp external/mongoose/mongoose.c)
+TARGET_LINK_LIBRARIES(web_server pthread sdsl)
+
+#g++ web_server.c ../external/mongoose/mongoose.c -o web_server -I ../external/mongoose/ 
