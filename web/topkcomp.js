@@ -9,13 +9,15 @@ $(function () {
         noCache: true,
         serviceUrl: '/topcomp',
         dataType: 'json',
-//        lookup: countriesArray,
         lookupFilter: function(suggestion, originalQuery, queryLowerCase) {
             var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
             return re.test(suggestion.value);
         },
         onSelect: function(suggestion) {
-            $('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            //window.location = 'http://google.com/maps?q=' + suggestion.value;
+            window.open('http://google.com/maps?q=' + suggestion.value);
+//            alert("You selected:" + suggestion.value);
+//            $('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
         },
         onHint: function (hint) {
             $('#autocomplete-ajax-x').val(hint);
