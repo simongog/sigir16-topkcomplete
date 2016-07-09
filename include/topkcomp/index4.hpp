@@ -113,7 +113,7 @@ class index4 {
 
             size_t  bp_idx=0, start_idx = 0, label_idx=0;
             m_start_bv[start_idx++] = 1; // append ..('' of root
-            build_tree(string_weight, 0, string_weight.size(), 0, bp_idx, start_idx, label_idx);
+            build_tree(string_weight, 0, N, 0, bp_idx, start_idx, label_idx);
             m_start_bv[start_idx++] = 0; // append ,,)'' of root
             m_bp.resize(bp_idx);              // resize to actual size
             m_labels.resize(label_idx);       // resize to actual size
@@ -130,26 +130,26 @@ class index4 {
                 return;
             m_bp[bp_idx++] = 1; // append ,,(''
             size_t d = depth;
-            const char* lb_entry = string_weight[lb].first.c_str();
-            const char* rb_entry = string_weight[rb-1].first.c_str();
+            const uint8_t* lb_entry = (const uint8_t*)(string_weight[lb].first.c_str());
+            const uint8_t* rb_entry = (const uint8_t*)(string_weight[rb-1].first.c_str());
             // extend common prefix
             while ( lb_entry[d] !=0 and lb_entry[d] == rb_entry[d] ) {
                 m_labels[label_idx++] = lb_entry[d]; // store common char
                 ++start_idx; ++d;
             }
             m_start_bv[start_idx++] = 1; // mark end of edge label
-            if ( lb_entry[d] == 0 ) {
-                ++lb;
-            }
-            // handle children
-            while ( lb < rb ) {
-                char c = string_weight[lb].first[d];
-                size_t mid = lb+1;
-                while ( mid < rb and string_weight[mid].first[d] == c ) {
-                    ++mid;
+            // if node is not a leaf
+            if ( lb+1 < rb) {
+                // handle children
+                while ( lb < rb ) {
+                    uint8_t c = string_weight[lb].first.c_str()[d];
+                    size_t mid = lb+1;
+                    while ( mid < rb and ((uint8_t)string_weight[mid].first.c_str()[d]) == c ) {
+                        ++mid;
+                    }
+                    build_tree(string_weight, lb, mid, d, bp_idx, start_idx, label_idx);
+                    lb = mid;
                 }
-                build_tree(string_weight, lb, mid, d, bp_idx, start_idx, label_idx);
-                lb = mid;
             }
             m_bp[bp_idx++] = 0; // append ,,)''
         }
