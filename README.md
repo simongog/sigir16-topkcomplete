@@ -62,7 +62,7 @@ is 8080 and you will get top-10 query suggestions at
     which contains the pairs of Dutch train stations and number
     of daily train stops.
 
-  * Thanks to all contributers of the SDSL.
+  * Thanks to [all contributers to the SDSL project][SDSLCONTRIB].
 
 [TUTPAGE]: http://pages.di.unipi.it/rossano/succinct-data-structures-in-information-retrieval-theory-and-practice/
 [SIGIR16]: http://sigir.org/sigir2016/
