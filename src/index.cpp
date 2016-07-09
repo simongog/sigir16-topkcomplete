@@ -29,10 +29,28 @@ int main(int argc, char* argv[]){
         string s_weight;
         getline(in, s_weight);
         uint64_t weight = stoull(s_weight);
+//        stringstream ss;
+//        ss << weight;
+//        if ( ss.str() != s_weight ) {
+//            std::cout<<"ss.str()="<<ss.str()<<" != " <<s_weight << std::endl;
+//            return 1;
+//        }
         string_weight.emplace_back(entry, weight);
     }
     sort(string_weight.begin(), string_weight.end());
-    cout << "read and sorted " << string_weight.size() << " entries" << endl;
+    cout << "read and sorted " << string_weight.size() << " strings" << endl;
+    auto unique_end = unique(string_weight.begin(), string_weight.end(),
+                             [](const tPSU& a, const tPSU& b) {
+                                return a.first == b.first;
+                             });
+    string_weight.resize(unique_end-string_weight.begin());
+    cout << "number of unique strings is " << string_weight.size() << endl;
+    {
+        ofstream out(std::string(argv[1])+".unique.txt");
+        for(size_t i=0; i<string_weight.size(); ++i){
+            out << string_weight[i].first << "\t"<<string_weight[i].second << "\n";
+        }
+    }
 
     auto construction_start = clock::now();
     t_index topk_index(string_weight);
