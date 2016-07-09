@@ -22,11 +22,13 @@ static void ev_handler(struct mg_connection *nc, int ev, void *p) {
   if (ev == MG_EV_HTTP_REQUEST) {
     struct http_message *hm = (struct http_message *) p;
     std::string uri = std::string(hm->uri.p, (hm->uri.p)+(hm->uri.len));
+//    std::cout<<"uri="<<uri<<std::endl;
     char buf[128];
     int buf_len = mg_url_decode(hm->query_string.p, hm->query_string.len, buf, 128, 1);
     if ( buf_len == -1 )
         return; 
     std::string query_string = std::string(buf, buf+buf_len);
+//    std::cout<<"query_string="<<query_string<<std::endl;
     if ( uri == "/topcomp" and query_string.substr(0, 6) == "query=" ) {
         std::string query = query_string.substr(6);
         std::string data;

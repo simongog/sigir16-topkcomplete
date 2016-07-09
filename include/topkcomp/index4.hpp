@@ -4,9 +4,6 @@
 #include <sdsl/bit_vectors.hpp>
 #include <sdsl/bp_support.hpp>
 #include <sdsl/rmq_support.hpp>
-#include <algorithm>
-#include <queue>
-#include <locale> // required by std::tolower
 
 namespace topkcomp {
 
@@ -20,104 +17,60 @@ class index4 {
     typedef sdsl::int_vector<8> t_label;
     typedef edge_rac<t_label>   t_edge_label;
 
-    t_label             m_labels;     // labels of the tree
-    sdsl::bit_vector    m_bp;         // balanced parantheses sequence of tree
+    t_label             m_labels;     // concatenation of tree labels
+    sdsl::bit_vector    m_bp;         // balanced parentheses sequence of tree
     t_bp_support        m_bp_support; // support structure for m_bp
-    t_bp_rnk10          m_bp_rnk10;   // rank for leaves in bp
-    t_bp_sel10          m_bp_sel10;   // select for leaves in bp
-    t_bv                m_start_bv;   // bitvector which represents the start of labels in m_labels
+    t_bp_rnk10          m_bp_rnk10;   // rank for leaf nodes in m_bp
+    t_bp_sel10          m_bp_sel10;   // select for leaf nodes in m_bp
+    t_bv                m_start_bv;   // marks start of labels in m_labels
     t_sel               m_start_sel;  // select structure for m_start_bv
-    sdsl::int_vector<>  m_priority;   //
-    t_rmq               m_rmq;        // range maximum query support for m_priority
+    sdsl::int_vector<>  m_weight;     // weights of strings 
+    t_rmq               m_rmq;        // range maximum query on m_weight
 
 
     public:
         typedef size_t size_type;
 
-        // Constructor
-        index4(const tVSI& entry_priority=tVSI()) {
-            if ( entry_priority.size() == 0 ) {
-                return;
-            }
-            // get the length of the concatenation of all strings
-            uint64_t n = std::accumulate(entry_priority.begin(), entry_priority.end(),
-                            0, [](uint64_t a, std::pair<std::string, uint64_t> ep){
-                                    return a + ep.first.size();
-                               });
-            // get maximum of priorities
-            auto max_priority = std::max_element(entry_priority.begin(), entry_priority.end(),
-                                    [] (const tSI& a, const tSI& b){
-                                        return a.second < b.second;
-                                    })->second;
-            size_t N   = entry_priority.size(), bp_idx=0, start_idx = 0, label_idx=0;
-            // initialize m_priority
-            m_priority = sdsl::int_vector<>(entry_priority.size(), 0, sdsl::bits::hi(max_priority)+1);
-            for (size_t i=0; i < N; ++i) {
-                m_priority[i] = entry_priority[i].second;
-            }
-            // initialize range maximum structure
-            m_rmq = t_rmq(&m_priority);
-            // m_bp size is at most 2*2*N
-            m_labels   = sdsl::int_vector<8>(n);
-            m_start_bv = sdsl::bit_vector(N+n+2, 0);
-            m_bp       = sdsl::bit_vector(2*2*N, 0);
-            m_start_bv[start_idx++] = 1;
-            build_tree(entry_priority, bp_idx, start_idx, label_idx);
-            m_bp.resize(bp_idx);
-            m_labels.resize(label_idx);
-            m_start_bv.resize(start_idx);
-            m_start_sel  = t_sel(&m_start_bv);
-            m_bp_support = t_bp_support(&m_bp);
-            m_bp_rnk10   = t_bp_rnk10(&m_bp);
-            m_bp_sel10   = t_bp_sel10(&m_bp);
-        }
-
-        struct priority_interval{
-            uint64_t p;
-            size_t idx, lb, rb;
-            priority_interval(uint64_t f_p, size_t f_idx, size_t f_lb, size_t f_rb) : 
-                p(f_p), idx(f_idx), lb(f_lb), rb(f_rb) {}
-
-            bool operator<(const priority_interval& pi) const {
-                if ( p != pi.p ) return p < pi.p;
-                if ( idx != pi.idx ) return idx < pi.idx;
-                if ( lb != pi.lb ) return lb < pi.lb;
-                return rb < pi.rb;
-            }
-        };
-
-        // k > 0
-        tVSI top_k(const std::string& prefix, size_t k) const{
-            auto range = prefix_range(prefix);
-            tVSI result_list;
-            std::priority_queue<priority_interval> pq;
-
-            auto push_interval = [&](size_t f_lb, size_t f_rb) {
-                if ( f_rb > f_lb ) {
-                    size_t max_idx = m_rmq(f_lb, f_rb-1);
-                    pq.push(priority_interval(m_priority[max_idx], max_idx, f_lb, f_rb));
+        // Constructor takes a sorted list of (string,weight)-pairs
+        index4(const tVPSU& string_weight=tVPSU()) {
+            using namespace sdsl;
+            if ( !string_weight.empty() ) {
+                uint64_t N, n, max_weight;
+                std::tie(N, n, max_weight) = input_stats(string_weight);
+                // initialize m_weight
+                m_weight = int_vector<>(N, 0, bits::hi(max_weight)+1);
+                for (size_t i=0; i < N; ++i) {
+                    m_weight[i] = string_weight[i].second;
                 }
-            };
-
-            push_interval(range[0], range[1]);
-            
-            while ( result_list.size() < k and !pq.empty() ) {
-                auto iv = pq.top();
-                pq.pop();
-                auto idx = iv.idx;
-                result_list.emplace_back(label(idx), m_priority[idx]);
-                push_interval(iv.lb, idx);
-                push_interval(idx+1, iv.rb);
+                // initialize range maximum structure
+                m_rmq = t_rmq(&m_weight);
+                // build the succinct tree
+                build_tree(string_weight, N, n);
+                // initialize the support structures
+                m_start_sel  = t_sel(&m_start_bv);
+                m_bp_support = t_bp_support(&m_bp);
+                m_bp_rnk10   = t_bp_rnk10(&m_bp);
+                m_bp_sel10   = t_bp_sel10(&m_bp);
             }
-            return result_list; 
+        }
+ 
+        // k > 0
+        tVPSU top_k(const std::string& prefix, size_t k) const{
+            auto range = prefix_range(prefix);
+            auto top_idx = heaviest_indexes_in_range(k, range, m_weight, m_rmq);
+            tVPSU result_list;
+            for (auto idx : top_idx){
+                result_list.push_back(tPSU(label(idx), m_weight[idx]));
+            }
+            return result_list;
         }
 
-        // Serialize method
+        // Serialize method (calls serialize method of each member)
         size_type
         serialize(std::ostream& out, sdsl::structure_tree_node* v=nullptr,
                   std::string name="") const {
             using namespace sdsl;
-            structure_tree_node* child = structure_tree::add_child(v, name, util::class_name(*this));
+            auto child = structure_tree::add_child(v, name, util::class_name(*this));
             size_type written_bytes = 0;
             written_bytes += m_labels.serialize(out, child, "labels");
             written_bytes += m_bp.serialize(out, child, "bp");
@@ -126,13 +79,13 @@ class index4 {
             written_bytes += m_bp_sel10.serialize(out, child, "bp_sel10");
             written_bytes += m_start_bv.serialize(out, child, "start_bv");
             written_bytes += m_start_sel.serialize(out, child, "start_sel");
-            written_bytes += m_priority.serialize(out, child, "priority");
+            written_bytes += m_weight.serialize(out, child, "weight");
             written_bytes += m_rmq.serialize(out, child, "rmq");
             structure_tree::add_size(child, written_bytes);
             return written_bytes;
         }
 
-        // Load method
+        // Load method (calls load method of each member)
         void load(std::istream& in) {
             m_labels.load(in);
             m_bp.load(in);
@@ -145,45 +98,63 @@ class index4 {
             m_start_bv.load(in);
             m_start_sel.load(in);
             m_start_sel.set_vector(&m_start_bv);
-            m_priority.load(in);
+            m_weight.load(in);
             m_rmq.load(in);
         }
 
     private:
 
-        void build_tree(const tVSI& entry_priority, size_t& bp_idx, size_t &start_idx, size_t &label_idx) {
-            build_tree(entry_priority, 0, entry_priority.size(), 0, bp_idx, start_idx, label_idx);
+        // Build balanced parentheses sequence of the trie of the strings
+        void build_tree(const tVPSU& string_weight, size_t N, size_t n) {
+            using namespace sdsl;
+            m_labels   = int_vector<8>(n);     // initialize to worst case size
+            m_start_bv = bit_vector(N+n+2, 0); // initialize to worst case size
+            m_bp       = bit_vector(2*2*N, 0); // initialize to worst case size
+
+            size_t  bp_idx=0, start_idx = 0, label_idx=0;
+            m_start_bv[start_idx++] = 1; // append ..('' of root
+            build_tree(string_weight, 0, string_weight.size(), 0, bp_idx, start_idx, label_idx);
+            m_start_bv[start_idx++] = 0; // append ,,)'' of root
+            m_bp.resize(bp_idx);              // resize to actual size
+            m_labels.resize(label_idx);       // resize to actual size
+            m_start_bv.resize(start_idx);     // resize to actual size
         }
 
-        void build_tree(const tVSI& entry_priority, size_t lb, size_t rb, size_t depth, size_t& bp_idx, size_t& start_idx, size_t& label_idx) {
+        // Recursive tree construction
+        void
+        build_tree(const tVPSU& string_weight, size_t lb, size_t rb,
+                   size_t depth, size_t& bp_idx, size_t& start_idx,
+                   size_t& label_idx) 
+        {
             if ( lb >= rb )
                 return;
             m_bp[bp_idx++] = 1; // append ,,(''
             size_t d = depth;
-            const char* lb_entry = entry_priority[lb].first.c_str();
-            const char* rb_entry = entry_priority[rb-1].first.c_str();
+            const char* lb_entry = string_weight[lb].first.c_str();
+            const char* rb_entry = string_weight[rb-1].first.c_str();
+            // extend common prefix
             while ( lb_entry[d] !=0 and lb_entry[d] == rb_entry[d] ) {
-                m_labels[label_idx++] = lb_entry[d];
-                start_idx++;
-                ++d;
+                m_labels[label_idx++] = lb_entry[d]; // store common char
+                ++start_idx; ++d;
             }
-            m_start_bv[start_idx++] = 1; 
+            m_start_bv[start_idx++] = 1; // mark end of edge label
             if ( lb_entry[d] == 0 ) {
                 ++lb;
             }
+            // handle children
             while ( lb < rb ) {
-                char c = entry_priority[lb].first[d];
+                char c = string_weight[lb].first[d];
                 size_t mid = lb+1;
-                while ( mid < rb and entry_priority[mid].first[d] == c ) {
+                while ( mid < rb and string_weight[mid].first[d] == c ) {
                     ++mid;
                 }
-                build_tree(entry_priority, lb, mid, d, bp_idx, start_idx, label_idx);
+                build_tree(string_weight, lb, mid, d, bp_idx, start_idx, label_idx);
                 lb = mid;
             }
             m_bp[bp_idx++] = 0; // append ,,)''
         }
 
-        // Return range [lb, rb) of matching entries
+       // Return range [lb, rb) of matching entries
         std::array<size_t,2> prefix_range(const std::string& prefix) const {
             size_t v = 0; // node is represented by position of opening parenthesis in bp
             size_t m = 0; // length of common prefix
@@ -220,38 +191,38 @@ class index4 {
                     }
                 }
             }
+            // Map from sub tree rooted at v to entries in the original array
             return {{m_bp_rnk10(v), m_bp_rnk10(m_bp_support.find_close(v)+1)}};
         }
 
-
-        // v -> [1..N]
+       // Map node v to its unique identifier. node_id : v -> [1..N]
         size_t node_id(size_t v) const{
             return m_bp_support.rank(v);
         }
 
-        // node_id -> edge of node
+        // Get edge label leading to node v with node_id(v) = v_id
         t_edge_label edge(size_t v_id) const{
             size_t begin = m_start_sel(v_id) + 1 - v_id;
             size_t end   = m_start_sel(v_id+1) + 1 - (v_id+1);
             return t_edge_label(&m_labels, begin, end);
         }
 
-        // check if v is a leaf
+        // Check if v is a leaf
         size_t is_leaf(size_t v) const {
             return m_bp[v+1] == 0;
         }
 
-        // check if v is the root node
+        // Check if v is the root node
         size_type is_root(size_t v) const {
             return v == 0;
         }
 
-        // parent of v
+        // Return parent of v
         size_type parent(size_t v) const {
             return m_bp_support.enclose(v);
         }
 
-        // reconstruct label at position idx of original sequence
+        // Reconstruct label at position idx of original sequence
         std::string label(size_t idx) const {
             std::stack<size_t> node_stack;
             node_stack.push(m_bp_sel10(idx+1)-1);
@@ -268,6 +239,7 @@ class index4 {
             return res;
         }
 
+        // Return all children of v
         std::vector<size_t> children(size_t v) const {
             std::vector<size_t> res;
             size_t cv = v+1;

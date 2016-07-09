@@ -23,20 +23,19 @@ int main(int argc, char* argv[]){
     }
     using clock = std::chrono::high_resolution_clock;
     ifstream in(argv[1]);
-    tVSI entry_priority;
+    tVPSU string_weight;
     string entry;
     while ( getline(in, entry, '\t')  ) {
-        string s_priority;
-        getline(in, s_priority);
-        uint64_t priority = stoull(s_priority);
-//        cout << "(" << entry << ", " << priority << ")" << endl;
-        entry_priority.emplace_back(entry, priority);
+        string s_weight;
+        getline(in, s_weight);
+        uint64_t weight = stoull(s_weight);
+        string_weight.emplace_back(entry, weight);
     }
-    cout << "read " << entry_priority.size() << " entries" << endl;
+    sort(string_weight.begin(), string_weight.end());
+    cout << "read and sorted " << string_weight.size() << " entries" << endl;
 
     auto construction_start = clock::now();
-    sort(entry_priority.begin(), entry_priority.end());
-    t_index topk_index(entry_priority);
+    t_index topk_index(string_weight);
     auto construction_time = clock::now() - construction_start;
     auto construction_ms    = chrono::duration_cast<chrono::milliseconds>(construction_time).count();
     cout << "(construction took "<< std::setprecision(3) << construction_ms / 1000.0;
