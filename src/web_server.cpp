@@ -4,11 +4,28 @@
 #include "topkcomp/index.hpp"
 #include <iostream>
 #include <string>
+#include <sstream>
 
 extern "C"
 {
 #include "mongoose.h"
 }
+
+// -- Helper function to escape output
+// http://stackoverflow.com/questions/7724448/simple-json-string-escape-for-c/33799784#33799784
+std::string escape_json(const std::string &s) {
+    std::ostringstream o;
+    for (auto c = s.cbegin(); c != s.cend(); c++) {
+        if (*c == '"' || *c == '\\' || ('\x00' <= *c && *c <= '\x1f')) {
+            o << "\\u"
+              << std::hex << std::setw(4) << std::setfill('0') << (int)*c;
+        } else {
+            o << *c;
+        }
+    }
+    return o.str();
+}
+// --
 
 using namespace topkcomp;
 
@@ -28,18 +45,19 @@ static void ev_handler(struct mg_connection *nc, int ev, void *p) {
     if ( buf_len == -1 )
         return; 
     std::string query_string = std::string(buf, buf+buf_len);
-//    std::cout<<"query_string="<<query_string<<std::endl;
+std::cout<<"query_string="<<query_string<<std::endl;
     if ( uri == "/topcomp" and query_string.substr(0, 6) == "query=" ) {
         std::string query = query_string.substr(6);
         std::string data;
         auto result_list = topk_index.top_k(query, 10);
+std::cout<<"result_list.size()="<<result_list.size()<<std::endl;
         if ( result_list.empty() ){
             data =  "{\"suggestions\":[\"value\":\"\",\"data\":\"\"]}\n";
         } else {
             data =  "{\"suggestions\":[";
             for (size_t i=0; i<result_list.size(); ++i) {
                 if (i>0) data += ",";
-                data += "{\"value\":\"" + result_list[i].first + "\",";
+                data += "{\"value\":\"" + escape_json( result_list[i].first ) + "\",";
                 data +=  "\"data\":\""+ std::to_string(i)+ "\"}";
             }
             data += "]}\n";
