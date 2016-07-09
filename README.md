@@ -1,4 +1,14 @@
-This is an example project presented at the Succinct Data Structure Tutorial at SIGIR 2016.
+This is an example project of the [SIGIR 2016][SIGIR] tutorial
+[Succinct Data Structures in Information Retrieval: Theory and Practice][TUTPAGE]
+presented by [Simon Gog][SIMON] and [Rossano Venturini][ROSSANO].
+
+
+The example shows how the [Succinct Data Structure Library][SDSL] can be used
+to implement a space-efficient top-k query completion system. The final result
+is an almost state-of-the-art system which is implemented in less than 300 lines
+of code.
+
+
 
 ### Input format
 
@@ -48,6 +58,16 @@ is 8080 and you will get top-10 query suggestions at
 
 
 ### Credits
+    
+    * Thanks to Sascha Witt for preparing the example input file
+      which contains the pairs of Dutch train stations and number
+      of daily train stops.
 
-Thanks to Sascha Witt for preparing the file which contains the pairs of
-Dutch train stations and number of daily train stops.
+    * Thanks to all contributers of the SDSL.
+
+[TUTPAGE]: http://pages.di.unipi.it/rossano/succinct-data-structures-in-information-retrieval-theory-and-practice/
+[SIGIR16]: http://sigir.org/sigir2016/
+[ROSSANO]: http://pages.di.unipi.it/rossano/
+[SIMON]: http://algo2.iti.kit.edu/gog/
+[SDSL]: https://github.com/simongog/sdsl-lite
+[SDSLCONTRIB]: https://github.com/simongog/sdsl-lite/graphs/contributors
