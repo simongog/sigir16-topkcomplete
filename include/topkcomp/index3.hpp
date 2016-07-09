@@ -52,6 +52,7 @@ class index3 {
         // k > 0
         tVPSU top_k(const std::string& prefix, size_t k) const {
             auto range = prefix_range(prefix);
+            std::cout<<"range=["<<range[0]<<","<<range[1]<<"]"<<std::endl;
             auto top_idx = heaviest_indexes_in_range(k, range, m_weight);
             tVPSU result_list;
             for (auto idx : top_idx){

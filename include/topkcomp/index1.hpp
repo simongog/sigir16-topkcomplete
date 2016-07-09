@@ -47,11 +47,11 @@ class index1 {
             for (size_t i=0; i<prefix.size(); ++i) {
                 // use binary search at each step to narrow the interval
                 res[0] = std::lower_bound(m_start.begin()+res[0], m_start.begin()+res[1],
-                        prefix[i],  [&](uint64_t idx, char c){
+                        prefix[i],  [&](uint64_t idx, uint8_t c){
                                         return m_text[idx+i] < c;
                                     }) - m_start.begin();
                 res[1] = std::upper_bound(m_start.begin()+res[0], m_start.begin()+res[1],
-                        prefix[i],  [&](char c, uint64_t idx){
+                        prefix[i],  [&](uint8_t c, uint64_t idx){
                                         return c < m_text[idx+i];
                                     }) - m_start.begin();
             }
@@ -61,12 +61,13 @@ class index1 {
         // k > 0
         tVPSU top_k(const std::string& prefix, size_t k) const {
             auto range   = prefix_range(prefix);
+            std::cout<<"range=["<<range[0]<<","<<range[1]<<"]"<<std::endl;
             auto top_idx = heaviest_indexes_in_range(k, range, m_weight);
             tVPSU result_list(top_idx.size());
             for (size_t i=0; i < top_idx.size(); ++i){
                 auto idx = top_idx[i];
                 auto s = std::string(m_text.begin()+m_start[idx], 
-                                     m_text.begin()+m_start[idx+1]); which will be supported
+                                     m_text.begin()+m_start[idx+1]); 
                 result_list[i] = tPSU(s, m_weight[idx]);
             }
             return result_list; 
