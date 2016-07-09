@@ -1,4 +1,4 @@
-This is an example project of the [SIGIR 2016][SIGIR] tutorial
+This is an example project of the [SIGIR 2016][SIGIR16] tutorial
 [Succinct Data Structures in Information Retrieval: Theory and Practice][TUTPAGE]
 presented by [Simon Gog][SIMON] and [Rossano Venturini][ROSSANO].
 
