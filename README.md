@@ -12,9 +12,8 @@ of code.
 
 ### Input format
 
-Each line of the input file should consists of a (entry, priority)-pair.
-Entry is a string followed by a tab `\t` followed by an integer which
-represents the priority.
+Each line of the input file should consists of a (string, weight)-pair.
+The string and weight should be separated by a single tab `\t`.
 
 ### Installation
 
@@ -59,11 +58,11 @@ is 8080 and you will get top-10 query suggestions at
 
 ### Credits
     
-    * Thanks to Sascha Witt for preparing the example input file
-      which contains the pairs of Dutch train stations and number
-      of daily train stops.
+  * Thanks to Sascha Witt for preparing the example input file
+    which contains the pairs of Dutch train stations and number
+    of daily train stops.
 
-    * Thanks to all contributers of the SDSL.
+  * Thanks to all contributers of the SDSL.
 
 [TUTPAGE]: http://pages.di.unipi.it/rossano/succinct-data-structures-in-information-retrieval-theory-and-practice/
 [SIGIR16]: http://sigir.org/sigir2016/
