@@ -39,18 +39,23 @@ static void ev_handler(struct mg_connection *nc, int ev, void *p) {
   if (ev == MG_EV_HTTP_REQUEST) {
     struct http_message *hm = (struct http_message *) p;
     std::string uri = std::string(hm->uri.p, (hm->uri.p)+(hm->uri.len));
-//    std::cout<<"uri="<<uri<<std::endl;
-    char buf[128];
-    int buf_len = mg_url_decode(hm->query_string.p, hm->query_string.len, buf, 128, 1);
-    if ( buf_len == -1 )
-        return; 
-    std::string query_string = std::string(buf, buf+buf_len);
-std::cout<<"query_string="<<query_string<<std::endl;
-    if ( uri == "/topcomp" and query_string.substr(0, 6) == "query=" ) {
-        std::string query = query_string.substr(6);
+
+    if ( uri == "/topcomp" ) {
+        std::string prefix = "";
+        size_t k           = 10;
+        char prefix_buf[128];
+        int prefix_len = mg_get_http_var(&(hm->query_string), "q", prefix_buf, 128); 
+        if ( prefix_len > 0 ) {
+            prefix = std::string(prefix_buf, prefix_buf+prefix_len);
+        }
+        char k_buf[16];
+        int k_len = mg_get_http_var(&(hm->query_string), "k", k_buf, 16); 
+        if ( k_len > 0 ) {
+            k = std::stoull(std::string(k_buf, k_buf+k_len));
+        }
+
         std::string data;
-        auto result_list = topk_index.top_k(query, 10);
-std::cout<<"result_list.size()="<<result_list.size()<<std::endl;
+        auto result_list = topk_index.top_k(prefix, k);
         if ( result_list.empty() ){
             data =  "{\"suggestions\":[\"value\":\"\",\"data\":\"\"]}\n";
         } else {
