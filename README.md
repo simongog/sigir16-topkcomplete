@@ -7,8 +7,8 @@ The example shows how the [Succinct Data Structure Library][SDSL] can be used
 to implement a space-efficient top-k query completion system. The final result
 is an almost state-of-the-art system which is implemented in less than 300 lines
 of code.
-[[https://github.com/simongog/sigir16-autocomplete/blob/master/web/demo.gif|alt=Demo]]
 
+![Demo][DEMO]
 
 ### Input format
 
@@ -70,3 +70,4 @@ is 8080 and you will get top-10 query suggestions at
 [SIMON]: http://algo2.iti.kit.edu/gog/
 [SDSL]: https://github.com/simongog/sdsl-lite
 [SDSLCONTRIB]: https://github.com/simongog/sdsl-lite/graphs/contributors
+[DEMO]: https://github.com/simongog/sigir16-autocomplete/blob/master/web/demo.gif
