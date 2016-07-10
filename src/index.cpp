@@ -29,12 +29,6 @@ int main(int argc, char* argv[]){
         string s_weight;
         getline(in, s_weight);
         uint64_t weight = stoull(s_weight);
-//        stringstream ss;
-//        ss << weight;
-//        if ( ss.str() != s_weight ) {
-//            std::cout<<"ss.str()="<<ss.str()<<" != " <<s_weight << std::endl;
-//            return 1;
-//        }
         string_weight.emplace_back(entry, weight);
     }
     sort(string_weight.begin(), string_weight.end());
