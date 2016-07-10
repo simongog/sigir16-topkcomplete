@@ -42,30 +42,34 @@ class index5 {
                 // construct compressed suffix array
                 auto concat_file = tmp_file(std::string("./"),"_index5");
                 {
-                    {
-                        std::string concat;
-                        for (auto ep : string_weight) {
-                            concat.append(ep.first.begin(), ep.first.end());
-                        }
-                        store_to_file(concat.c_str(), concat_file);
+                    std::string concat;
+                    for (auto ep : string_weight) {
+                        concat.append(ep.first.begin(), ep.first.end());
                     }
-                    construct(m_csa, concat_file, 1);
-                    sdsl::remove(concat_file);
+                    store_to_file(concat.c_str(), concat_file);
                 }
-                // use LF function to mark start of strings
+                cache_config cc(false, "./");
+                construct(m_csa, concat_file, cc, 1);
                 {
+                    bit_vector string_start(m_csa.size(), 0);
+                    for (size_t i=0, idx=0; i < N; ++i ) {
+                        string_start[idx] = 1;
+                        idx += string_weight[i].first.size();
+                    }
                     bit_vector bv(m_csa.size(), 0);
-                    size_t sa_pos = 0;
-                    for (size_t i = 0; i < string_weight.size(); ++i){
-                        for (size_t j = 0; j < string_weight[string_weight.size()-i-1].first.size(); ++j) {
-                            sa_pos = m_csa.lf[sa_pos];
+                    int_vector_buffer<> sa_buf(cache_file_name(conf::KEY_SA, cc));
+                    for (size_t i=0; i < sa_buf.size(); ++i){
+                        if ( string_start[sa_buf[i]] ) {
+                            bv[i] = 1;
                         }
-                        bv[sa_pos] = 1;
                     }
                     m_start = t_bv(bv);
-                    m_start_rnk = t_rnk(&m_start);
-                    m_start_sel = t_sel(&m_start);
                 }
+                cc.delete_files = true;
+
+                sdsl::remove(concat_file);
+                m_start_rnk = t_rnk(&m_start);
+                m_start_sel = t_sel(&m_start);
             }
         }
 
