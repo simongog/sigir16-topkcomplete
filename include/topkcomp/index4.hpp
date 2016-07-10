@@ -9,6 +9,7 @@ namespace topkcomp {
 
 template<typename t_bv = sdsl::bit_vector,
          typename t_sel= typename t_bv::select_1_type,
+         typename t_rac_weight = sdsl::int_vector<>,
          typename t_bp_support = sdsl::bp_support_sada<>,
          typename t_bp_rnk10 = sdsl::rank_support_v5<10,2>,
          typename t_bp_sel10 = sdsl::select_support_mcl<10,2>,
@@ -24,7 +25,7 @@ class index4 {
     t_bp_sel10          m_bp_sel10;   // select for leaf nodes in m_bp
     t_bv                m_start_bv;   // marks start of labels in m_labels
     t_sel               m_start_sel;  // select structure for m_start_bv
-    sdsl::int_vector<>  m_weight;     // weights of strings 
+    t_rac_weight        m_weight;     // weights of strings 
     t_rmq               m_rmq;        // range maximum query on m_weight
 
 
@@ -37,13 +38,17 @@ class index4 {
             if ( !string_weight.empty() ) {
                 uint64_t N, n, max_weight;
                 std::tie(N, n, max_weight) = input_stats(string_weight);
-                // initialize m_weight
-                m_weight = int_vector<>(N, 0, bits::hi(max_weight)+1);
-                for (size_t i=0; i < N; ++i) {
-                    m_weight[i] = string_weight[i].second;
+                // initialize weight
+                {
+                    int_vector<> weight(N, 0, bits::hi(max_weight)+1);
+                    for (size_t i=0; i < N; ++i) {
+                        weight[i] = string_weight[i].second;
+                    }
+                    // initialize range maximum structure
+                    m_rmq = t_rmq(&weight);
+                    // intialize m_weight
+                    m_weight = t_rac_weight(weight);
                 }
-                // initialize range maximum structure
-                m_rmq = t_rmq(&m_weight);
                 // build the succinct tree
                 build_tree(string_weight, N, n);
                 // initialize the support structures
