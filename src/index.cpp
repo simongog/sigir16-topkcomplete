@@ -12,6 +12,7 @@ using namespace topkcomp;
 typedef INDEX_TYPE t_index;
 
 int main(int argc, char* argv[]){
+    using clock = chrono::high_resolution_clock;
     const string index_name = INDEX_NAME;
     const string index_file = std::string(argv[1])+"."+INDEX_NAME+".sdsl";
     if ( argc < 2 ) {
@@ -21,42 +22,11 @@ int main(int argc, char* argv[]){
         cout << index_name << ".sdsl" << endl;
         return 1;
     }
-    using clock = std::chrono::high_resolution_clock;
-    ifstream in(argv[1]);
-    tVPSU string_weight;
-    string entry;
-    while ( getline(in, entry, '\t')  ) {
-        string s_weight;
-        getline(in, s_weight);
-        uint64_t weight = stoull(s_weight);
-        string_weight.emplace_back(entry, weight);
-    }
-    sort(string_weight.begin(), string_weight.end());
-    cout << "read and sorted " << string_weight.size() << " strings" << endl;
-    auto unique_end = unique(string_weight.begin(), string_weight.end(),
-                             [](const tPSU& a, const tPSU& b) {
-                                return a.first == b.first;
-                             });
-    string_weight.resize(unique_end-string_weight.begin());
-    cout << "number of unique strings is " << string_weight.size() << endl;
-    {
-        ofstream out(std::string(argv[1])+".unique.txt");
-        for(size_t i=0; i<string_weight.size(); ++i){
-            out << string_weight[i].first << "\t"<<string_weight[i].second << "\n";
-        }
-    }
+    t_index topk_index;
+    generate_index_from_file(topk_index, argv[1], index_file, index_name);
 
-    auto construction_start = clock::now();
-    t_index topk_index(string_weight);
-    auto construction_time = clock::now() - construction_start;
-    auto construction_ms    = chrono::duration_cast<chrono::milliseconds>(construction_time).count();
-    cout << "(construction took "<< std::setprecision(3) << construction_ms / 1000.0;
-    cout << " s)" << endl;
-    sdsl::store_to_file(topk_index, index_file);
-    write_structure<HTML_FORMAT>(topk_index, string(argv[1])+"."+index_name+".html");
-    cout << "(index size is " << size_in_mega_bytes(topk_index) << " MiB)" << endl;
-    sdsl::load_from_file(topk_index, index_file);
-
+    cout << "Please enter queries line by line." << endl;
+    cout << "Pressing Crtl-D will quit the program." << endl;
     string prefix;
     while ( getline(cin, prefix) ) {
         auto query_start = clock::now();

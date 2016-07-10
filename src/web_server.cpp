@@ -94,13 +94,7 @@ int main(int argc, char* argv[]){
     s_http_port = argv[2];
   }
   
-  if ( sdsl::load_from_file(topk_index, index_file) ) {
-      std::cout<<"Index load from file " << index_file << std::endl;
-  } else {
-    // TODO: generate index, if it does not yet exist
-    std::cerr<<"Could not load index from file " << index_file << std::endl;
-    return 1;
-  }
+  generate_index_from_file(topk_index, argv[1], index_file, index_name);
 
   struct mg_mgr mgr;
   struct mg_connection *nc;
@@ -110,8 +104,8 @@ int main(int argc, char* argv[]){
 
   // Set up HTTP server parameters
   mg_set_protocol_http_websocket(nc);
-  s_http_server_opts.document_root = "../web";      // Serve current directory
-  s_http_server_opts.enable_directory_listing = "yes";
+  s_http_server_opts.document_root = "../web";
+  s_http_server_opts.enable_directory_listing = "no";
 
   printf("Starting web server on port %s\n", s_http_port.c_str());
   
