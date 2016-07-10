@@ -102,7 +102,13 @@ namespace topkcomp{
 
         edge_rac(const t_label *p=nullptr, size_t begin=0, size_t end=0) : m_label(p), m_begin(begin), m_end(end) {};
 
-        value_type operator[](size_type i) const{ return (*m_label)[i+m_begin]; }
+        value_type operator[](size_type i) const{
+            if ( i < size() ) {
+                return (*m_label)[i+m_begin]; 
+            } else { // return C-string sentinel character
+                return 0;
+            }
+        }
 
         size_type size() const{ return m_end-m_begin; }
 

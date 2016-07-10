@@ -112,9 +112,8 @@ class index4 {
             m_bp       = bit_vector(2*2*N, 0); // initialize to worst case size
 
             size_t  bp_idx=0, start_idx = 0, label_idx=0;
-            m_start_bv[start_idx++] = 1; // append ..('' of root
+            m_start_bv[start_idx++] = 1; // mark start of first label
             build_tree(string_weight, 0, N, 0, bp_idx, start_idx, label_idx);
-            m_start_bv[start_idx++] = 0; // append ,,)'' of root
             m_bp.resize(bp_idx);              // resize to actual size
             m_labels.resize(label_idx);       // resize to actual size
             m_start_bv.resize(start_idx);     // resize to actual size
