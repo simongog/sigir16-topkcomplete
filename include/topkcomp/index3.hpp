@@ -96,41 +96,46 @@ class index3 {
         }
 
     private:
-        
+
         // Build balanced parentheses sequence of the trie of the strings
         void build_tree(const tVPSU& string_weight, size_t N, size_t n) {
             using namespace sdsl;
+            bit_vector start_bv(N+n+2, 0);     // initialize to worst case size
             m_labels   = int_vector<8>(n);     // initialize to worst case size
-            m_start_bv = bit_vector(N+n+2, 0); // initialize to worst case size
             m_bp       = bit_vector(2*2*N, 0); // initialize to worst case size
 
-            size_t  bp_idx=0, start_idx = 0, label_idx=0;
-            m_start_bv[start_idx++] = 1; // append ..('' of root
-            build_tree(string_weight, 0, N, 0, bp_idx, start_idx, label_idx);
-            m_start_bv[start_idx++] = 0; // append ,,)'' of root
-            m_bp.resize(bp_idx);              // resize to actual size
-            m_labels.resize(label_idx);       // resize to actual size
-            m_start_bv.resize(start_idx);     // resize to actual size
+
+            auto bp_it    = m_bp.begin();
+            auto start_it = start_bv.begin();
+            auto label_it = m_labels.begin();
+            *(start_it++) = 1;                // mark start of first label 
+            build_tree(string_weight, 0, N, 0, bp_it, start_it, label_it);
+            m_bp.resize(bp_it-m_bp.begin());            // resize to actual size
+            m_labels.resize(label_it-m_labels.begin()); // resize to actual size
+            start_bv.resize(start_it-start_bv.begin()); // resize to actual size
+
+            m_start_bv = t_bv(start_bv);     // copy to member bitvector
         }
 
         // Recursive tree construction
         void
-        build_tree(const tVPSU& string_weight, size_t lb, size_t rb,
-                   size_t depth, size_t& bp_idx, size_t& start_idx,
-                   size_t& label_idx) 
+        build_tree(const tVPSU& string_weight, size_t lb, size_t rb, size_t depth,
+                   sdsl::bit_vector::iterator& bp_it,
+                   sdsl::bit_vector::iterator& start_it,
+                   sdsl::int_vector<8>::iterator& label_it) 
         {
             if ( lb >= rb )
                 return;
-            m_bp[bp_idx++] = 1; // append ,,(''
+            *(bp_it++) = 1; // append ,,(''
             size_t d = depth;
             const uint8_t* lb_entry = (const uint8_t*)(string_weight[lb].first.c_str());
             const uint8_t* rb_entry = (const uint8_t*)(string_weight[rb-1].first.c_str());
             // extend common prefix
             while ( lb_entry[d] !=0 and lb_entry[d] == rb_entry[d] ) {
-                m_labels[label_idx++] = lb_entry[d]; // store common char
-                ++start_idx; ++d;
+                *(label_it++) = lb_entry[d]; // store common char
+                ++start_it; ++d;
             }
-            m_start_bv[start_idx++] = 1; // mark end of edge label
+            *(start_it++) = 1; // mark end of edge label
             // if node is not a leaf
             if ( lb+1 < rb) {
                 // handle children
@@ -140,13 +145,13 @@ class index3 {
                     while ( mid < rb and ((uint8_t)string_weight[mid].first.c_str()[d]) == c ) {
                         ++mid;
                     }
-                    build_tree(string_weight, lb, mid, d, bp_idx, start_idx, label_idx);
+                    build_tree(string_weight, lb, mid, d, bp_it, start_it, label_it);
                     lb = mid;
                 }
             }
-            m_bp[bp_idx++] = 0; // append ,,)''
+            bp_it++; // move iterator to right; e.g. append ,,)''
         }
-
+        
        // Return range [lb, rb) of matching entries
         std::array<size_t,2> prefix_range(const std::string& prefix) const {
             size_t v = 0; // node is represented by position of opening parenthesis in bp
