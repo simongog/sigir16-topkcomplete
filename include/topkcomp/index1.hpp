@@ -65,7 +65,7 @@ class index1 {
             tVPSU result_list(top_idx.size());
             for (size_t i=0; i < top_idx.size(); ++i){
                 auto idx = top_idx[i];
-                auto s = std::string(m_text.begin()+m_start[idx], 
+                auto s = ci_string(m_text.begin()+m_start[idx], 
                                      m_text.begin()+m_start[idx+1]); 
                 result_list[i] = tPSU(s, m_weight[idx]);
             }

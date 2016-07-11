@@ -62,7 +62,7 @@ static void ev_handler(struct mg_connection *nc, int ev, void *p) {
             data =  "{\"suggestions\":[";
             for (size_t i=0; i<result_list.size(); ++i) {
                 if (i>0) data += ",";
-                data += "{\"value\":\"" + escape_json( result_list[i].first ) + "\",";
+                data += "{\"value\":\"" + escape_json( result_list[i].first.c_str() ) + "\",";
                 data +=  "\"data\":\""+ std::to_string(i)+ "\"}";
             }
             data += "]}\n";

@@ -109,6 +109,10 @@ class index4 {
 
     private:
 
+        uint32_t T(uint8_t c) const{
+            return (uint8_t)std::toupper((char)c);
+        };
+
         // Build balanced parentheses sequence of the trie of the strings
         void build_tree(const tVPSU& string_weight, size_t N, size_t n) {
             using namespace sdsl;
@@ -143,7 +147,7 @@ class index4 {
             const uint8_t* lb_entry = (const uint8_t*)(string_weight[lb].first.c_str());
             const uint8_t* rb_entry = (const uint8_t*)(string_weight[rb-1].first.c_str());
             // extend common prefix
-            while ( lb_entry[d] !=0 and lb_entry[d] == rb_entry[d] ) {
+            while ( lb_entry[d] !=0 and T(lb_entry[d]) == T(rb_entry[d]) ) {
                 *(label_it++) = lb_entry[d]; // store common char
                 ++start_it; ++d;
             }
@@ -154,7 +158,7 @@ class index4 {
                 while ( lb < rb ) {
                     uint8_t c = string_weight[lb].first.c_str()[d];
                     size_t mid = lb+1;
-                    while ( mid < rb and ((uint8_t)string_weight[mid].first.c_str()[d]) == c ) {
+                    while ( mid < rb and T(string_weight[mid].first.c_str()[d]) == T(c) ) {
                         ++mid;
                     }
                     build_tree(string_weight, lb, mid, d, bp_it, start_it, label_it);
@@ -166,25 +170,29 @@ class index4 {
 
        // Return range [lb, rb) of matching entries
         std::array<size_t,2> prefix_range(const std::string& prefix) const {
+//std::cout<<"prefix_range of "<< prefix <<std::endl;
             size_t v = 0; // node is represented by position of opening parenthesis in bp
             size_t m = 0; // length of common prefix
             while ( m < prefix.size() ) {
                 auto cv = children(v);
+//std::cout<<"cv.size()="<<cv.size()<<std::endl;
                 if ( cv.size() == 0 ) { // v is already a leaf, prefix is longer than leaf
                     return {{0,0}};
                 }
                 auto w = v;
                 auto w_edge = edge(node_id(cv[0]));
+//std::cout<<" m="<<m<<" w_edge[0]="<<T(w_edge[0])<<" "<<T(prefix[m])<<std::endl;
                 size_t i = 0;
-                while ( ++i < cv.size() and w_edge[0] < ((uint8_t)prefix[m]) ) {
+                while ( ++i < cv.size() and T(w_edge[0]) < T(prefix[m]) ) {
                     w_edge = edge(node_id(cv[i]));
+//std::cout<<" m="<<m<<" w_edge[0]="<<T(w_edge[0])<<" "<<T(prefix[m])<<std::endl;
                 }
-                if ( ((uint8_t)prefix[m]) != w_edge[0] ) { // no matching child found
+                if ( T(prefix[m]) != T(w_edge[0]) ) { // no matching child found
                     return {{0,0}};
                 } else {
                     w = cv[i-1];
                     size_t mm = m+1;
-                    while ( mm < prefix.size() and mm-m < w_edge.size() and  (uint8_t)prefix[mm] == w_edge[mm-m] ) {
+                    while ( mm < prefix.size() and mm-m < w_edge.size() and  T(prefix[mm]) == T(w_edge[mm-m]) ) {
                         ++mm;
                     }
                     // edge search exhausted 
@@ -233,14 +241,14 @@ class index4 {
         }
 
         // Reconstruct label at position idx of original sequence
-        std::string label(size_t idx) const {
+        ci_string label(size_t idx) const {
             std::stack<size_t> node_stack;
             node_stack.push(m_bp_sel10(idx+1)-1);
             while ( !is_root(node_stack.top()) ) {
                 size_t p = parent(node_stack.top());
                 node_stack.push(p);
             }
-            std::string res;
+            ci_string res;
             while ( !node_stack.empty() ){
                 auto e = edge(node_id(node_stack.top()));
                 res.append(e.begin(), e.end());

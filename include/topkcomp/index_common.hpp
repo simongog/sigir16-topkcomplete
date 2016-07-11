@@ -7,10 +7,44 @@
 #include <sdsl/int_vector.hpp>
 
 namespace topkcomp{
+
+    // ---
+    // Guru of the week case-insensitive string class
+    // http://www.gotw.ca/gotw/029.htm
+    struct ci_char_traits : public std::char_traits<char> {
+        static bool eq(char c1, char c2) { return (uint8_t)toupper(c1) == (uint8_t)toupper(c2); }
+        static bool ne(char c1, char c2) { return (uint8_t)toupper(c1) != (uint8_t)toupper(c2); }
+        static bool lt(char c1, char c2) { return (uint8_t)toupper(c1) <  (uint8_t)toupper(c2); }
+        static int compare(const char* s1, const char* s2, size_t n) {
+            while( n-- != 0 ) {
+                if( (uint8_t)toupper(*s1) < (uint8_t)toupper(*s2) ) return -1;
+                if( (uint8_t)toupper(*s1) > (uint8_t)toupper(*s2) ) return 1;
+                ++s1; ++s2;
+            }
+            return 0;
+        }
+        static const char* find(const char* s, int n, char a) {
+            while( n-- > 0 && (uint8_t)toupper(*s) != (uint8_t)toupper(a) ) {
+                ++s;
+            }
+            return s;
+        }
+    };
+
+    typedef std::basic_string<char, ci_char_traits> ci_string;
+
+    std::basic_ostream<char, std::char_traits<char>>&
+    operator<<(std::basic_ostream<char, std::char_traits<char>>& os, const ci_string& str) {
+        os << str.c_str();
+        return os;
+    }
+    // ---
+
+
     // helpful typedefs
     typedef std::pair<uint64_t, uint64_t>            tPUU;
     typedef std::tuple<uint64_t, uint64_t, uint64_t> tTUUU;
-    typedef std::pair<std::string, uint64_t>         tPSU;
+    typedef std::pair<ci_string, uint64_t>           tPSU;
     typedef std::vector<uint64_t>                    tVU;
     typedef std::vector<tPSU>                        tVPSU;
     typedef std::array<size_t,2>                     t_range;
@@ -23,7 +57,7 @@ namespace topkcomp{
     tTUUU input_stats(const tVPSU& string_weight) {
          // get the length of the concatenation of all strings
         uint64_t n = std::accumulate(string_weight.begin(), string_weight.end(),
-                        0, [](uint64_t a, std::pair<std::string, uint64_t> ep){
+                        0, [](uint64_t a, const tPSU& ep){
                                 return a + ep.first.size();
                            });
         // get maximum of priorities

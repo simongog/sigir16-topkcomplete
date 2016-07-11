@@ -28,7 +28,7 @@ namespace topkcomp{
         if ( load_from_file(index, index_file) ){
             cout << "Load index from "<<index_file << endl;
         } else {
-            cout << "Index of " << file << "does not exists." << endl;
+            cout << "Index of " << file << " does not exists." << endl;
             cout << "Start generation" << endl;
             ifstream in(file.c_str());
             if ( !in ) {
@@ -41,7 +41,8 @@ namespace topkcomp{
                 string s_weight;
                 getline(in, s_weight);
                 uint64_t weight = stoull(s_weight);
-                string_weight.emplace_back(entry, weight);
+                string_weight.push_back(tPSU(ci_string(entry.begin(),entry.end()), weight));
+//cout << string_weight.back().first << endl;
             }
             sort(string_weight.begin(), string_weight.end());
             cout << "read and sorted " << string_weight.size() << " strings" << endl;
