@@ -8,6 +8,7 @@ namespace topkcomp {
 
 template<typename t_bv = sdsl::bit_vector,
          typename t_sel= typename t_bv::select_1_type,
+         typename t_rac_weight = sdsl::int_vector<>,
          typename t_bp_support = sdsl::bp_support_sada<>,
          typename t_bp_rnk10 = sdsl::rank_support_v5<10,2>,
          typename t_bp_sel10 = sdsl::select_support_mcl<10,2>>
@@ -22,7 +23,7 @@ class index3 {
     t_bp_sel10          m_bp_sel10;   // select for leaf nodes in m_bp
     t_bv                m_start_bv;   // marks start of labels in m_labels
     t_sel               m_start_sel;  // select structure for m_start_bv
-    sdsl::int_vector<>  m_weight;     // weights of strings 
+    t_rac_weight        m_weight;     // weights of strings 
 
 
     public:
@@ -35,9 +36,12 @@ class index3 {
                 uint64_t N, n, max_weight;
                 std::tie(N, n, max_weight) = input_stats(string_weight);
                 // initialize m_weight
-                m_weight = int_vector<>(N, 0, bits::hi(max_weight)+1);
-                for (size_t i=0; i < N; ++i) {
-                    m_weight[i] = string_weight[i].second;
+                {
+                    int_vector<> weight(N, 0, bits::hi(max_weight)+1);
+                    for (size_t i=0; i < N; ++i) {
+                        weight[i] = string_weight[i].second;
+                    }
+                    m_weight = t_rac_weight(weight);
                 }
                 // build the succinct tree
                 build_tree(string_weight, N, n);
@@ -151,8 +155,8 @@ class index3 {
             }
             bp_it++; // move iterator to right; e.g. append ,,)''
         }
-        
-       // Return range [lb, rb) of matching entries
+
+        // Return range [lb, rb) of matching entries
         std::array<size_t,2> prefix_range(const std::string& prefix) const {
             size_t v = 0; // node is represented by position of opening parenthesis in bp
             size_t m = 0; // length of common prefix
@@ -164,7 +168,7 @@ class index3 {
                 auto w = v;
                 auto w_edge = edge(node_id(cv[0]));
                 size_t i = 0;
-                while ( ++i < cv.size() and w_edge[0] < (uint8_t)prefix[m] ) {
+                while ( ++i < cv.size() and w_edge[0] < ((uint8_t)prefix[m]) ) {
                     w_edge = edge(node_id(cv[i]));
                 }
                 if ( ((uint8_t)prefix[m]) != w_edge[0] ) { // no matching child found
@@ -172,7 +176,7 @@ class index3 {
                 } else {
                     w = cv[i-1];
                     size_t mm = m+1;
-                    while ( mm < prefix.size() and mm-m < w_edge.size() and  ((uint8_t)prefix[mm]) == w_edge[mm-m] ) {
+                    while ( mm < prefix.size() and mm-m < w_edge.size() and  (uint8_t)prefix[mm] == w_edge[mm-m] ) {
                         ++mm;
                     }
                     // edge search exhausted 
@@ -192,7 +196,7 @@ class index3 {
             // Map from sub tree rooted at v to entries in the original array
             return {{m_bp_rnk10(v), m_bp_rnk10(m_bp_support.find_close(v)+1)}};
         }
-
+        
        // Map node v to its unique identifier. node_id : v -> [1..N]
         size_t node_id(size_t v) const{
             return m_bp_support.rank(v);

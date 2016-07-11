@@ -176,15 +176,15 @@ class index4 {
                 auto w = v;
                 auto w_edge = edge(node_id(cv[0]));
                 size_t i = 0;
-                while ( ++i < cv.size() and w_edge[0] < prefix[m] ) {
+                while ( ++i < cv.size() and w_edge[0] < ((uint8_t)prefix[m]) ) {
                     w_edge = edge(node_id(cv[i]));
                 }
-                if ( prefix[m] != w_edge[0] ) { // no matching child found
+                if ( ((uint8_t)prefix[m]) != w_edge[0] ) { // no matching child found
                     return {{0,0}};
                 } else {
                     w = cv[i-1];
                     size_t mm = m+1;
-                    while ( mm < prefix.size() and mm-m < w_edge.size() and  prefix[mm] == w_edge[mm-m] ) {
+                    while ( mm < prefix.size() and mm-m < w_edge.size() and  (uint8_t)prefix[mm] == w_edge[mm-m] ) {
                         ++mm;
                     }
                     // edge search exhausted 
