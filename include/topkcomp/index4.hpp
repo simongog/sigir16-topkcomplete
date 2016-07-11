@@ -13,27 +13,31 @@ template<typename t_bv = sdsl::bit_vector,
          typename t_bp_support = sdsl::bp_support_sada<>,
          typename t_bp_rnk10 = sdsl::rank_support_v5<10,2>,
          typename t_bp_sel10 = sdsl::select_support_mcl<10,2>,
-         typename t_rmq = sdsl::rmq_succinct_sct<0>>
+         typename t_rmq = sdsl::rmq_succinct_sct<0>,
+         typename t_bv_uc = sdsl::bit_vector
+         >
 class index4 {
     typedef sdsl::int_vector<8> t_label;
     typedef edge_rac<t_label>   t_edge_label;
 
-    t_label             m_labels;     // concatenation of tree labels
-    sdsl::bit_vector    m_bp;         // balanced parentheses sequence of tree
-    t_bp_support        m_bp_support; // support structure for m_bp
-    t_bp_rnk10          m_bp_rnk10;   // rank for leaf nodes in m_bp
-    t_bp_sel10          m_bp_sel10;   // select for leaf nodes in m_bp
-    t_bv                m_start_bv;   // marks start of labels in m_labels
-    t_sel               m_start_sel;  // select structure for m_start_bv
-    t_rac_weight        m_weight;     // weights of strings 
-    t_rmq               m_rmq;        // range maximum query on m_weight
-
+    t_label             m_labels;      // concatenation of tree labels
+    sdsl::bit_vector    m_bp;          // balanced parentheses sequence of tree
+    t_bp_support        m_bp_support;  // support structure for m_bp
+    t_bp_rnk10          m_bp_rnk10;    // rank for leaf nodes in m_bp
+    t_bp_sel10          m_bp_sel10;    // select for leaf nodes in m_bp
+    t_bv                m_start_bv;    // marks start of labels in m_labels
+    t_sel               m_start_sel;   // select structure for m_start_bv
+    t_rac_weight        m_weight;      // weights of strings 
+    t_rmq               m_rmq;         // range maximum query on m_weight
+    t_bv                m_str_start;   // string starts in concatenation
+    t_sel               m_str_sel;     // select structure for m_str_start
+    t_bv_uc             m_uppercase;   // marks uppercase letters 
 
     public:
         typedef size_t size_type;
 
         // Constructor takes a sorted list of (string,weight)-pairs
-        index4(const tVPSU& string_weight=tVPSU()) {
+        index4(tVPSU string_weight=tVPSU()) {
             using namespace sdsl;
             if ( !string_weight.empty() ) {
                 uint64_t N, n, max_weight;
@@ -41,9 +45,25 @@ class index4 {
                 // initialize weight
                 {
                     int_vector<> weight(N, 0, bits::hi(max_weight)+1);
-                    for (size_t i=0; i < N; ++i) {
+                    bit_vector str_start(n, 0);
+                    bit_vector uppercase(n, 0);
+                    for (size_t i=0,sum=0; i < N; ++i) {
                         weight[i] = string_weight[i].second;
+                        str_start[sum] = 1;
+                        for (auto &c : string_weight[i].first) {
+                            auto lc = std::tolower(c);
+                            if ( lc != c ){
+                                c = lc;
+                                uppercase[sum] = 1;
+                            }
+                            ++sum; 
+                        }
                     }
+                    // initialize m_str_start
+                    m_str_start = t_bv(str_start);
+                    m_str_sel   = t_sel(&m_str_start);
+                    // initialize m_uppercase
+                    m_uppercase = t_bv_uc(uppercase);
                     // initialize range maximum structure
                     m_rmq = t_rmq(&weight);
                     // intialize m_weight
@@ -86,6 +106,9 @@ class index4 {
             written_bytes += m_start_sel.serialize(out, child, "start_sel");
             written_bytes += m_weight.serialize(out, child, "weight");
             written_bytes += m_rmq.serialize(out, child, "rmq");
+            written_bytes += m_str_start.serialize(out, child, "str_start");
+            written_bytes += m_str_sel.serialize(out, child, "str_sel");
+            written_bytes += m_uppercase.serialize(out, child, "uppercase");
             structure_tree::add_size(child, written_bytes);
             return written_bytes;
         }
@@ -105,6 +128,10 @@ class index4 {
             m_start_sel.set_vector(&m_start_bv);
             m_weight.load(in);
             m_rmq.load(in);
+            m_str_start.load(in);
+            m_str_sel.load(in);
+            m_str_sel.set_vector(&m_str_start);
+            m_uppercase.load(in);
         }
 
     private:
@@ -165,7 +192,8 @@ class index4 {
         }
 
        // Return range [lb, rb) of matching entries
-        std::array<size_t,2> prefix_range(const std::string& prefix) const {
+        std::array<size_t,2> prefix_range(std::string prefix) const {
+            std::transform(prefix.begin(), prefix.end(), prefix.begin(), ::tolower);
             size_t v = 0; // node is represented by position of opening parenthesis in bp
             size_t m = 0; // length of common prefix
             while ( m < prefix.size() ) {
@@ -245,6 +273,13 @@ class index4 {
                 auto e = edge(node_id(node_stack.top()));
                 res.append(e.begin(), e.end());
                 node_stack.pop();
+            }
+            // Case insensitive -> case sensitive
+            auto str_idx = m_str_sel(idx+1);
+            for (size_t i=0; i<res.size(); ++i){
+                if ( m_uppercase[str_idx+i] ) {
+                    res[i] = std::toupper(res[i]);
+                }
             }
             return res;
         }

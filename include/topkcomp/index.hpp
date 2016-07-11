@@ -35,21 +35,33 @@ namespace topkcomp{
                 cerr << "Error: Could not open file " << file << endl;
                 return;
             }
+            tVPSU string_pointer;
             tVPSU string_weight;
             string entry;
             while ( getline(in, entry, '\t')  ) {
+                string ci_entry(entry);
+                std::transform(entry.begin(), entry.end(), ci_entry.begin(), ::tolower);
+
                 string s_weight;
                 getline(in, s_weight);
                 uint64_t weight = stoull(s_weight);
+
+                string_pointer.emplace_back(ci_entry, string_weight.size());
                 string_weight.emplace_back(entry, weight);
             }
-            sort(string_weight.begin(), string_weight.end());
-            cout << "read and sorted " << string_weight.size() << " strings" << endl;
-            auto unique_end = unique(string_weight.begin(), string_weight.end(),
+            sort(string_pointer.begin(), string_pointer.end());
+            cout << "read and sorted " << string_pointer.size() << " strings" << endl;
+            auto unique_end = unique(string_pointer.begin(), string_pointer.end(),
                                      [](const tPSU& a, const tPSU& b) {
                                         return a.first == b.first;
                                      });
-            string_weight.resize(unique_end-string_weight.begin());
+            string_pointer.resize(unique_end-string_pointer.begin());
+            for(auto& entry : string_pointer) {
+                 entry = string_weight[entry.second];
+            }
+            string_weight = string_pointer;
+            string_pointer = tVPSU();
+
             cout << "number of unique strings is " << string_weight.size() << endl;
             {
                 ofstream out(file+".unique.txt");
