@@ -22,7 +22,7 @@ Then change into the `sigir16-topkcomplete` directory and follow the instruction
 
 In the following description we index as set of `N` (string,weight)-paris. Let `n` be the length of the concatenation of all strings in the set and `m` be the length of the pattern.    
 
-## Solution 1
+## Top-k completion system #1
 
 You can find the implementation of our first index in the file [`index1.hpp`][IDX1]. The index is implemented as class which consists of
 * three members (`m_text`, `m_start`,`m_weight`). Each one has SDSL class type.
@@ -42,11 +42,44 @@ We want to analyze the practical properties of index1. For this we first compile
 
 How fast are query answered for `k=5` and the empty prefix, prefix `E`, prefix `Ex`, `Exw`?
 
+What happens if you search for a lower case prefix: `a`, `b`,`c`,...?
+
 ### Exercise 1.b (optional)
 
 How do the numbers change for `k=50`? To answer this question you have to modify the console program (see [index.cpp][MAIN]).
 
-## Solution 2
+## Top-k completion system #2
+
+In our second solution we keep the algorithmic framework of our first solution. We just alter the representation of `m_start`. While we were
+using  n &lceil;log n&rceil; bits for `m_start` by using an `int_vector<>` we now use a bit vector and select structure to represent it. So we mark in `m_start_bv` every each position at which a string starts in the concatenation and construct a select structure `m_start_sel` for `m_start_bv`.
+
+Instead of accessing `m_start[i]` we can get the start of the i-th string by querying `m_start_sel(i+1)` (not that we have to add one, since the indexing is 1-based in all SDSL select structures).
+
+[TODO: more on select structures here?]
+
+
+In order to compile index2, we have to remove the comment symbol `#` in front of entry `index2;index2<>` in the [index.config][IDXCFG] file. Again call `cmake .. && make index2-main` to generate the executable.
+
+
+### Exercise 2.a
+
+How much space is used by the bit vector and select structure which mark the start of the strings in the concatentation? Explore the effect on query speed.
+
+
+### Exercise 2.b
+
+Examine how much space can be saved by using the Elias-Fano representation (i.e. using the `sd_vector<>` class instead of the plain bit vector class `bit_vector`)?
+You can plug-in the Elias-Fano representation by adjusting the template parameter of `index2`.
+
+Explore the effect on query speed.
+
+
+## Top-k completion system #3
+
+We have seen that the marking the start of strings is now only a small fraction of the total memory consumption of the index. We now try to improve the space of the remaining parts, namely the concatenated text and the weights.
+
+
+
 
 
 
@@ -56,3 +89,4 @@ How do the numbers change for `k=50`? To answer this question you have to modify
 [IDX1]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index1.hpp
 [IDXC]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index_common.hpp
 [MAIN]: https://github.com/simongog/sigir16-topkcomplete/blob/master/src/index.cpp
+[IDXCFG]: https://github.com/simongog/sigir16-topkcomplete/blob/master/index.config
