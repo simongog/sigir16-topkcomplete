@@ -32,8 +32,8 @@ You can find the implementation of our first index in the file [`index1.hpp`][ID
 * a constructor, which takes a vector of pairs of strings and unsigned integers (i.e. strings and weights/priorities),
 * two methods to `serialize` and `load` a class instance. Note that all SDSL classes implement these methods and we just have to call the methods of the members.
 * and three methods which are used to answer top-k queries:
-  - `prefix_range(prefix)` determines the range in the sorted list of strings which is prefixed by `prefix`. This is done by binary search. I.e. it takes O(m*log n) time.
-  - `heaviest_indexes_in_range(k, range, w)` (defined in [index_common.hpp][IDXC]) determines `k` indexes in the range `[begin, end)`, which are associated with the heaviest weight in weight vector `w`. For a range of size `r=end-begin` this takes O(r*log k) time as we use a min-priority queue of size `k` to maintain the heaviest strings.
+  - `prefix_range(prefix)` determines the range in the sorted list of strings which is prefixed by `prefix`. This is done by binary search. I.e. it takes O(m&times;log n) time.
+  - `heaviest_indexes_in_range(k, range, w)` (defined in [index_common.hpp][IDXC]) determines `k` indexes in the range `[begin, end)`, which are associated with the heaviest weight in weight vector `w`. For a range of size `r=end-begin` this takes O(r&times;log k) time as we use a min-priority queue of size `k` to maintain the heaviest strings.
   - `top-k(prefix, k)` first determines the range of all strings prefixed by `prefix`, and the uses `heaviest_indexes_in_range` to get the `k` positions of the heaviest strings in the set. The only work left is to replace the positions by the (string,weight) pairs.
 
 ### Exercise 1.a
@@ -50,7 +50,7 @@ How do the numbers change for `k=50`? To answer this question you have to modify
 
 ## Top-k completion system #2
 
-In our second solution we keep the algorithmic framework of our first solution. We just alter the representation of `m_start`. While we were
+In our second solution (in [index2.hpp][IDX2]) we keep the algorithmic framework of our first solution. We just alter the representation of `m_start`. While we were
 using  n &lceil;log n&rceil; bits for `m_start` by using an `int_vector<>` we now use a bit vector and select structure to represent it. So we mark in `m_start_bv` every each position at which a string starts in the concatenation and construct a select structure `m_start_sel` for `m_start_bv`.
 
 Instead of accessing `m_start[i]` we can get the start of the i-th string by querying `m_start_sel(i+1)` (not that we have to add one, since the indexing is 1-based in all SDSL select structures).
@@ -77,6 +77,12 @@ Explore the effect on query speed.
 ## Top-k completion system #3
 
 We have seen that the marking the start of strings is now only a small fraction of the total memory consumption of the index. We now try to improve the space of the remaining parts, namely the concatenated text and the weights. For this we build a trie of the keys and store the trie topology as a balanced parentheses sequence in succinct space.
+Our first trie based implementation is contained in [index3.hpp][IDX3].
+
+* describe `build_tree`
+* discuss tree operations
+* discuss who labels are stored
+* discuss who subtree is mapped back to lexicographic range
 
 [TODO: more description here, discuss introduction of `m_bp_rnk10` and `m_bp_sel10`,`m_bp_support`]
 
@@ -149,6 +155,8 @@ A good solution should not require more than 330 MiB ;)
 [MONGOOSE]: https://github.com/cesanta/mongoose
 [JQUERYAUTO]: https://https://github.com/devbridge/jQuery-Autocomplete
 [IDX1]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index1.hpp
+[IDX2]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index2.hpp
+[IDX3]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index3.hpp
 [IDXC]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index_common.hpp
 [MAIN]: https://github.com/simongog/sigir16-topkcomplete/blob/master/src/index.cpp
 [IDXCFG]: https://github.com/simongog/sigir16-topkcomplete/blob/master/index.config
