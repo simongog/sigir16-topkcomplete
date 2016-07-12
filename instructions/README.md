@@ -76,10 +76,28 @@ Explore the effect on query speed.
 
 ## Top-k completion system #3
 
-We have seen that the marking the start of strings is now only a small fraction of the total memory consumption of the index. We now try to improve the space of the remaining parts, namely the concatenated text and the weights.
+We have seen that the marking the start of strings is now only a small fraction of the total memory consumption of the index. We now try to improve the space of the remaining parts, namely the concatenated text and the weights. For this we build a trie of the keys and store the trie topology as a balanced parentheses sequence in succinct space.
 
 
+### Exercise 3.1
 
+Again we want to analyze the practical properties of index3. You can remove again the `#` sign in front of index3 in the [index.config][IDXCFG] file and call `cmake .. && make index3-main`.
+Build the index for the Wikipedia titles (`./index3-main ../data/enwiki-20160601-all-titles `) and report the total space consumption of the index and the space breakdown of the three components.
+
+What is the effect on the query times (`printf "\nE\nEx\n" | ./index3-main ../data/enwiki-20160601-all-titles`)?
+
+### Exercise 3.2
+
+We have used a plain bit vector (`bit_vector`) and its select structure to compress the starting points of the labels. How much space can be saved by using the Elias-Fano representation (`sd_vector<>`)? Implement a version which uses Elias-Fano and call it `index3a`.
+
+### Exercise 3.3
+
+Compress `weight` here :) 
+
+
+### Exercise 3.4 (optional)
+
+The implemented tree construction is quite inefficient in the worst case, as we determine the child ranges of an range by scanning the whole range. Suppose that we can afford to store O(n) extra bits during construction. Can you devise a solution which has O(n) time complexity?
 
 
 
