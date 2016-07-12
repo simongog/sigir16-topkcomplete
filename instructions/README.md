@@ -115,6 +115,22 @@ Note that the code of `index4` hardly changed compared to `index3`. We just
 
 ### Exercise 4.a
 
+Compare the `index4` to `index3a` in time and space.
+Create two versions of `index4`. One which uses `dac_vector<4>` (named `index3a`) and one which uses `vlc_vector<>` (named `index3b`) for the `weight` array. Compare those variants to `index3b`. Are `index4a` and `index4b` practical solutions?
+
+
+## Top-k completion system #4 (case-insensitive version)
+
+We have to add two more bit vectors to generate a system which is capcable of matching case-insensitive but returns the original (case-sensitive) strings for our query.
+This index is implemented in [index4ci][IDX4ci]. 
+
+
+## Top-k completion system #5
+
+[TODO: add description]
+
+
+
 
 [SDSL]: https://github.com/simongog/sdsl-lite
 [MONGOOSE]: https://github.com/cesanta/mongoose
@@ -123,3 +139,4 @@ Note that the code of `index4` hardly changed compared to `index3`. We just
 [IDXC]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index_common.hpp
 [MAIN]: https://github.com/simongog/sigir16-topkcomplete/blob/master/src/index.cpp
 [IDXCFG]: https://github.com/simongog/sigir16-topkcomplete/blob/master/index.config
+[IDX4ci]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index4ci.hpp
