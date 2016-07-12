@@ -78,27 +78,42 @@ Explore the effect on query speed.
 
 We have seen that the marking the start of strings is now only a small fraction of the total memory consumption of the index. We now try to improve the space of the remaining parts, namely the concatenated text and the weights. For this we build a trie of the keys and store the trie topology as a balanced parentheses sequence in succinct space.
 
+[TODO: more description here, discuss introduction of `m_bp_rnk10` and `m_bp_sel10`,`m_bp_support`]
 
-### Exercise 3.1
+### Exercise 3.a
 
 Again we want to analyze the practical properties of index3. You can remove again the `#` sign in front of index3 in the [index.config][IDXCFG] file and call `cmake .. && make index3-main`.
 Build the index for the Wikipedia titles (`./index3-main ../data/enwiki-20160601-all-titles `) and report the total space consumption of the index and the space breakdown of the three components.
 
 What is the effect on the query times (`printf "\nE\nEx\n" | ./index3-main ../data/enwiki-20160601-all-titles`)?
 
-### Exercise 3.2
+### Exercise 3.b
 
 We have used a plain bit vector (`bit_vector`) and its select structure to compress the starting points of the labels. How much space can be saved by using the Elias-Fano representation (`sd_vector<>`)? Implement a version which uses Elias-Fano and call it `index3a`.
 
-### Exercise 3.3
+### Exercise 3.c
 
-Compress `weight` here :) 
+We assume that there a a lot of Wikipedia pages which are not clicked often which means that there are many small values in our `weight` vector. Investigate how much you can reduce the space of this component by replacing the `int_vector<>` data structure by alternatives presented in the tutorial slides of SDSL (e.g. variants of `dac_vector<>` and `vlc_vector<>`).
 
 
-### Exercise 3.4 (optional)
+How does the significant space reduction influence query time?
+
+
+### Exercise 3.d (optional)
 
 The implemented tree construction is quite inefficient in the worst case, as we determine the child ranges of an range by scanning the whole range. Suppose that we can afford to store O(n) extra bits during construction. Can you devise a solution which has O(n) time complexity?
 
+
+## Top-k completion system #4
+
+We have seen that the space for the `weight` component can be reduced significantly but at the same time query speed drops dramatically. We can use a range maximum query (RMQ) structure built on top of `weight` to reduce the number of accesses to the `weight` vector. The algorithmic change happens in the `haviest_index_in_range` method. We use the RMQ to get the position `p` of the maximum in the initial range `[begin,end)`. We then extract `weight[p]` put the `(weight[p],[begin,end))`-pair into a max-priority queue. From this queue we extract the top element and recurse into ranges `[begin,p)` and `[p+1,end)` if they are not empty. The extracted element is added to our top-k list.
+Now the query time is independent from the range size and only O(k*log k), as we extract at most k elements from the queue and produce at most two new elements per extracted elements.
+
+Note that the code of `index4` hardly changed compared to `index3`. We just
+* added the member m_rmq
+* and wrote a new version of `heaviest_indexes_in_range` (see [index_common.hpp][IDXC]).
+
+### Exercise 4.a
 
 
 [SDSL]: https://github.com/simongog/sdsl-lite
