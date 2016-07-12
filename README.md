@@ -82,5 +82,5 @@ which will listen to the specified port.
 [SDSL]: https://github.com/simongog/sdsl-lite
 [SDSLCONTRIB]: https://github.com/simongog/sdsl-lite/graphs/contributors
 [WIKICOUNT]: https://dumps.wikimedia.org/other/pagecounts-raw/
-[INDEX1SPACE]: https://github.com/simongog/sigir16-topkcomplete/blob/master/web/stops_nl.txt.index1.html?raw=true
+[INDEX1SPACE]: http://algo2.iti.kit.edu/gog/stops_nl.txt.index1.html
 
