@@ -40,7 +40,13 @@ of the corresponding executables.
     ./index1-main ../data/stops_nl.txt
 ```
 The binary will generate an index and wait for user input
-and answer queries (one per line) interactively.
+and answer queries (one per line) interactively. The
+index is stored in `../data/stops_nl.txt.index1.sdsl` and
+a visualization of its memory consumption is available
+at `stops_nl.txt.index1.html`. In general, each
+executable `IDX-*`  will store the generated index
+at `file.IDX.sdsl` and its space visualization at
+`file.IDX.html`.
 
 
 ### Running the webserver version
@@ -49,11 +55,8 @@ and answer queries (one per line) interactively.
     ./index1-webserver ../data/stops_nl.txt 8000
 ```
 
-The binary will generate an index and start a web server
+The binary will generate an index and start a webserver
 which will listen to the specified port.
-In the example the port
-is 8080 and you will get top-10 query suggestions at 
-[http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 ### Running the demo application
 
