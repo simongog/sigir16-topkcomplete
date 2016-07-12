@@ -1,0 +1,149 @@
+Acerra	56177
+Acireale	53122
+Afragola	63981
+Agrigento	59175
+Alessandria	94974
+Altamura	70023
+Ancona	102997
+Andria	100086
+Anzio	55413
+Aprilia	70349
+Arezzo	100212
+Ascoli Piceno	51168
+Asti	76534
+Avellino	56339
+Aversa	51631
+Bagheria	56336
+Bari	315933
+Barletta	94459
+Battipaglia	51133
+Benevento	62035
+Bergamo	119551
+Bisceglie	54847
+Bitonto	56462
+Bologna	371337
+Bolzano	104029
+Brescia	189902
+Brindisi	89780
+Busto Arsizio	81760
+Cagliari	149576
+Caltanissetta	60267
+Campobasso	50916
+Carpi	69021
+Carrara	65573
+Casalnuovo di Napoli	50724
+Caserta	78693
+Casoria	79562
+Castellammare di Stabia	64506
+Catania	293902
+Catanzaro	93124
+Cava de' Tirreni	53520
+Cerignola	59103
+Cesena	97056
+Chieti	54305
+Chioggia	50674
+Cinisello Balsamo	75150
+Civitavecchia	52294
+Collegno	50135
+Como	85263
+Cosenza	70068
+Cremona	72147
+Crotone	61798
+Cuneo	55714
+Ercolano	54779
+Faenza	58150
+Fano	64100
+Ferrara	135369
+Fiumicino	70985
+Florence	358079
+Foggia	152747
+Foligno	58162
+Forlì	118167
+Gallarate	51751
+Gela	77360
+Genoa	586180
+Giugliano in Campania	117963
+Grosseto	81928
+Guidonia Montecelio	83736
+Imola	69116
+La Spezia	95378
+Lamezia Terme	71286
+Latina	119804
+Lecce	95520
+Legnano	59147
+Livorno	157052
+Lucca	84939
+L’Aquila	72511
+Manfredonia	57455
+Marano di Napoli	59472
+Marsala	82774
+Massa	70973
+Matera	60818
+Mazara del Vallo	51492
+Messina	243262
+Milan	1242123
+Modena	179149
+Modica	55196
+Molfetta	60159
+Moncalieri	58320
+Montesilvano	51565
+Monza	122712
+Naples	962003
+Novara	105024
+Olbia	56066
+Padua	206192
+Palermo	657651
+Parma	175895
+Pavia	71142
+Perugia	162449
+Pesaro	95011
+Pescara	123077
+Piacenza	103206
+Pisa	88217
+Pistoia	90288
+Pomezia	61106
+Pordenone	51723
+Portici	53981
+Potenza	68297
+Pozzuoli	83459
+Prato	185456
+Quartu Sant'Elena	71779
+Ragusa	73743
+Ravenna	153740
+Reggio Calabria	180817
+Reggio Emilia	162082
+Rho	50686
+Rimini	143321
+Rome	2617175
+Rovigo	52793
+Salerno	139019
+San Severo	55321
+Sanremo	56962
+Sassari	130658
+Savona	62553
+Scafati	50794
+Scandicci	50309
+Sesto San Giovanni	81130
+Siena	54543
+Syracuse	123850
+Taranto	200154
+Teramo	54957
+Terni	113324
+Tivoli	56531
+Torre del Greco	87197
+Trani	53940
+Trapani	70622
+Trento	116298
+Treviso	82807
+Trieste	202123
+Turin	872367
+Udine	99627
+Varese	81579
+Velletri	53544
+Venice	261362
+Verona	260172
+Viareggio	64503
+Vicenza	115927
+Vigevano	63700
+Viterbo	63597
+Vittoria	63332
