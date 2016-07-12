@@ -12,7 +12,7 @@ Here is an example of our final system. The index is built over
 [titles and click counts of Wikipedia pages][WIKICOUNT].
 
 <p align="center">
-  <img src="https://github.com/simongog/sigir16-autocomplete/blob/master/web/demo.gif?raw=true" alt="Searching Wikipedia titles"/>
+  <img src="https://github.com/simongog/sigir16-topkcomplete/blob/master/web/demo.gif?raw=true" alt="Searching Wikipedia titles"/>
 </p>
 
 ### Installation
@@ -43,7 +43,7 @@ The binary will generate an index and wait for user input
 and answer queries (one per line) interactively. The
 index is stored in `../data/stops_nl.txt.index1.sdsl` and
 a visualization of its memory consumption is available
-at `stops_nl.txt.index1.html`. In general, each
+at [stops_nl.txt.index1.html][INDEX1SPACE]. In general, each
 executable `IDX-*`  will store the generated index
 at `file.IDX.sdsl` and its space visualization at
 `file.IDX.html`.
@@ -82,3 +82,5 @@ which will listen to the specified port.
 [SDSL]: https://github.com/simongog/sdsl-lite
 [SDSLCONTRIB]: https://github.com/simongog/sdsl-lite/graphs/contributors
 [WIKICOUNT]: https://dumps.wikimedia.org/other/pagecounts-raw/
+[INDEX1SPACE]: https://github.com/simongog/sigir16-topkcomplete/blob/master/web/stops_nl.txt.index1.html?raw=true
+
