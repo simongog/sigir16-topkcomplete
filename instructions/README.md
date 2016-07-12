@@ -121,9 +121,22 @@ Create two versions of `index4`. One which uses `dac_vector<4>` (named `index3a`
 
 ## Top-k completion system #4 (case-insensitive version)
 
-We have to add two more bit vectors to generate a system which is capcable of matching case-insensitive but returns the original (case-sensitive) strings for our query.
-This index is implemented in [index4ci][IDX4ci]. 
+We have to add two more bit vectors to generate a system which is capable of matching case-insensitive but returns the original (case-sensitive) strings for our query.
+This index is implemented in [index4ci][IDX4ci].
 
+Compared to [index4][IDX4] we added three members to the class:
+ * `m_str_start` is a bit vector which marks the starting positions of each string in the concatenation
+ * `m_str_sel` is a select structure for `m_str_start` so that we access the start of the i-th string efficiently
+ * `m_bv_uc` is a bit vector which indicates for each position in the concatenation if the character was in uppercase
+
+ Apart from the reorganization of the construction (strings are first sorted case-insensitively, then concatenated, `m_bv_uc` constructed and the trie built over the lowercased concatenation) there are only minor changes of the code:
+  * the pattern is lowercased before the matching
+  * for each top-k entry, say the `i`-th string, we use `p=m_str_sel(i+1)` to go the the start of the `i`-th string in the concatenation and then check for each character  at position `j` of the string if it was written in uppercase in the original input by checking if `m_bv_uc[p+j]` was set. If yes, we uppercase the character at position `j` in the string.
+
+### Exercise 4.b
+
+With the default parametrization of the class `index4ci<>` takes about 427 MiB for the Wikipedia titles input. Try to optimze the space of the index by choosing better parameters. Keep in mind that the query times. They should not exceed 5 milliseconds. Call you new index `demo` and try the `demo-webserver` application.
+A good solution should not require more than 330 MiB ;)
 
 ## Top-k completion system #5
 
@@ -139,4 +152,5 @@ This index is implemented in [index4ci][IDX4ci].
 [IDXC]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index_common.hpp
 [MAIN]: https://github.com/simongog/sigir16-topkcomplete/blob/master/src/index.cpp
 [IDXCFG]: https://github.com/simongog/sigir16-topkcomplete/blob/master/index.config
+[IDX4]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index4.hpp
 [IDX4ci]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index4ci.hpp

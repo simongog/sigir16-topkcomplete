@@ -7,7 +7,7 @@
 
 namespace topkcomp {
 
-template<typename t_bv = sdsl::sd_vector<>
+template<typename t_bv = sdsl::sd_vector<>,
          typename t_sel= typename t_bv::select_1_type,
          typename t_rac_weight = sdsl::int_vector<>,
          typename t_bp_support = sdsl::bp_support_sada<>,

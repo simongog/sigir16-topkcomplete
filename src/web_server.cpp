@@ -28,6 +28,7 @@ std::string escape_json(const std::string &s) {
 // --
 
 using namespace topkcomp;
+using namespace sdsl;
 
 typedef INDEX_TYPE t_index;
 
