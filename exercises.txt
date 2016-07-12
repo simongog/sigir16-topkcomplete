@@ -1,4 +1,0 @@
-Exercises
-
-Currently the search is case sensitive. How can we make the search case
-insensitive but still display the original entries in the result list?
