@@ -40,6 +40,9 @@ FOREACH(line ${index_lines})
     SET_PROPERTY(TARGET ${web-exec} PROPERTY COMPILE_DEFINITIONS 
                  INDEX_TYPE=${index_type} 
                  INDEX_NAME="${index_name}")
+    ADD_CUSTOM_TARGET(${index_name}
+                 DEPENDS ${exec} ${web-exec}
+                 )
 ENDFOREACH()
 
 SET(test_case enwiki-20160601-all-titles.gz)
