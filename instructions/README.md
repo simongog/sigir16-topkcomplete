@@ -2,14 +2,14 @@
 # Tutorial instructions
 
 For this tutorial we have generated an example project which implements a top-k query completion system. The project depends on three resources (which are included as submodules and will be installed automatically):
-* The [Succinct Data Structure Library](SDSL) will provide basic succinct data structures.
-* The [Mongoose Embedded Web Server Library][MONGOOSE] was used to implement the server of our web application.
-* On the client side of your web application [jQuery-Autocomplete][JQUERYAUTO] is used to fetch and display results
+* The [Succinct Data Structure Library](SDSL) provides basic succinct data structures;
+* The [Mongoose Embedded Web Server Library][MONGOOSE] is used to implement the server of our web application;
+* On the client side of your web application [jQuery-Autocomplete][JQUERYAUTO] is used to fetch and display results.
 
 The project has the following software requirements:
-* `git` version control  
-* `cmake` build system
-* a recent C++ compiler (`clang++` or `g++`)
+* `git` version control; 
+* `cmake` build system;
+* a recent C++ compiler (`clang++` or `g++`).
 
 
 You can clone the tutorial with the following command:
@@ -32,13 +32,13 @@ You can find the implementation of our first index in the file [`index1.hpp`][ID
 * a constructor, which takes a vector of pairs of strings and unsigned integers (i.e. strings and weights/priorities),
 * two methods to `serialize` and `load` a class instance. Note that all SDSL classes implement these methods and we just have to call the methods of the members.
 * and three methods which are used to answer top-k queries:
-  - `prefix_range(prefix)` determines the range in the sorted list of strings which is prefixed by `prefix`. This is done by binary search. I.e. it takes O(m&times;log n) time.
+  - `prefix_range(prefix)` determines the range in the sorted list of strings which is prefixed by `prefix`. This is done by binary search, thus, it takes O(m&times;log N) time.
   - `heaviest_indexes_in_range(k, range, w)` (defined in [index_common.hpp][IDXC]) determines `k` indexes in the range `[begin, end)`, which are associated with the heaviest weight in weight vector `w`. For a range of size `r=end-begin` this takes O(r&times;log k) time as we use a min-priority queue of size `k` to maintain the heaviest strings.
   - `top-k(prefix, k)` first determines the range of all strings prefixed by `prefix`, and the uses `heaviest_indexes_in_range` to get the `k` positions of the heaviest strings in the set. The only work left is to replace the positions by the (string,weight) pairs.
 
 ### Exercise 1.a
 
-We want to analyze the practical properties of index1. For this we first compiler the index (change into the `build` directory and call `make index1-main` to create the console application). Build the index for the Wikipedia titles (`./index1-main ../data/enwiki-20160601-all-titles `) and report the total space consumption of the index and the space breakdown of the three components.
+We want to analyze the performance of index1 on a real dataset. For this we first compile the index (change into the `build` directory and call `make index1-main` to create the console application). Build the index for the Wikipedia titles (`./index1-main ../data/enwiki-20160601-all-titles `) and report the total space consumption of the index and the space breakdown of the three components.
 
 How fast are query answered for `k=5` and the empty prefix, prefix `E`, prefix `Ex`, `Exw`?
 
@@ -47,6 +47,7 @@ What happens if you search for a lower case prefix: `a`, `b`,`c`,...?
 ### Exercise 1.b (optional)
 
 How do the numbers change for `k=50`? To answer this question you have to modify the console program (see [index.cpp][MAIN]).
+Can you explain this effect?
 
 ## Top-k completion system #2
 
@@ -65,7 +66,7 @@ How much space is used by the bit vector and select structure which mark the sta
 
 ### Exercise 2.b
 
-Examine how much space can be saved by using the Elias-Fano representation (i.e. using the `sd_vector<>` class instead of the plain bit vector class `bit_vector`)?
+Examine how much space can be saved by using the Elias-Fano representation (i.e., using the `sd_vector<>` class instead of the plain bit vector class `bit_vector`)?
 You can plug-in the Elias-Fano representation by adjusting the template parameter of `index2`.
 
 Explore the effect on query speed.
@@ -76,23 +77,23 @@ Explore the effect on query speed.
 We have seen that the marking the start of strings is now only a small fraction of the total memory consumption of the index. We now try to improve the space of the remaining parts, namely the concatenated text and the weights. For this we build a trie of the keys and store the trie topology as a balanced parentheses sequence in succinct space.
 Our first trie based implementation is contained in [index3.hpp][IDX3].
 
-* The construction of the succinct trie representation is done directly in method `build_tree`. The member `m_bp` which will hold the balanced parentheses is initialized to the maximal size of the representation which is 4N bits (as we have N leave nodes, at most N-1 inner nodes, and we take write two bits per node). The character vector `m_labels` which will keep the labels is also initialized to its maximal size n. We also initialize `start_bv` which will be used to store the length of the edge labels to its maximum size 2N+n+2 (we have at most 2N nodes and the total length of the labels is at most n). We then built the trie recursively as follows: We start with the range [0,N-1] and determine the length of the longest common prefix `l` of all strings by comparing `string[0]` and `string[N-1]`. We append an opening parenthesis to `m_bp`, append `l` 0-bits and a 1-bit to `start_bv` and append the `l` common prefix characters to `m_labels`. Then we recurse by determine all subranges which share a common prefix of length > `l`. After the recursive calls we append a closing parenthesis to `m_bp`. Last, we resize the structures to their actual size.
+* The construction of the succinct trie representation is done directly in method `build_tree`. The member `m_bp` which holds the balanced parentheses is initialized to the maximal size of the representation which is 4N bits (as we have N leave nodes, at most N-1 inner nodes, and we take write two bits per node). The character vector `m_labels` which will keep the labels is also initialized to its maximal size n. We also initialize `start_bv` which will be used to store the length of the edge labels to its maximum size 2N+n+2 (we have at most 2N nodes and the total length of the labels is at most n). We then built the trie recursively as follows: We start with the range [0,N-1] and determine the length of the longest common prefix `l` of all strings by comparing `string[0]` and `string[N-1]`. We append an opening parenthesis to `m_bp`, append `l` 0-bits and a 1-bit to `start_bv` and append the `l` common prefix characters to `m_labels`. Then we recurse by determine all subranges which share a common prefix of length > `l`. After the recursive calls we append a closing parenthesis to `m_bp`. Last, we resize the structures to their actual size.
 * On top of `m_bp` we have two additional support structures. A rank structure for bit-pattern `10` (remember that `()` or `10` corresponds to a leaf in the tree represented by the balanced parentheses sequence) and a select structure for `10`.
 * We add methods to navigate and access our trie:
-  - `node_id(v)` maps a node identifier `v` (=position of corresponing opening parenthesis in `m_bp`) to a unique id in [0,N-1]. This can be done by counting the number of opening parentheses in `m_bp[0,v-1]`.
-  - `edge(v_id)` for a given node id `v_id` we get the `begin` and `end` of its label by two selects in `m_start_bv` and the return a random access container to `m_labels[begin,end-1]`.
-  - `is_leaf(v)` determines if a node is a leaf node.
-  - `is_root(v)` determines if the node is the root.
-  - `parent(v)` return the parent node of `v`.
-  - `label(idx)` return the string formed by the concatenation of all edge labels from the root to the `idx`-th leaf in the trie.
-  - `children(v)` return a vector a children of `v` (ordered according to the first character of the edge labels).
-* With this operations we can now implement the `prefix_range` method:
+  - `node_id(v)`: map a node identifier `v` (=position of corresponing opening parenthesis in `m_bp`) to a unique id in [0,N-1]. This can be done by counting the number of opening parentheses in `m_bp[0,v-1]`.
+  - `edge(v_id)`: for a given node id `v_id`, we get the `begin` and `end` of its label by two selects in `m_start_bv` and the return a random access container to `m_labels[begin,end-1]`.
+  - `is_leaf(v)`: determine if a node is a leaf node.
+  - `is_root(v)`: determine if the node is the root.
+  - `parent(v)`: return the parent node of `v`.
+  - `label(idx)`: return the string formed by the concatenation of all edge labels from the root to the `idx`-th leaf in the trie.
+  - `children(v)`: return a vector a children of `v` (ordered according to the first character of the edge labels).
+* With these operations we can now implement the `prefix_range` method:
   - We start at the root node and try to find an edge which matches the next characters of the given prefix. There are now two cases. Either we find a node `v` such that all leaf nodes in its subtree start with the given prefix or we do not find such a `v` and return the empty interval. In the first case we map node `v` to its lexicographic range by counting leaf nodes to this right of `v`'s subtree (`m_bp_rnk10(v)`) and leaf nodes right of and included in `v`'s subtree (`m_bp_rnk10(m_bp_support.find_close(v)`).
 * The do not have to alter method `heaviest_indexes_in_range` and can simply use the `label` method to reconstruct the strings of the result list.
 
 ### Exercise 3.a
 
-Again we want to analyze the practical properties of index3. You can remove again the `#` sign in front of index3 in the [index.config][IDXCFG] file and call `cmake .. && make index3-main`.
+Again we want to analyze the performance of index3. You can remove again the `#` sign in front of index3 in the [index.config][IDXCFG] file and call `cmake .. && make index3-main`.
 Build the index for the Wikipedia titles (`./index3-main ../data/enwiki-20160601-all-titles `) and report the total space consumption of the index and the space breakdown of the three components.
 
 What is the effect on the query times (`printf "\nE\nEx\n" | ./index3-main ../data/enwiki-20160601-all-titles`)?
@@ -103,8 +104,7 @@ We have used a plain bit vector (`bit_vector`) and its select structure to compr
 
 ### Exercise 3.c
 
-We assume that there a a lot of Wikipedia pages which are not clicked often which means that there are many small values in our `weight` vector. Investigate how much you can reduce the space of this component by replacing the `int_vector<>` data structure by alternatives presented in the tutorial slides of SDSL (e.g. variants of `dac_vector<>` and `vlc_vector<>`).
-
+We assume that there a lot of Wikipedia pages which are not clicked often which means that there are many small values in our `weight` vector. Investigate how much you can reduce the space of this component by replacing the `int_vector<>` data structure by alternatives presented in the tutorial slides of SDSL (e.g., variants of `dac_vector<>` and `vlc_vector<>`).
 
 How does the significant space reduction influence query time?
 
