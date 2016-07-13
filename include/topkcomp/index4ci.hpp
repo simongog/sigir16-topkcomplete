@@ -140,7 +140,7 @@ class index4ci {
         // Build balanced parentheses sequence of the trie of the strings
         void build_tree(const tVPSU& string_weight, size_t N, size_t n) {
             using namespace sdsl;
-            bit_vector start_bv(N+n+2, 0);     // initialize to worst case size
+            bit_vector start_bv(2*N+n+2, 0);   // initialize to worst case size
             m_labels   = int_vector<8>(n);     // initialize to worst case size
             m_bp       = bit_vector(2*2*N, 0); // initialize to worst case size
 
