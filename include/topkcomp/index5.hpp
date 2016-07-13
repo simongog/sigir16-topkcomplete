@@ -8,6 +8,7 @@
 namespace topkcomp {
 
 template<typename t_csa = sdsl::csa_wt<>,
+         typename t_rac_weight = sdsl::dac_vector<4>,
          typename t_bv = sdsl::sd_vector<>,
          typename t_rnk= typename t_bv::rank_1_type,
          typename t_sel= typename t_bv::select_1_type,
@@ -20,7 +21,7 @@ class index5 {
     t_bv               m_start;     // marks starts of strings in CSA
     t_rnk              m_start_rnk; // rank support structure for m_start
     t_sel              m_start_sel; // select support structure for m_start
-    sdsl::int_vector<> m_weight;    // weights of strings
+    t_rac_weight       m_weight;    // weights of strings
     t_rmq              m_rmq;       // range maximum query on m_weight
 
     public:
@@ -34,12 +35,15 @@ class index5 {
                 uint64_t N, n, max_weight;
                 std::tie(N, n, max_weight) = input_stats(string_weight);
                 // initialize m_weight
-                m_weight = int_vector<>(N, 0, bits::hi(max_weight)+1);
-                for (size_t i=0; i < N; ++i) {
-                    m_weight[i] = string_weight[i].second;
+                {
+                    int_vector<> weight(N, 0, bits::hi(max_weight)+1);
+                    for (size_t i=0; i < N; ++i) {
+                        weight[i] = string_weight[i].second;
+                    }
+                    // initialize range maximum structure
+                    m_rmq = t_rmq(&weight);
+                    m_weight = t_rac_weight(weight);
                 }
-                // initialize range maximum structure
-                m_rmq = t_rmq(&m_weight);
                 // construct compressed suffix array
                 auto concat_file = tmp_file(std::string("./"),"_index5");
                 {
