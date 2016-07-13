@@ -7,8 +7,8 @@ For this tutorial we have generated an example project which implements a top-k 
 * On the client side of your web application [jQuery-Autocomplete][JQUERYAUTO] is used to fetch and display results.
 
 The project has the following software requirements:
-* `git` version control; 
-* `cmake` build system;
+* `git` version control
+* `cmake` build system
 * a recent C++ compiler (`clang++` or `g++`).
 
 
