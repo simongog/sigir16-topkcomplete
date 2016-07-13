@@ -111,10 +111,6 @@ How does the significant space reduction influence query time?
 
 ### Exercise 3.d (optional)
 
-The implemented tree construction is quite inefficient in the worst case, as we determine the child ranges of a range by scanning the whole range. Suppose that we can afford to store O(n) extra bits during construction. Can you devise a solution which has O(n) time complexity?
-
-### Exercise 3.e (optional)
-
 What would be the advantage of using the DFUDS representation in this application?
 
 
@@ -151,6 +147,11 @@ Compared to [index4][IDX4] we added three members to the class:
 
 With the default parametrization of the class `index4ci<>` takes about 427 MiB for the Wikipedia titles input. Try to optimize the space of the index by choosing better parameters. Keep in mind that the query times. They should not exceed 5 milliseconds. Call you new index `demo` and try the `demo-webserver` application.
 A good solution should not require more than 330 MiB ;)
+
+### Exercise 4.c (optional)
+
+The implemented tree construction is quite inefficient in the worst case, as we determine the child ranges of a range by scanning the whole range. Suppose that we can afford to store O(n) extra bits during construction. Can you devise a solution which has O(n) time complexity?
+
 
 ## Top-k completion system #5
 
