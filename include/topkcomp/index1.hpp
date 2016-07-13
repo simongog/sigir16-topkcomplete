@@ -46,7 +46,7 @@ class index1 {
         t_range prefix_range(const std::string& prefix) const {
             t_range res = {{0, m_weight.size()}};
             for (size_t i=0; i<prefix.size(); ++i) {
-                // use binary search at each step to narrow the interval
+                // use binary search at each step to narrow the range
                 res[0] = std::lower_bound(m_start.begin()+res[0], m_start.begin()+res[1],
                         prefix[i],  [&](uint64_t idx, uint8_t c){
                                         return m_text[idx+i] < c;

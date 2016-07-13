@@ -53,7 +53,7 @@ class index2 {
             t_range res = {{0, m_weight.size()}};
             id_rac id(m_weight.size());
             for (size_t i=0; i<prefix.size(); ++i) {
-                // use binary search at each step to narrow the interval
+                // use binary search at each step to narrow the range
                 res[0] = std::lower_bound(id.begin()+res[0], id.begin()+res[1],
                             prefix[i],  [&](size_t idx, char c){
                                 return m_text[m_start_sel(idx+1)+i] < c;
