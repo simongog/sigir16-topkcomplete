@@ -159,9 +159,13 @@ We present an alternative solution based on a compressed full-text index (see [i
 ### Exercise 5.a
 
 Build `index5-main` and determine the query time and space consumption for the Wikipedia titles and the tree prefixes of the previous tasks.
-Reduce the space consumption of the index by plugging in a better compressed full-text index. 
+Reduce the space consumption of the index by plugging in a better compressed full-text index (name your index `index5a`). 
 
 ### Exercise 5.b (optional)
+
+A &Psi; access in a FM-index is usually more expensive than a `LF` access. I.e. going forward in the text is more expensive than going backward. Can you adjust the index in such a way that `LF` is used instead of &Psi;. Which definition has to be adjusted? Implement your solution.  
+
+### Exercise 5.c (optional)
 
 Imagine that the lexicographic range determined by the full-text index for a given prefix `P` is not empty but we do not find a string which starts in this range. Devise a method to report the top-k infix matches.
 
