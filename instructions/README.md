@@ -87,10 +87,8 @@ Our first trie based implementation is contained in [index3.hpp][IDX3].
   - `label(idx)` return the string formed by the concatenation of all edge labels from the root to the `idx`-th leaf in the trie.
   - `children(v)` return a vector a children of `v` (ordered according to the first character of the edge labels).
 * With this operations we can now implement the `prefix_range` method:
-  - TODO
-* discuss who subtree is mapped back to lexicographic range
-
-[TODO: more description here, discuss introduction of `m_bp_rnk10` and `m_bp_sel10`,`m_bp_support`]
+  - We start at the root node and try to find an edge which matches the next characters of the given prefix. There are now two cases. Either we find a node `v` such that all leaf nodes in its subtree start with the given prefix or we do not find such a `v` and return the empty interval. In the first case we map node `v` to its lexicographic range by counting leaf nodes to this right of `v`'s subtree (`m_bp_rnk10(v)`) and leaf nodes right of and included in `v`'s subtree (`m_bp_rnk10(m_bp_support.find_close(v)`).
+* The do not have to alter method `heaviest_indexes_in_range` and can simply use the `label` method to reconstruct the strings of the result list.
 
 ### Exercise 3.a
 
