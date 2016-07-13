@@ -149,14 +149,21 @@ Compared to [index4][IDX4] we added three members to the class:
 
 ### Exercise 4.b
 
-With the default parametrization of the class `index4ci<>` takes about 427 MiB for the Wikipedia titles input. Try to optimze the space of the index by choosing better parameters. Keep in mind that the query times. They should not exceed 5 milliseconds. Call you new index `demo` and try the `demo-webserver` application.
+With the default parametrization of the class `index4ci<>` takes about 427 MiB for the Wikipedia titles input. Try to optimize the space of the index by choosing better parameters. Keep in mind that the query times. They should not exceed 5 milliseconds. Call you new index `demo` and try the `demo-webserver` application.
 A good solution should not require more than 330 MiB ;)
 
 ## Top-k completion system #5
 
-[TODO: add description]
+We present an alternative solution based on a compressed full-text index (see [index5.hpp][IDX5]). The idea is to build a compressed full-text index `m_csa` over the concatenation of sorted strings. We then use a bit vector `m_start` to mark all suffixes which are aligned to the start of a string. Note that we can map from a lexicographic range `[lb, rb]` in `m_csa` to a range in the string set by two rank operation (`m_start_rnk(lb)` and `m_start_rnk(rb+1)`). With the range in the string set we can use the `heaviest_indexes_in_range` implementation of the previous solutions. To extract the `idx`-th string, we make use the &Psi; function and the character borders of `m_csa`.
 
+### Exercise 5.a
 
+Build `index5-main` and determine the query time and space consumption for the Wikipedia titles and the tree prefixes of the previous tasks.
+Reduce the space consumption of the index by plugging in a better compressed full-text index. 
+
+### Exercise 5.b (optional)
+
+Imagine that the lexicographic range determined by the full-text index for a given prefix `P` is not empty but we do not find a string which starts in this range. Devise a method to report the top-k infix matches.
 
 
 [SDSL]: https://github.com/simongog/sdsl-lite
@@ -168,5 +175,6 @@ A good solution should not require more than 330 MiB ;)
 [IDX3]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index3.hpp
 [IDX4]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index4.hpp
 [IDX4ci]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index4ci.hpp
+[IDX5]: https://github.com/simongog/sigir16-topkcomplete/blob/master/include/topkcomp/index5.hpp
 [MAIN]: https://github.com/simongog/sigir16-topkcomplete/blob/master/src/index.cpp
 [IDXCFG]: https://github.com/simongog/sigir16-topkcomplete/blob/master/index.config
