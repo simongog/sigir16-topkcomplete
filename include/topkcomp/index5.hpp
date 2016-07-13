@@ -120,7 +120,7 @@ class index5 {
 
     private:
 
-        // Return range [lb, rb) of matching entries
+        // Return range [lb, rb) of matching strings
         std::array<size_t,2> prefix_range(const std::string& prefix) const {
             auto sa_range = lex_interval(m_csa, prefix.begin(), prefix.end());
             return {{m_start_rnk(sa_range[0]), m_start_rnk(sa_range[1]+1)}};

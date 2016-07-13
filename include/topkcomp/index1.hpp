@@ -42,7 +42,7 @@ class index1 {
             }
         }
 
-        // Return range [lb, rb) of matching entries
+        // Return range [lb, rb) of matching strings
         t_range prefix_range(const std::string& prefix) const {
             t_range res = {{0, m_weight.size()}};
             for (size_t i=0; i<prefix.size(); ++i) {

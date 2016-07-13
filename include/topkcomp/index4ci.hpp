@@ -192,7 +192,7 @@ class index4ci {
             bp_it++; // move iterator to right; e.g. append ,,)''
         }
 
-       // Return range [lb, rb) of matching entries
+       // Return range [lb, rb) of matching strings
         std::array<size_t,2> prefix_range(std::string prefix) const {
             std::transform(prefix.begin(), prefix.end(), prefix.begin(), ::tolower);
             size_t v = 0; // node is represented by position of opening parenthesis in bp
@@ -230,7 +230,7 @@ class index4ci {
                     }
                 }
             }
-            // Map from sub tree rooted at v to entries in the original array
+            // Map from sub tree rooted at v to strings in the original array
             return {{m_bp_rnk10(v), m_bp_rnk10(m_bp_support.find_close(v)+1)}};
         }
 

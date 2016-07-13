@@ -48,7 +48,7 @@ class index2 {
             }
         }
 
-        // Return range [lb, rb) of matching entries
+        // Return range [lb, rb) of matching strings
         t_range prefix_range(const std::string& prefix) const {
             t_range res = {{0, m_weight.size()}};
             id_rac id(m_weight.size());
