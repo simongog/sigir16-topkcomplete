@@ -111,7 +111,7 @@ How does the significant space reduction influence query time?
 
 ### Exercise 3.d (optional)
 
-The implemented tree construction is quite inefficient in the worst case, as we determine the child ranges of an range by scanning the whole range. Suppose that we can afford to store O(n) extra bits during construction. Can you devise a solution which has O(n) time complexity?
+The implemented tree construction is quite inefficient in the worst case, as we determine the child ranges of a range by scanning the whole range. Suppose that we can afford to store O(n) extra bits during construction. Can you devise a solution which has O(n) time complexity?
 
 ### Exercise 3.e (optional)
 
@@ -163,7 +163,7 @@ Reduce the space consumption of the index by plugging in a better compressed ful
 
 ### Exercise 5.b (optional)
 
-A &Psi; access in a FM-index is usually more expensive than a `LF` access. I.e. going forward in the text is more expensive than going backward. Can you adjust the index in such a way that `LF` is used instead of &Psi;. Which definition has to be adjusted? Implement your solution.  
+A &Psi; access in a FM-index is usually more expensive than a `LF` access, i.e., going forward in the text is more expensive than going backward. Can you adjust the index in such a way that `LF` is used instead of &Psi;. Which definition has to be adjusted? Implement your solution.  
 
 ### Exercise 5.c (optional)
 
