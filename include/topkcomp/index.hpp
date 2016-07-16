@@ -37,24 +37,29 @@ namespace topkcomp{
                 cerr << "Error: Could not open file " << file << endl;
                 return;
             }
-            tVPSU string_pointer;
             tVPSU string_weight;
             string entry;
             while ( getline(in, entry, '\t')  ) {
                 string s_weight;
                 getline(in, s_weight);
                 uint64_t weight = stoull(s_weight);
-                if ( !case_sensitive ) {
-                    string ci_entry(entry);
-                    std::transform(entry.begin(), entry.end(), ci_entry.begin(), ::tolower);
-                    string_pointer.emplace_back(ci_entry, string_weight.size());
-                }
                 string_weight.emplace_back(entry, weight);
             }
             if ( case_sensitive ) {
                 sort(string_weight.begin(), string_weight.end());
             } else {
-                sort(string_pointer.begin(), string_pointer.end());
+                sort(string_weight.begin(), string_weight.end(),[](const tPSU& a, const tPSU& b){
+                    const uint8_t* ap = (const uint8_t*)(a.first.c_str());
+                    const uint8_t* bp = (const uint8_t*)(b.first.c_str());
+                    while ( std::tolower(*ap) == std::tolower(*bp) ) {
+                        if ( *ap == 0 ) {
+                            return false;
+                        } else {
+                            ++ap; ++bp;
+                        }
+                    }
+                    return std::tolower(*ap) < std::tolower(*bp);
+                });
             }
             cout << "Read and sorted " << string_weight.size() << " string." << endl;
             if ( case_sensitive ) {
@@ -64,16 +69,22 @@ namespace topkcomp{
                                          });
                 string_weight.resize(unique_end-string_weight.begin());
             } else {
-                auto unique_end = unique(string_pointer.begin(), string_pointer.end(),
+                auto unique_end = unique(string_weight.begin(), string_weight.end(),
                                          [](const tPSU& a, const tPSU& b) {
-                                            return a.first == b.first;
+                                            if ( a.first.size() != b.first.size() )
+                                                return false;
+                                            const uint8_t* ap = (const uint8_t*)(a.first.c_str());
+                                            const uint8_t* bp = (const uint8_t*)(b.first.c_str());
+                                            while ( std::tolower(*ap) == std::tolower(*bp) ) {
+                                                if ( *ap == 0 ) {
+                                                    return true;
+                                                } else {
+                                                    ++ap; ++bp;
+                                                }
+                                            }
+                                            return false;
                                          });
-                string_pointer.resize(unique_end-string_pointer.begin());
-                for(auto& entry : string_pointer) {
-                     entry = string_weight[entry.second];
-                }
-                string_weight = string_pointer;
-                string_pointer = tVPSU();
+                string_weight.resize(unique_end-string_weight.begin());
             }
             cout << "Number of unique strings is " << string_weight.size() << "." << endl;
 /*            {
@@ -83,15 +94,17 @@ namespace topkcomp{
                 }
             }
 */
-            auto construction_start = clock::now();
-            t_index topk_index(string_weight);
-            auto construction_time = clock::now() - construction_start;
-            auto construction_ms    = chrono::duration_cast<chrono::milliseconds>(construction_time).count();
-            cout << "Construction took "<< std::setprecision(3) << construction_ms / 1000.0;
-            cout << " s" << endl;
-            store_to_file(topk_index, index_file);
-            write_structure<HTML_FORMAT>(topk_index, file+"."+index_name+".html");
-            cout << "Index size is " << size_in_mega_bytes(topk_index) << " MiB" << endl;
+            {
+                auto construction_start = clock::now();
+                t_index topk_index(string_weight);
+                auto construction_time = clock::now() - construction_start;
+                auto construction_ms    = chrono::duration_cast<chrono::milliseconds>(construction_time).count();
+                cout << "Construction took "<< std::setprecision(3) << construction_ms / 1000.0;
+                cout << " s" << endl;
+                store_to_file(topk_index, index_file);
+                write_structure<HTML_FORMAT>(topk_index, file+"."+index_name+".html");
+                cout << "Index size is " << size_in_mega_bytes(topk_index) << " MiB" << endl;
+            }
             load_from_file(index, index_file);
         }
     }
