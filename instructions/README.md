@@ -2,7 +2,7 @@
 # Tutorial instructions
 
 For this tutorial we have generated an example project which implements a top-k query completion system. The project depends on three resources (which are included as submodules and will be installed automatically):
-* The [Succinct Data Structure Library](SDSL) provides basic succinct data structures;
+* The [Succinct Data Structure Library][SDSL] provides basic succinct data structures;
 * The [Mongoose Embedded Web Server Library][MONGOOSE] is used to implement the server of our web application;
 * On the client side of your web application [jQuery-Autocomplete][JQUERYAUTO] is used to fetch and display results.
 
